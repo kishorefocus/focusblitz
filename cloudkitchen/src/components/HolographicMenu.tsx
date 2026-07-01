@@ -9,23 +9,41 @@ import { Search, Plus } from 'lucide-react';
 /* ─── CONSTANTS ──────────────────────────────────────────────────────── */
 
 const CAT_META: Record<string, { code: string; label: string }> = {
-  'classic-thalis': { code: 'CT-01', label: 'CLASSIC THALIS' },
-  'meal-combos': { code: 'MC-02', label: 'MEAL COMBOS' },
-  'seafood-specials': { code: 'SF-03', label: 'SEAFOOD SPECIALS' },
+  'surti-specials': { code: 'SS-01', label: 'SURTI SPECIALS' },
+  'vada-pav-specials': { code: 'VP-02', label: 'VADA PAV SPECIALS' },
+  'chatpate-chaat': { code: 'CC-03', label: 'CHATPATE CHAAT' },
 };
 
 const ITEM_BADGES: Record<string, { text: string; bg: string; color: string }> = {
-  'veg-thali': { text: 'BESTSELLER', bg: '#ff5400', color: '#000' },
-  'non-veg-thali': { text: 'SPICY', bg: '#f59e0b', color: '#000' },
-  'veg-meal': { text: 'HOT', bg: '#ef4444', color: '#fff' },
-  'non-veg-meal': { text: 'POPULAR', bg: '#8b5cf6', color: '#fff' },
-  'fish-thali': { text: 'SIGNATURE', bg: '#ff5400', color: '#000' },
-  'mini-fish-thali': { text: 'HOT', bg: '#ef4444', color: '#fff' },
+  'surti-khaman': { text: 'BESTSELLER', bg: '#ff5400', color: '#000' },
+  'surti-khaman-butter': { text: 'BUTTERY', bg: '#f59e0b', color: '#000' },
+  'surti-khaman-cheese': { text: 'CHEESY', bg: '#8b5cf6', color: '#fff' },
+  'sev-khamani': { text: 'POPULAR', bg: '#ef4444', color: '#fff' },
+  'khichu': { text: 'CLASSIC', bg: '#10b981', color: '#fff' },
+  'ragda-pav': { text: 'SPICY', bg: '#f59e0b', color: '#000' },
+  'dakor-gota': { text: 'SIGNATURE', bg: '#ff5400', color: '#000' },
+  'poha': { text: 'LIGHT', bg: '#3b82f6', color: '#fff' },
+  'cheese-vada-pav': { text: 'CHEESY', bg: '#8b5cf6', color: '#fff' },
+  'schezwan-vada-pav': { text: 'HOT', bg: '#ef4444', color: '#fff' },
+  'ulta-vada-pav': { text: 'UNIQUE', bg: '#ff5400', color: '#000' },
+  'sabudana-vada': { text: 'CRISPY', bg: '#10b981', color: '#fff' },
+  'masala-pav': { text: 'BUTTERY', bg: '#f59e0b', color: '#000' },
+  'aloo-chaat': { text: 'TANGY', bg: '#3b82f6', color: '#fff' },
+  'aloo-tikki-chaat': { text: 'FAVORITE', bg: '#ff5400', color: '#000' },
+  'dahi-vada': { text: 'COOLING', bg: '#10b981', color: '#fff' },
+  'mumbai-bhel-puri': { text: 'CLASSIC', bg: '#3b82f6', color: '#fff' },
+  'magical-masala-bhel': { text: 'EXTREME', bg: '#ef4444', color: '#fff' },
+  'sukha-bhel-puri': { text: 'DRY', bg: '#6b7280', color: '#fff' },
+  'nippat-masala': { text: 'CRUNCHY', bg: '#f59e0b', color: '#000' },
+  'panipuri': { text: '5 FLAVORS', bg: '#10b981', color: '#fff' },
 };
 
 const LEVELS: Record<string, number> = {
-  'veg-thali': 3, 'non-veg-thali': 4, 'veg-meal': 3,
-  'non-veg-meal': 4, 'fish-thali': 4, 'mini-fish-thali': 2,
+  'surti-khaman': 3, 'surti-khaman-butter': 4, 'surti-khaman-cheese': 4,
+  'sev-khamani': 3, 'khichu': 2, 'ragda-pav': 4, 'dakor-gota': 3, 'poha': 2,
+  'cheese-vada-pav': 4, 'schezwan-vada-pav': 5, 'ulta-vada-pav': 3, 'sabudana-vada': 3, 'masala-pav': 4,
+  'aloo-chaat': 4, 'aloo-tikki-chaat': 4, 'dahi-vada': 2, 'mumbai-bhel-puri': 3,
+  'magical-masala-bhel': 5, 'sukha-bhel-puri': 2, 'nippat-masala': 4, 'panipuri': 4,
 };
 
 const getCalories = (item: MenuItem) =>
@@ -33,9 +51,9 @@ const getCalories = (item: MenuItem) =>
 
 const getItemCode = (category: string, index: number) => {
   const map: Record<string, string> = {
-    'classic-thalis': 'CT', 'meal-combos': 'MC', 'seafood-specials': 'SF',
+    'surti-specials': 'SS', 'vada-pav-specials': 'VP', 'chatpate-chaat': 'CC',
   };
-  return `#${map[category] ?? 'DA'}-${index + 1}`;
+  return `#${map[category] ?? 'SC'}-${index + 1}`;
 };
 
 /* ─── LEVEL BARS ─────────────────────────────────────────────────────── */
@@ -324,7 +342,7 @@ const MenuCard: React.FC<{
 /* ─── MAIN COMPONENT ─────────────────────────────────────────────────── */
 export const HolographicMenu: React.FC = () => {
   const { addToCart, setSelectedItemForDetail, setIsOrderModalOpen } = useCart();
-  const [activeCategory, setActiveCategory] = useState<string>('classic-thalis');
+  const [activeCategory, setActiveCategory] = useState<string>('surti-specials');
   const [search, setSearch] = useState('');
 
   const filtered = MENU_ITEMS.filter((item) => {

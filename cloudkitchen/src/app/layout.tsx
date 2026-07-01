@@ -28,19 +28,21 @@ const robotoMono = Roboto_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "DevAnsh Cloud Kitchen | Authentic Indian Thalis — Yelahanka, Bengaluru",
+  title: "Surti Chaska (Cloud Kitchen) | Authentic Gujarati Snacks & Chaat — Koramangala, Bengaluru",
   description:
-    "Experience authentic, comforting Indian thalis, traditional gravies, and coastal seafood combos from Bengaluru's premier cloud kitchen. Order now for fast delivery.",
+    "Experience authentic Surti Khaman, delicious Vada Pav, and chatpate chaat from Bengaluru's premier cloud kitchen. Order now for fast delivery.",
   keywords: [
-    "DevAnsh Cloud Kitchen",
-    "Yelahanka",
-    "Bengaluru Cloud Kitchen",
-    "Authentic Veg Thali",
-    "Non-Veg Thali",
-    "Fish Thali",
+    "Surti Chaska",
+    "Cloud Kitchen",
+    "Koramangala",
+    "HSR Layout",
+    "Surti Khaman",
+    "Vada Pav",
+    "Aloo Tikki Chaat",
+    "Pani Puri",
     "Bengaluru Food Delivery",
   ],
-  authors: [{ name: "DevAnsh Team" }],
+  authors: [{ name: "Surti Chaska Team" }],
 };
 
 export const viewport = {

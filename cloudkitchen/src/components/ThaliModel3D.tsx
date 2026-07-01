@@ -32,7 +32,7 @@ export const ThaliModel3D: React.FC<ThaliModel3DProps> = ({ neonColor, itemId })
   const accentColor = '#FF5400'; // Hot orange branding highlight
 
   const isFish = itemId.includes('fish');
-  const isVeg = itemId.includes('veg') && !itemId.includes('non');
+  const isVeg = !itemId.includes('non');
 
   // Realistic color palette for traditional Indian gravies
   // Index 0: Main curry, 1: Dal Tadka, 2: Dahi Baingan/Subji, 3: Special Gravy, 4: White Raita/Curd

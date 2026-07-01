@@ -20,7 +20,7 @@ export const SmartCart: React.FC = () => {
     setDispatching(true);
     setTimeout(() => {
       alert(
-        `🚀 DELIVERY SEQUENCE INITIATED!\n\nOrder manifest compiled.\nGrand Total: ₹${grandTotal}\nNode: Yelahanka, Bengaluru\n\nETA: ~35 minutes`
+        `🚀 DELIVERY SEQUENCE INITIATED!\n\nOrder manifest compiled.\nGrand Total: ₹${grandTotal}\nNode: Koramangala, Bengaluru\n\nETA: ~35 minutes`
       );
       clearCart();
       setDispatching(false);

@@ -161,7 +161,7 @@ const ConcentricBadge: React.FC = () => (
         textShadow: '0 0 20px rgba(255,84,0,0.8), 0 0 50px rgba(255,84,0,0.4)',
         userSelect: 'none',
       }}>
-        दे
+        सु
       </span>
       <span style={{
         fontFamily: 'var(--font-roboto-mono), monospace',
@@ -171,7 +171,7 @@ const ConcentricBadge: React.FC = () => (
         marginTop: '8px',
         textTransform: 'uppercase',
       }}>
-        DA // 560092
+        SC // 560034
       </span>
     </div>
 
@@ -225,10 +225,10 @@ const useTypewriter = (lines: string[], speed = 45) => {
 /* ─── HERO ─────────────────────────────────────────────────────────── */
 export const Hero: React.FC = () => {
   const termLines = [
-    '> INITIALIZING DEVANSH_CLOUD.OS _',
-    '> CONNECTING TO YELAHANKA NODE _',
-    '> COMFORT-FOOD PROTOCOL: ACTIVE',
-    '> AUTHENTIC THALIS • DELIVERY FIRST',
+    '> INITIALIZING SURTI_CHASKA_CLOUD.OS _',
+    '> CONNECTING TO KORAMANGALA NODE _',
+    '> CHASKA-FOOD PROTOCOL: ACTIVE',
+    '> GUJARATI SNACKS & CHAAT • FRESH DAILY',
   ];
   const typed = useTypewriter(termLines, 35);
 
@@ -284,7 +284,7 @@ export const Hero: React.FC = () => {
             style={{ display: 'flex', gap: '10px', marginBottom: '36px', flexWrap: 'wrap' }}
           >
             {[
-              { icon: '⛙', text: 'NODE-08 / YELAHANKA' },
+              { icon: '⛙', text: 'NODE-34 / KORAMANGALA' },
               { icon: '⚡', text: 'DELIVERY-FIRST KITCHEN' },
             ].map((b) => (
               <span
@@ -311,7 +311,7 @@ export const Hero: React.FC = () => {
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.6, delay: 0.25 }}
           >
-            {/* SOLID WHITE — "DEVANSH" */}
+            {/* SOLID WHITE — "SURTI" */}
             <h1
               style={{
                 fontFamily: '"Barlow Condensed", "Orbitron", sans-serif',
@@ -324,9 +324,9 @@ export const Hero: React.FC = () => {
                 margin: 0,
               }}
             >
-              DEVANSH
+              SURTI
             </h1>
-            {/* STROKE OUTLINE — "KITCHEN" */}
+            {/* STROKE OUTLINE — "CHASKA" */}
             <h1
               style={{
                 fontFamily: '"Barlow Condensed", "Orbitron", sans-serif',
@@ -341,7 +341,7 @@ export const Hero: React.FC = () => {
                 textShadow: '0 0 40px rgba(255,84,0,0.15)',
               }}
             >
-              KITCHEN
+              CHASKA
             </h1>
           </motion.div>
 
@@ -356,7 +356,7 @@ export const Hero: React.FC = () => {
               marginTop: '20px', letterSpacing: '0.06em',
             }}
           >
-            // comfort_meals_in_every_bite()
+            // chaska_in_every_bite()
           </motion.p>
 
           {/* Terminal log */}
