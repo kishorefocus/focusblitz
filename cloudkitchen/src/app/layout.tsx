@@ -28,21 +28,21 @@ const robotoMono = Roboto_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Surti Chaska (Cloud Kitchen) | Authentic Gujarati Snacks & Chaat — Koramangala, Bengaluru",
+  title: "Vishala Kitchen (Cloud Kitchen) | Authentic Gujarati Snacks & Chaat — Bilekahalli, Bengaluru",
   description:
     "Experience authentic Surti Khaman, delicious Vada Pav, and chatpate chaat from Bengaluru's premier cloud kitchen. Order now for fast delivery.",
   keywords: [
-    "Surti Chaska",
+    "Vishala Kitchen",
     "Cloud Kitchen",
-    "Koramangala",
-    "HSR Layout",
+    "Bilekahalli",
+    "Bannerghatta Road",
     "Surti Khaman",
     "Vada Pav",
     "Aloo Tikki Chaat",
     "Pani Puri",
     "Bengaluru Food Delivery",
   ],
-  authors: [{ name: "Surti Chaska Team" }],
+  authors: [{ name: "Vishala Kitchen Team" }],
 };
 
 export const viewport = {

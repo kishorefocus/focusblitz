@@ -116,7 +116,7 @@ export const ThaliModal: React.FC = () => {
                   textTransform: 'uppercase', letterSpacing: '0.1em',
                   marginBottom: '16px',
                 }}>
-                  <span style={{ color: '#ff5400' }}>SYS_CORE: SURTI.ENG_v1.0</span>
+                  <span style={{ color: '#ff5400' }}>SYS_CORE: VISHALA.ENG_v1.0</span>
                   <span style={{ color: item.isAvailable ? '#22c55e' : '#ef4444' }}>
                     {item.isAvailable ? '● AVAILABLE' : '● UNAVAILABLE'}
                   </span>

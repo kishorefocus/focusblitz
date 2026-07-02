@@ -161,7 +161,7 @@ const ConcentricBadge: React.FC = () => (
         textShadow: '0 0 20px rgba(255,84,0,0.8), 0 0 50px rgba(255,84,0,0.4)',
         userSelect: 'none',
       }}>
-        सु
+        वि
       </span>
       <span style={{
         fontFamily: 'var(--font-roboto-mono), monospace',
@@ -171,7 +171,7 @@ const ConcentricBadge: React.FC = () => (
         marginTop: '8px',
         textTransform: 'uppercase',
       }}>
-        SC // 560034
+        VK // 560078
       </span>
     </div>
 
@@ -225,8 +225,8 @@ const useTypewriter = (lines: string[], speed = 45) => {
 /* ─── HERO ─────────────────────────────────────────────────────────── */
 export const Hero: React.FC = () => {
   const termLines = [
-    '> INITIALIZING SURTI_CHASKA_CLOUD.OS _',
-    '> CONNECTING TO KORAMANGALA NODE _',
+    '> INITIALIZING VISHALA_KITCHEN_CLOUD.OS _',
+    '> CONNECTING TO BILEKAHALLI NODE _',
     '> CHASKA-FOOD PROTOCOL: ACTIVE',
     '> GUJARATI SNACKS & CHAAT • FRESH DAILY',
   ];
@@ -284,7 +284,7 @@ export const Hero: React.FC = () => {
             style={{ display: 'flex', gap: '10px', marginBottom: '36px', flexWrap: 'wrap' }}
           >
             {[
-              { icon: '⛙', text: 'NODE-34 / KORAMANGALA' },
+              { icon: '⛙', text: 'NODE-78 / BILEKAHALLI' },
               { icon: '⚡', text: 'DELIVERY-FIRST KITCHEN' },
             ].map((b) => (
               <span
@@ -311,7 +311,7 @@ export const Hero: React.FC = () => {
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.6, delay: 0.25 }}
           >
-            {/* SOLID WHITE — "SURTI" */}
+            {/* SOLID WHITE — "VISHALA" */}
             <h1
               style={{
                 fontFamily: '"Barlow Condensed", "Orbitron", sans-serif',
@@ -324,9 +324,9 @@ export const Hero: React.FC = () => {
                 margin: 0,
               }}
             >
-              SURTI
+              VISHALA
             </h1>
-            {/* STROKE OUTLINE — "CHASKA" */}
+            {/* STROKE OUTLINE — "KITCHEN" */}
             <h1
               style={{
                 fontFamily: '"Barlow Condensed", "Orbitron", sans-serif',
@@ -341,7 +341,7 @@ export const Hero: React.FC = () => {
                 textShadow: '0 0 40px rgba(255,84,0,0.15)',
               }}
             >
-              CHASKA
+              KITCHEN
             </h1>
           </motion.div>
 
