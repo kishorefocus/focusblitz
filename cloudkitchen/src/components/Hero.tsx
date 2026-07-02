@@ -161,7 +161,7 @@ const ConcentricBadge: React.FC = () => (
         textShadow: '0 0 20px rgba(255,84,0,0.8), 0 0 50px rgba(255,84,0,0.4)',
         userSelect: 'none',
       }}>
-        वि
+        ली
       </span>
       <span style={{
         fontFamily: 'var(--font-roboto-mono), monospace',
@@ -171,7 +171,7 @@ const ConcentricBadge: React.FC = () => (
         marginTop: '8px',
         textTransform: 'uppercase',
       }}>
-        VK // 560078
+        LK // 560066
       </span>
     </div>
 
@@ -225,8 +225,8 @@ const useTypewriter = (lines: string[], speed = 45) => {
 /* ─── HERO ─────────────────────────────────────────────────────────── */
 export const Hero: React.FC = () => {
   const termLines = [
-    '> INITIALIZING VISHALA_KITCHEN_CLOUD.OS _',
-    '> CONNECTING TO BILEKAHALLI NODE _',
+    '> INITIALIZING LEETUS_KITCHEN_CLOUD.OS _',
+    '> CONNECTING TO WHITEFIELD NODE _',
     '> CHASKA-FOOD PROTOCOL: ACTIVE',
     '> GUJARATI SNACKS & CHAAT • FRESH DAILY',
   ];
@@ -284,7 +284,7 @@ export const Hero: React.FC = () => {
             style={{ display: 'flex', gap: '10px', marginBottom: '36px', flexWrap: 'wrap' }}
           >
             {[
-              { icon: '⛙', text: 'NODE-78 / BILEKAHALLI' },
+              { icon: '⛙', text: 'NODE-66 / WHITEFIELD' },
               { icon: '⚡', text: 'DELIVERY-FIRST KITCHEN' },
             ].map((b) => (
               <span
@@ -311,7 +311,7 @@ export const Hero: React.FC = () => {
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.6, delay: 0.25 }}
           >
-            {/* SOLID WHITE — "VISHALA" */}
+            {/* SOLID WHITE — "LEETU'S" */}
             <h1
               style={{
                 fontFamily: '"Barlow Condensed", "Orbitron", sans-serif',
@@ -324,7 +324,7 @@ export const Hero: React.FC = () => {
                 margin: 0,
               }}
             >
-              VISHALA
+              LEETU'S
             </h1>
             {/* STROKE OUTLINE — "KITCHEN" */}
             <h1
