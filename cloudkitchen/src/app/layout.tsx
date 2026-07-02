@@ -28,21 +28,21 @@ const robotoMono = Roboto_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Mane Thindi | Cloud Kitchen Jalahalli, Bengaluru",
+  title: "DREAM PARADISE | Fresh Juice Shop Old Madiwala, Bengaluru",
   description:
-    "Experience authentic Gujarati Snacks, Chaats & Coolers, and Buns from Bengaluru's premier cloud kitchen. Order now for fast delivery.",
+    "Experience 100% pure fresh juices, smoothies, shakes, and mocktails from Bengaluru's premier juice shop. Order now for fast delivery.",
   keywords: [
-    "Mane Thindi",
-    "Cloud Kitchen",
-    "Jalahalli",
-    "Renaissance Woods",
-    "Steamed Idli",
-    "Vada Pav",
-    "Samosa Chaat",
-    "Pani Puri",
+    "DREAM PARADISE",
+    "Juice Shop",
+    "Old Madiwala",
+    "Venkateshwara Layout",
+    "Fresh Juice",
+    "Mocktails",
+    "Smoothies",
+    "Shakes",
     "Bengaluru Food Delivery",
   ],
-  authors: [{ name: "Mane Thindi Team" }],
+  authors: [{ name: "DREAM PARADISE Juice Team" }],
 };
 
 export const viewport = {

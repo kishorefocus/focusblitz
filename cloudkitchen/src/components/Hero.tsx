@@ -54,8 +54,8 @@ const ParticleField: React.FC = () => {
         const alpha = Math.sin((p.life / p.maxLife) * Math.PI) * 0.8;
         ctx.beginPath();
         ctx.arc(p.x, p.y, p.r, 0, Math.PI * 2);
-        ctx.fillStyle = `rgba(255,84,0,${alpha})`;
-        ctx.shadowColor = '#ff5400';
+        ctx.fillStyle = `rgba(13,242,101,${alpha})`;
+        ctx.shadowColor = '#0df265';
         ctx.shadowBlur = 6;
         ctx.fill();
 
@@ -156,22 +156,22 @@ const ConcentricBadge: React.FC = () => (
         fontFamily: '"Noto Sans Devanagari", serif',
         fontSize: '72px',
         fontWeight: 700,
-        color: '#ff5400',
+        color: '#0df265',
         lineHeight: 1,
-        textShadow: '0 0 20px rgba(255,84,0,0.8), 0 0 50px rgba(255,84,0,0.4)',
+        textShadow: '0 0 20px rgba(13,242,101,0.8), 0 0 50px rgba(13,242,101,0.4)',
         userSelect: 'none',
       }}>
-        म
+        डी
       </span>
       <span style={{
         fontFamily: 'var(--font-roboto-mono), monospace',
         fontSize: '9px',
-        color: 'rgba(255,84,0,0.6)',
+        color: 'rgba(13,242,101,0.6)',
         letterSpacing: '0.2em',
         marginTop: '8px',
         textTransform: 'uppercase',
       }}>
-        MT // 560015
+        DP // 560068
       </span>
     </div>
 
@@ -225,10 +225,10 @@ const useTypewriter = (lines: string[], speed = 45) => {
 /* ─── HERO ─────────────────────────────────────────────────────────── */
 export const Hero: React.FC = () => {
   const termLines = [
-    '> INITIALIZING MANE_THINDI_CLOUD.OS _',
-    '> CONNECTING TO JALAHALLI NODE _',
-    '> CHASKA-FOOD PROTOCOL: ACTIVE',
-    '> GUJARATI SNACKS & CHAAT • FRESH DAILY',
+    '> INITIALIZING DREAM_PARADISE_JUICES.OS _',
+    '> CONNECTING TO MADIWALA NODE _',
+    '> FRESH-JUICE PROTOCOL: ACTIVE',
+    '> 100% PURE JUICES & COLD DRINKS',
   ];
   const typed = useTypewriter(termLines, 35);
 
@@ -284,20 +284,20 @@ export const Hero: React.FC = () => {
             style={{ display: 'flex', gap: '10px', marginBottom: '36px', flexWrap: 'wrap' }}
           >
             {[
-              { icon: '⛙', text: 'NODE-15 / JALAHALLI' },
-              { icon: '⚡', text: 'DELIVERY-FIRST KITCHEN' },
+              { icon: '⛙', text: 'NODE-68 / MADIWALA' },
+              { icon: '⚡', text: 'FRESH JUICES & MOCKTAILS' },
             ].map((b) => (
               <span
                 key={b.text}
                 style={{
                   display: 'inline-flex', alignItems: 'center', gap: '6px',
                   padding: '5px 12px',
-                  border: '1px solid rgba(255,84,0,0.35)',
-                  background: 'rgba(255,84,0,0.06)',
+                  border: '1px solid rgba(13,242,101,0.35)',
+                  background: 'rgba(13,242,101,0.06)',
                   fontFamily: 'var(--font-roboto-mono), monospace',
                   fontSize: '10px', fontWeight: 700,
                   letterSpacing: '0.12em', textTransform: 'uppercase',
-                  color: '#ff5400', borderRadius: '3px',
+                  color: '#0df265', borderRadius: '3px',
                 }}
               >
                 {b.icon} {b.text}
@@ -311,7 +311,7 @@ export const Hero: React.FC = () => {
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.6, delay: 0.25 }}
           >
-            {/* SOLID WHITE — "MANE" */}
+            {/* SOLID WHITE — "DREAM" */}
             <h1
               style={{
                 fontFamily: '"Barlow Condensed", "Orbitron", sans-serif',
@@ -324,9 +324,9 @@ export const Hero: React.FC = () => {
                 margin: 0,
               }}
             >
-              MANE
+              DREAM
             </h1>
-            {/* STROKE OUTLINE — "THINDI" */}
+            {/* STROKE OUTLINE — "PARADISE" */}
             <h1
               style={{
                 fontFamily: '"Barlow Condensed", "Orbitron", sans-serif',
@@ -335,13 +335,13 @@ export const Hero: React.FC = () => {
                 textTransform: 'uppercase',
                 letterSpacing: '-0.01em',
                 lineHeight: 0.92,
-                WebkitTextStroke: '2.5px #ff5400',
+                WebkitTextStroke: '2.5px #0df265',
                 color: 'transparent',
                 margin: 0,
-                textShadow: '0 0 40px rgba(255,84,0,0.15)',
+                textShadow: '0 0 40px rgba(13,242,101,0.15)',
               }}
             >
-              THINDI
+              PARADISE
             </h1>
           </motion.div>
 
@@ -388,7 +388,7 @@ export const Hero: React.FC = () => {
                 {i === typed.length - 1 && (
                   <span style={{
                     display: 'inline-block', width: '7px', height: '13px',
-                    background: '#ff5400', marginLeft: '2px', verticalAlign: 'middle',
+                    background: '#0df265', marginLeft: '2px', verticalAlign: 'middle',
                     animation: 'blink 1s step-end infinite',
                   }} />
                 )}

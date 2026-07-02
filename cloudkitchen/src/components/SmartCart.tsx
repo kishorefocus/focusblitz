@@ -43,21 +43,21 @@ export const SmartCart: React.FC = () => {
           width: '56px',
           height: '56px',
           borderRadius: '50%',
-          background: '#ff5400',
+          background: '#0df265',
           border: 'none',
           color: '#000000',
           display: 'flex',
           alignItems: 'center',
           justifyContent: 'center',
           cursor: 'pointer',
-          boxShadow: '0 0 20px rgba(255,84,0,0.35)',
+          boxShadow: '0 0 20px rgba(13,242,101,0.35)',
           transition: 'box-shadow 0.2s',
         }}
         onMouseEnter={(e) => {
-          (e.currentTarget as HTMLElement).style.boxShadow = '0 0 25px rgba(255,84,0,0.6)';
+          (e.currentTarget as HTMLElement).style.boxShadow = '0 0 25px rgba(13,242,101,0.6)';
         }}
         onMouseLeave={(e) => {
-          (e.currentTarget as HTMLElement).style.boxShadow = '0 0 20px rgba(255,84,0,0.35)';
+          (e.currentTarget as HTMLElement).style.boxShadow = '0 0 20px rgba(13,242,101,0.35)';
         }}
       >
         <ShoppingBag size={22} />
@@ -132,7 +132,7 @@ export const SmartCart: React.FC = () => {
                     gap: '5px',
                     fontFamily: 'var(--font-roboto-mono), monospace',
                     fontSize: '9px',
-                    color: '#ff5400',
+                    color: '#0df265',
                     textTransform: 'uppercase',
                     letterSpacing: '0.14em',
                     marginBottom: '5px',
@@ -143,8 +143,8 @@ export const SmartCart: React.FC = () => {
                       width: '6px',
                       height: '6px',
                       borderRadius: '50%',
-                      background: '#ff5400',
-                      boxShadow: '0 0 6px rgba(255,84,0,0.9)',
+                      background: '#0df265',
+                      boxShadow: '0 0 6px rgba(13,242,101,0.9)',
                       flexShrink: 0,
                       animation: 'badge-pulse 1.5s ease-in-out infinite',
                     }}
@@ -186,8 +186,8 @@ export const SmartCart: React.FC = () => {
                   flexShrink: 0,
                 }}
                 onMouseEnter={(e) => {
-                  (e.currentTarget as HTMLElement).style.borderColor = 'rgba(255,84,0,0.5)';
-                  (e.currentTarget as HTMLElement).style.color = '#ff5400';
+                  (e.currentTarget as HTMLElement).style.borderColor = 'rgba(13,242,101,0.5)';
+                  (e.currentTarget as HTMLElement).style.color = '#0df265';
                 }}
                 onMouseLeave={(e) => {
                   (e.currentTarget as HTMLElement).style.borderColor = 'rgba(255,255,255,0.12)';
@@ -326,7 +326,7 @@ export const SmartCart: React.FC = () => {
                                 fontSize: '14px',
                                 lineHeight: 1,
                               }}
-                              onMouseEnter={(e) => { (e.currentTarget as HTMLElement).style.color = '#ff5400'; }}
+                              onMouseEnter={(e) => { (e.currentTarget as HTMLElement).style.color = '#0df265'; }}
                               onMouseLeave={(e) => { (e.currentTarget as HTMLElement).style.color = 'rgba(255,255,255,0.5)'; }}
                             >
                               <Minus size={9} />
@@ -363,7 +363,7 @@ export const SmartCart: React.FC = () => {
                                 justifyContent: 'center',
                                 transition: 'color 0.15s',
                               }}
-                              onMouseEnter={(e) => { (e.currentTarget as HTMLElement).style.color = '#ff5400'; }}
+                              onMouseEnter={(e) => { (e.currentTarget as HTMLElement).style.color = '#0df265'; }}
                               onMouseLeave={(e) => { (e.currentTarget as HTMLElement).style.color = 'rgba(255,255,255,0.5)'; }}
                             >
                               <Plus size={9} />
@@ -446,10 +446,10 @@ export const SmartCart: React.FC = () => {
                     <span style={{ color: '#ffffff', fontWeight: 700, fontSize: '13px' }}>Total</span>
                     <span
                       style={{
-                        color: '#ff5400',
+                        color: '#0df265',
                         fontWeight: 700,
                         fontSize: '20px',
-                        textShadow: '0 0 12px rgba(255,84,0,0.5)',
+                        textShadow: '0 0 12px rgba(13,242,101,0.5)',
                         fontFamily: '"Barlow Condensed", sans-serif',
                         letterSpacing: '-0.01em',
                       }}
@@ -467,7 +467,7 @@ export const SmartCart: React.FC = () => {
                   style={{
                     width: '100%',
                     padding: '13px 10px',
-                    background: dispatching ? 'rgba(255,84,0,0.6)' : '#ff5400',
+                    background: dispatching ? 'rgba(13,242,101,0.6)' : '#0df265',
                     border: 'none',
                     borderRadius: '4px',
                     cursor: dispatching ? 'default' : 'pointer',
@@ -481,14 +481,14 @@ export const SmartCart: React.FC = () => {
                     alignItems: 'center',
                     justifyContent: 'center',
                     gap: '7px',
-                    boxShadow: dispatching ? 'none' : '0 0 20px rgba(255,84,0,0.35)',
+                    boxShadow: dispatching ? 'none' : '0 0 20px rgba(13,242,101,0.35)',
                     transition: 'background 0.2s, box-shadow 0.2s',
                   }}
                   onMouseEnter={(e) => {
-                    if (!dispatching) (e.currentTarget as HTMLElement).style.background = '#ff6a20';
+                    if (!dispatching) (e.currentTarget as HTMLElement).style.background = '#25ff77';
                   }}
                   onMouseLeave={(e) => {
-                    if (!dispatching) (e.currentTarget as HTMLElement).style.background = '#ff5400';
+                    if (!dispatching) (e.currentTarget as HTMLElement).style.background = '#0df265';
                   }}
                 >
                   <Send size={11} />

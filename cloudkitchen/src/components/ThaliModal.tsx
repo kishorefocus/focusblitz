@@ -90,11 +90,11 @@ export const ThaliModal: React.FC = () => {
               <div style={{
                 position: 'absolute', bottom: '16px', left: '50%', transform: 'translateX(-50%)',
                 fontFamily: 'var(--font-roboto-mono), monospace',
-                fontSize: '8px', color: '#ff5400',
+                fontSize: '8px', color: '#0df265',
                 letterSpacing: '0.25em', textTransform: 'uppercase',
                 background: 'rgba(10,10,10,0.85)', padding: '5px 12px', borderRadius: '3px',
-                border: '1px solid rgba(255,84,0,0.35)',
-                boxShadow: '0 0 10px rgba(255,84,0,0.25)',
+                border: '1px solid rgba(13,242,101,0.35)',
+                boxShadow: '0 0 10px rgba(13,242,101,0.25)',
                 whiteSpace: 'nowrap',
                 zIndex: 10,
               }}>
@@ -116,7 +116,7 @@ export const ThaliModal: React.FC = () => {
                   textTransform: 'uppercase', letterSpacing: '0.1em',
                   marginBottom: '16px',
                 }}>
-                  <span style={{ color: '#ff5400' }}>SYS_CORE: MANE_THINDI.ENG_v1.0</span>
+                  <span style={{ color: '#0df265' }}>SYS_CORE: DREAM_PARADISE.ENG_v1.0</span>
                   <span style={{ color: item.isAvailable ? '#22c55e' : '#ef4444' }}>
                     {item.isAvailable ? '● AVAILABLE' : '● UNAVAILABLE'}
                   </span>
@@ -154,7 +154,7 @@ export const ThaliModal: React.FC = () => {
                     <div style={{
                       display: 'flex', alignItems: 'center', gap: '6px',
                       fontFamily: 'var(--font-roboto-mono), monospace',
-                      fontSize: '9px', color: '#ff5400',
+                      fontSize: '9px', color: '#0df265',
                       textTransform: 'uppercase', letterSpacing: '0.12em',
                       marginBottom: '12px',
                     }}>
@@ -167,7 +167,7 @@ export const ThaliModal: React.FC = () => {
                           fontFamily: 'var(--font-roboto-mono), monospace',
                           fontSize: '10px', color: 'rgba(255,255,255,0.65)',
                         }}>
-                          <span style={{ color: '#ff5400', flexShrink: 0, marginTop: '2px' }}>›</span>
+                          <span style={{ color: '#0df265', flexShrink: 0, marginTop: '2px' }}>›</span>
                           {inc}
                         </li>
                       ))}
@@ -184,7 +184,7 @@ export const ThaliModal: React.FC = () => {
                     <div style={{
                       display: 'flex', alignItems: 'center', gap: '6px',
                       fontFamily: 'var(--font-roboto-mono), monospace',
-                      fontSize: '9px', color: '#ff5400',
+                      fontSize: '9px', color: '#0df265',
                       textTransform: 'uppercase', letterSpacing: '0.12em',
                       marginBottom: '12px',
                     }}>
@@ -220,8 +220,8 @@ export const ThaliModal: React.FC = () => {
                   <span style={{
                     fontFamily: '"Barlow Condensed", "Orbitron", sans-serif',
                     fontWeight: 900, fontSize: '32px',
-                    color: '#ff5400',
-                    textShadow: '0 0 16px rgba(255,84,0,0.5)',
+                    color: '#0df265',
+                    textShadow: '0 0 16px rgba(13,242,101,0.5)',
                   }}>₹{item.price}</span>
                 </div>
                 <div style={{ display: 'flex', gap: '10px' }}>
@@ -257,7 +257,7 @@ export const ThaliModal: React.FC = () => {
                 display: 'flex', alignItems: 'center', justifyContent: 'center',
                 transition: 'all 0.2s',
               }}
-              onMouseEnter={(e) => { (e.currentTarget as HTMLElement).style.borderColor = '#ff5400'; (e.currentTarget as HTMLElement).style.color = '#ff5400'; }}
+              onMouseEnter={(e) => { (e.currentTarget as HTMLElement).style.borderColor = '#0df265'; (e.currentTarget as HTMLElement).style.color = '#0df265'; }}
               onMouseLeave={(e) => { (e.currentTarget as HTMLElement).style.borderColor = 'rgba(255,255,255,0.1)'; (e.currentTarget as HTMLElement).style.color = 'rgba(255,255,255,0.5)'; }}
             >
               <X size={14} />

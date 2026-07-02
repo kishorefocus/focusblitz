@@ -13,7 +13,7 @@ const steps = [
   {
     code: 'PHASE_01',
     title: 'Source',
-    desc: 'Drone-synchronized delivery to your coordinates in under 35 minutes, anywhere in the Jalahalli radius.',
+    desc: 'Drone-synchronized delivery to your coordinates in under 35 minutes, anywhere in the Madiwala radius.',
   },
   {
     code: 'PHASE_02',
@@ -28,7 +28,7 @@ const steps = [
   {
     code: 'PHASE_04',
     title: 'Deliver',
-    desc: 'Drone-synchronized delivery to your coordinates in under 35 minutes, anywhere in the Jalahalli radius.',
+    desc: 'Drone-synchronized delivery to your coordinates in under 35 minutes, anywhere in the Madiwala radius.',
   },
 ];
 
@@ -36,7 +36,7 @@ const steps = [
 const faqs = [
   {
     q: 'What is the delivery radius?',
-    a: 'We cover a 15km radius from our Jalahalli node. Standard ETA is 30–45 minutes depending on order volume.',
+    a: 'We cover a 15km radius from our Madiwala node. Standard ETA is 30–45 minutes depending on order volume.',
   },
   {
     q: 'Can I pre-schedule an order?',
@@ -44,7 +44,7 @@ const faqs = [
   },
   {
     q: 'Are the recipes authentic?',
-    a: 'Absolutely. Our masala formulas are multi-generational Gujarati and Mane Thindi recipes, precision-replicated with modern kitchen tech.',
+    a: 'Absolutely. Our juice formulas are multi-generational organic and Dream Paradise recipes, precision-replicated with modern kitchen tech.',
   },
   {
     q: 'What payment methods are accepted?',
@@ -82,13 +82,13 @@ const FaqItem: React.FC<{ q: string; a: string; index: number }> = ({ q, a, inde
           fontFamily: '"Barlow Condensed", sans-serif',
           fontWeight: 700, fontSize: '16px',
           textTransform: 'uppercase', letterSpacing: '0.04em',
-          color: open ? '#ff5400' : '#ffffff',
+          color: open ? '#0df265' : '#ffffff',
           transition: 'color 0.2s',
         }}>
           {q}
         </span>
         <span style={{
-          color: '#ff5400', fontSize: '18px', fontWeight: 300,
+          color: '#0df265', fontSize: '18px', fontWeight: 300,
           transform: open ? 'rotate(45deg)' : 'rotate(0deg)',
           transition: 'transform 0.25s', flexShrink: 0, marginLeft: '16px',
         }}>
@@ -120,23 +120,23 @@ const FaqItem: React.FC<{ q: string; a: string; index: number }> = ({ q, a, inde
 const chefs = [
   {
     id: '01',
-    name: 'Chef Harshil Shah',
-    role: 'Lead Khaman Alchemist',
-    bio: 'Trained under the legendary Farsan masters of Surat. 15+ years formulating the perfect spongy texture and sweet-sour balance.',
+    name: 'Master Harshil Shah',
+    role: 'Lead Juice Alchemist',
+    bio: '15+ years formulating the perfect cold-pressed fruit juices and smoothies. Trained under the legendary juice masters of Old Bangalore.',
     stats: [
-      { k: 'KHAMAN_XP', v: 'LV.99' },
-      { k: 'SPONGE_CTRL', v: 'OPTIMAL' },
-      { k: 'FARSAN', v: '96%' },
+      { k: 'JUICE_XP', v: 'LV.99' },
+      { k: 'PULP_CTRL', v: 'OPTIMAL' },
+      { k: 'BLENDS', v: '96%' },
     ],
   },
   {
     id: '02',
-    name: 'Chef Jignesh',
-    role: 'Chaat Master Engineer',
-    bio: 'Expert in the crunch dynamics of bhel puri, tamarind viscosity, and high-temp vada pav toasting. Zero-compromise on spice integrity.',
+    name: 'Master Jignesh',
+    role: 'Mocktail Master Engineer',
+    bio: 'Expert in the carbonation dynamics of mojitos, lime zestiness, and thick milkshakes. Zero-compromise on fruit freshness.',
     stats: [
-      { k: 'VADA_PAV_XP', v: 'LV.92' },
-      { k: 'CHAAT_RATIO', v: 'ELITE' },
+      { k: 'MOCKTAIL_XP', v: 'LV.92' },
+      { k: 'COOLER_RATIO', v: 'ELITE' },
       { k: 'SPEED', v: '98%' },
     ],
   },
@@ -154,11 +154,11 @@ export default function Home() {
         style={{
           position: 'fixed', top: 0, left: 0, right: 0,
           height: '3px',
-          background: '#ff5400',
+          background: '#0df265',
           transformOrigin: 'left',
           scaleX,
           zIndex: 100,
-          boxShadow: '0 0 10px rgba(255,84,0,0.7)',
+          boxShadow: '0 0 10px rgba(13,242,101,0.7)',
         }}
       />
 
@@ -176,15 +176,15 @@ export default function Home() {
         {/* Logo */}
         <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
           <div style={{
-            width: '34px', height: '34px', background: '#ff5400',
+            width: '34px', height: '34px', background: '#0df265',
             display: 'flex', alignItems: 'center', justifyContent: 'center',
             borderRadius: '4px',
-            boxShadow: '0 0 12px rgba(255,84,0,0.4)',
+            boxShadow: '0 0 12px rgba(13,242,101,0.4)',
           }}>
             <span style={{
               fontFamily: '"Barlow Condensed", "Orbitron", sans-serif',
               fontWeight: 900, fontSize: '15px', color: '#000',
-            }}>MT</span>
+            }}>DP</span>
           </div>
           <span style={{
             fontFamily: '"Barlow Condensed", "Orbitron", sans-serif',
@@ -192,7 +192,7 @@ export default function Home() {
             letterSpacing: '0.15em', color: '#ffffff',
             textTransform: 'uppercase',
           }}>
-            MANE THINDI // CLOUD KITCHEN
+            DREAM PARADISE // JUICE SHOP
           </span>
         </div>
 
@@ -210,7 +210,7 @@ export default function Home() {
                 textDecoration: 'none',
                 transition: 'color 0.2s',
               }}
-              onMouseEnter={(e) => { (e.currentTarget as HTMLElement).style.color = '#ff5400'; }}
+              onMouseEnter={(e) => { (e.currentTarget as HTMLElement).style.color = '#0df265'; }}
               onMouseLeave={(e) => { (e.currentTarget as HTMLElement).style.color = 'rgba(255,255,255,0.5)'; }}
             >
               {l}
@@ -222,12 +222,12 @@ export default function Home() {
         <div style={{
           display: 'flex', alignItems: 'center', gap: '8px',
           padding: '6px 14px',
-          border: '1px solid rgba(255,84,0,0.35)',
+          border: '1px solid rgba(13,242,101,0.35)',
           borderRadius: '20px',
-          background: 'rgba(255,84,0,0.05)',
+          background: 'rgba(13,242,101,0.05)',
           fontFamily: 'var(--font-roboto-mono), monospace',
           fontSize: '10px', fontWeight: 700,
-          color: '#ff5400', letterSpacing: '0.1em',
+          color: '#0df265', letterSpacing: '0.1em',
           textTransform: 'uppercase',
         }}>
           <span style={{
@@ -264,9 +264,9 @@ export default function Home() {
             <p className="section-label" style={{ marginBottom: '10px' }}>SYSTEM_WORKFLOW // PIPELINE</p>
             <h2 className="section-title">How It Works</h2>
             <div style={{
-              width: '48px', height: '2px', background: '#ff5400',
+              width: '48px', height: '2px', background: '#0df265',
               margin: '16px auto 0',
-              boxShadow: '0 0 10px rgba(255,84,0,0.6)',
+              boxShadow: '0 0 10px rgba(13,242,101,0.6)',
             }} />
           </motion.div>
 
@@ -290,7 +290,7 @@ export default function Home() {
                   cursor: 'default',
                 }}
                 onHoverStart={(e) => {
-                  (e.target as HTMLElement).style.borderColor = 'rgba(255,84,0,0.3)';
+                  (e.target as HTMLElement).style.borderColor = 'rgba(13,242,101,0.3)';
                 }}
                 onHoverEnd={(e) => {
                   (e.target as HTMLElement).style.borderColor = 'rgba(255,255,255,0.06)';
@@ -299,12 +299,12 @@ export default function Home() {
                 {/* Top accent line */}
                 <div style={{
                   position: 'absolute', top: 0, left: 0, right: 0, height: '2px',
-                  background: 'linear-gradient(90deg, #ff5400, transparent)',
+                  background: 'linear-gradient(90deg, #0df265, transparent)',
                   opacity: 0.6,
                 }} />
                 <span style={{
                   fontFamily: 'var(--font-roboto-mono), monospace',
-                  fontSize: '9px', color: '#ff5400',
+                  fontSize: '9px', color: '#0df265',
                   letterSpacing: '0.15em', textTransform: 'uppercase',
                   display: 'block', marginBottom: '8px',
                 }}>{s.code}</span>
@@ -338,9 +338,9 @@ export default function Home() {
             viewport={{ once: true }}
             style={{ marginBottom: '48px', textAlign: 'center' }}
           >
-            <p className="section-label" style={{ marginBottom: '10px' }}>CULINARY_ENGINEERS // OPERATORS</p>
-            <h2 className="section-title">The Grid Operators</h2>
-            <div style={{ width: '48px', height: '2px', background: '#ff5400', margin: '16px auto 0', boxShadow: '0 0 10px rgba(255,84,0,0.6)' }} />
+             <p className="section-label" style={{ marginBottom: '10px' }}>JUICE_CRAFTERS // EXPERTS</p>
+            <h2 className="section-title">The Juice Alchemists</h2>
+            <div style={{ width: '48px', height: '2px', background: '#0df265', margin: '16px auto 0', boxShadow: '0 0 10px rgba(13,242,101,0.6)' }} />
           </motion.div>
 
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(340px, 1fr))', gap: '24px' }}>
@@ -362,15 +362,15 @@ export default function Home() {
                 <div style={{
                   position: 'absolute', top: 0, right: 0,
                   width: '100px', height: '100px',
-                  background: 'radial-gradient(circle at top right, rgba(255,84,0,0.06), transparent 70%)',
+                  background: 'radial-gradient(circle at top right, rgba(13,242,101,0.06), transparent 70%)',
                   pointerEvents: 'none',
                 }} />
                 <p style={{
                   fontFamily: 'var(--font-roboto-mono), monospace',
-                  fontSize: '9px', color: '#ff5400',
+                  fontSize: '9px', color: '#0df265',
                   letterSpacing: '0.15em', textTransform: 'uppercase',
                   margin: '0 0 8px',
-                }}>ENGINEER_PROFILE // {chef.id}</p>
+                }}>ALCHEMIST_PROFILE // {chef.id}</p>
                 <h3 style={{
                   fontFamily: '"Barlow Condensed", sans-serif',
                   fontWeight: 900, fontSize: '26px',
@@ -379,7 +379,7 @@ export default function Home() {
                 }}>{chef.name}</h3>
                 <p style={{
                   fontFamily: 'var(--font-roboto-mono), monospace',
-                  fontSize: '10px', color: '#ff5400',
+                  fontSize: '10px', color: '#0df265',
                   textTransform: 'uppercase', letterSpacing: '0.1em',
                   margin: '0 0 14px',
                 }}>{chef.role}</p>
@@ -425,7 +425,7 @@ export default function Home() {
           >
             <p className="section-label" style={{ marginBottom: '10px' }}>SYSTEM_DIAGNOSTICS // FAQ</p>
             <h2 className="section-title">Frequently Asked</h2>
-            <div style={{ width: '48px', height: '2px', background: '#ff5400', margin: '16px auto 0', boxShadow: '0 0 10px rgba(255,84,0,0.6)' }} />
+            <div style={{ width: '48px', height: '2px', background: '#0df265', margin: '16px auto 0', boxShadow: '0 0 10px rgba(13,242,101,0.6)' }} />
           </motion.div>
           <div style={{ display: 'flex', flexDirection: 'column', gap: '10px' }}>
             {faqs.map((f, i) => <FaqItem key={i} q={f.q} a={f.a} index={i} />)}
@@ -448,15 +448,15 @@ export default function Home() {
           >
             <p className="section-label" style={{ marginBottom: '10px' }}>// NODE_ADDRESS</p>
             <h2 className="section-title">Find Us</h2>
-            <div style={{ width: '48px', height: '2px', background: '#ff5400', margin: '16px auto 0', boxShadow: '0 0 10px rgba(255,84,0,0.6)' }} />
+            <div style={{ width: '48px', height: '2px', background: '#0df265', margin: '16px auto 0', boxShadow: '0 0 10px rgba(13,242,101,0.6)' }} />
           </motion.div>
 
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(220px, 1fr))', gap: '32px' }}>
             {[
-              { label: '📍 ADDRESS', lines: ['Renaissance Woods, Woods 1, 508,', 'Sri Sri Sri Shivakumara Swamiji Rd,', 'Renaissance HVV Villas, Jalahalli,', 'Bengaluru, Karnataka 560015'] },
+              { label: '📍 ADDRESS', lines: ['25 17th main, 13th Cross Rd,', 'Old Madiwala, Venkateshwara Layout,', 'Bengaluru, Karnataka', 'Pin 560068'] },
               { label: '🕒 HOURS', lines: ['11:00 — 23:00 IST', 'Mon – Sun', 'All major holidays'] },
               { label: '📡 COMMS', lines: ['+91 9999999999', 'WhatsApp Order', 'Also on Zomato & Swiggy'] },
-              { label: '// STATUS', lines: ['● Kitchen ONLINE', '⚡ Delivery: ~35min', '🔥 Orders flowing'] },
+              { label: '// STATUS', lines: ['● Juice Shop OPEN', '⚡ Delivery: ~35min', '🍹 Juices flowing'] },
             ].map((col) => (
               <motion.div
                 key={col.label}
@@ -469,7 +469,7 @@ export default function Home() {
                   fontFamily: 'var(--font-roboto-mono), monospace',
                   fontSize: '9px', fontWeight: 700,
                   letterSpacing: '0.2em', textTransform: 'uppercase',
-                  color: '#ff5400',
+                  color: '#0df265',
                 }}>{col.label}</span>
                 {col.lines.map((line, i) => (
                   <span key={i} style={{
@@ -494,27 +494,27 @@ export default function Home() {
       }}>
         <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>
           <div style={{
-            width: '28px', height: '28px', background: '#ff5400',
+            width: '28px', height: '28px', background: '#0df265',
             display: 'flex', alignItems: 'center', justifyContent: 'center', borderRadius: '3px',
           }}>
-            <span style={{ fontFamily: '"Barlow Condensed", sans-serif', fontWeight: 900, fontSize: '12px', color: '#000' }}>MT</span>
+            <span style={{ fontFamily: '"Barlow Condensed", sans-serif', fontWeight: 900, fontSize: '12px', color: '#000' }}>DP</span>
           </div>
           <span style={{
             fontFamily: 'var(--font-roboto-mono), monospace',
             fontSize: '10px', color: 'rgba(255,255,255,0.3)',
             letterSpacing: '0.05em',
           }}>
-            © {new Date().getFullYear()} MANE THINDI CLOUD KITCHEN [NODE_015]
+            © {new Date().getFullYear()} DREAM PARADISE JUICE SHOP [NODE_068]
           </span>
         </div>
         <div style={{ display: 'flex', gap: '6px', alignItems: 'center' }}>
-          <span style={{ width: '4px', height: '4px', borderRadius: '50%', background: '#ff5400', boxShadow: '0 0 6px rgba(255,84,0,0.8)' }} />
+          <span style={{ width: '4px', height: '4px', borderRadius: '50%', background: '#0df265', boxShadow: '0 0 6px rgba(13,242,101,0.8)' }} />
           <span style={{
             fontFamily: 'var(--font-roboto-mono), monospace',
-            fontSize: '9px', color: '#ff5400',
+            fontSize: '9px', color: '#0df265',
             letterSpacing: '0.1em', textTransform: 'uppercase',
           }}>
-            13.0480° N, 77.5401° E // 560015
+            12.9213° N, 77.6202° E // 560068
           </span>
         </div>
       </footer>

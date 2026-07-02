@@ -12,30 +12,30 @@ export interface MenuItem {
 }
 
 export const MENU_CATEGORIES = [
-  { id: 'surti-specials', name: 'Mane Specials' },
-  { id: 'vada-pav-specials', name: 'Buns & Vada Pav' },
-  { id: 'chatpate-chaat', name: 'Chaats & Coolers' },
+  { id: 'surti-specials', name: 'Signature Juices' },
+  { id: 'vada-pav-specials', name: 'Mocktails & Coolers' },
+  { id: 'chatpate-chaat', name: 'Fresh Shakes & Shots' },
 ] as const;
 
 export const MENU_ITEMS: MenuItem[] = [
-  // FLAVOUR SIGNATURES
+  // SIGNATURE JUICES
   {
     id: 'surti-khaman',
-    name: 'Traditional Steamed Idli (4 Pcs)',
-    price: 100,
+    name: 'Avocado Honey Shake',
+    price: 150,
     category: 'surti-specials',
-    description: 'Traditional soft, fluffy and spongy steamed rice cakes, tempered with light mustard seeds and served hot with fresh green chillies and chutney.',
+    description: 'Ultra-creamy fresh avocado blended with pure organic honey, whole milk, and served ice cold with chopped almonds.',
     inclusions: [
-      'Soft Steamed Idli (4 Pcs)',
-      'Fried Green Chillies',
-      'Spicy Mint-Coriander Chutney',
-      'Sambhar Garnish'
+      'Fresh Avocado Pulp',
+      'Organic Wild Honey',
+      'Chilled Whole Milk',
+      'Crushed Almond Garnish'
     ],
     specifications: [
-      { label: 'ENERGY_OUTPUT', value: '240 kcal' },
-      { label: 'PROTEIN_LOAD', value: '8g' },
-      { label: 'CARB_CHARGE', value: '34g' },
-      { label: 'PREP_CYCLES', value: '10 mins' }
+      { label: 'ENERGY_OUTPUT', value: '310 kcal' },
+      { label: 'VITAMIN_LOAD', value: 'High Vit E & K' },
+      { label: 'HEALTH_INDEX', value: '95%' },
+      { label: 'PREP_CYCLES', value: '5 mins' }
     ],
     isAvailable: true,
     neonColor: 'blue',
@@ -43,20 +43,20 @@ export const MENU_ITEMS: MenuItem[] = [
   },
   {
     id: 'surti-khaman-butter',
-    name: 'Butter Ghee Masala Idli',
-    price: 110,
+    name: 'Green Detox Booster',
+    price: 130,
     category: 'surti-specials',
-    description: 'Our traditional steamed idli served hot and topped with a generous layer of pure melted butter and aromatic podi for a rich, comforting taste.',
+    description: 'Refreshing cold-pressed green juice made from fresh spinach, green apple, cucumber, mint, and a dash of lemon juice.',
     inclusions: [
-      'Soft Idli (4 Pcs)',
-      'Melted Amul Butter & Ghee',
-      'Spicy Garlic-Podi Chutney'
+      'Cold-Pressed Spinach & Mint',
+      'Green Apple & Cucumber',
+      'Fresh Lemon Squeeze'
     ],
     specifications: [
-      { label: 'ENERGY_OUTPUT', value: '310 kcal' },
-      { label: 'FAT_CONTENT', value: '12g' },
-      { label: 'PROTEIN_LOAD', value: '8g' },
-      { label: 'PREP_CYCLES', value: '10 mins' }
+      { label: 'ENERGY_OUTPUT', value: '110 kcal' },
+      { label: 'SUGAR_LEVEL', value: 'VERY LOW' },
+      { label: 'ANTIOXIDANTS', value: 'SUPER-LOADED' },
+      { label: 'PREP_CYCLES', value: '5 mins' }
     ],
     isAvailable: true,
     neonColor: 'amber',
@@ -64,20 +64,20 @@ export const MENU_ITEMS: MenuItem[] = [
   },
   {
     id: 'surti-khaman-cheese',
-    name: 'Cheese Loaded Steamed Idli',
-    price: 120,
+    name: 'Kiwi Mint Slush',
+    price: 140,
     category: 'surti-specials',
-    description: 'Fluffy steamed idli loaded with a thick blanket of freshly grated processed cheese. A modern fusion twist to a classic south Indian staple.',
+    description: 'Refreshing blended icy slush made with fresh tangy kiwi fruit, crushed ice, and a dash of sweet mint syrup.',
     inclusions: [
-      'Soft Idli (4 Pcs)',
-      'Grated Cheddar & Mozzarella',
-      'Sweet and Sour Chutney'
+      'Fresh Pulp of Kiwi (2 Pcs)',
+      'Crushed Crystal Ice',
+      'Fresh Mint Extract'
     ],
     specifications: [
-      { label: 'ENERGY_OUTPUT', value: '360 kcal' },
-      { label: 'CHEESE_LOAD', value: 'LOADED' },
-      { label: 'PROTEIN_LOAD', value: '12g' },
-      { label: 'PREP_CYCLES', value: '10 mins' }
+      { label: 'ENERGY_OUTPUT', value: '160 kcal' },
+      { label: 'VITAMIN_C', value: '250mg' },
+      { label: 'TEMPRATURE', value: 'SUB-ZERO' },
+      { label: 'PREP_CYCLES', value: '4 mins' }
     ],
     isAvailable: true,
     neonColor: 'blue',
@@ -85,21 +85,20 @@ export const MENU_ITEMS: MenuItem[] = [
   },
   {
     id: 'sev-khamani',
-    name: 'Special Samosa Chaat',
-    price: 100,
+    name: 'Pulpy Orange Splash',
+    price: 120,
     category: 'surti-specials',
-    description: 'Crispy golden samosas crumbled and topped with yellow peas ragda, sweetened curd, tamarind chutney, fine nylon sev, and fresh pomegranate seeds.',
+    description: '100% natural, freshly squeezed orange juice with lots of real fruit pulp, served chilled without any added sugar.',
     inclusions: [
-      'Crumbled Spiced Samosas',
-      'Crispy Nylon Sev',
-      'Pomegranate Seeds',
-      'Fresh Coriander & Lemon'
+      'Fresh Orange Pulp Extract',
+      'Squeeze of Lime',
+      'Mint Leaf Garnish'
     ],
     specifications: [
-      { label: 'ENERGY_OUTPUT', value: '290 kcal' },
-      { label: 'PROTEIN_LOAD', value: '7g' },
-      { label: 'CARB_CHARGE', value: '36g' },
-      { label: 'PREP_CYCLES', value: '12 mins' }
+      { label: 'ENERGY_OUTPUT', value: '140 kcal' },
+      { label: 'PULP_LEVEL', value: 'HEAVY' },
+      { label: 'SUGAR_STATUS', value: 'NO ADDED SUGAR' },
+      { label: 'PREP_CYCLES', value: '4 mins' }
     ],
     isAvailable: true,
     neonColor: 'amber',
@@ -107,20 +106,20 @@ export const MENU_ITEMS: MenuItem[] = [
   },
   {
     id: 'khichu',
-    name: 'Classic Rava Idli (2 Pcs)',
-    price: 80,
+    name: 'Cucumber Mint Cooler',
+    price: 100,
     category: 'surti-specials',
-    description: 'A comforting, warm rava idli seasoned with green chillies, mustard seeds, and cashews, served hot drizzled with raw ghee.',
+    description: 'Crisp and hydrating juice blend of cucumber, fresh mint leaves, lemon juice, and a pinch of black salt.',
     inclusions: [
-      'Hot Spiced Rava Idli',
-      'Pure Desi Ghee',
-      'Coconut & Garlic Masala Chutney'
+      'Hydrating Cucumber Juice',
+      'Crushed Mint Leaves',
+      'Black Salt & Lemon'
     ],
     specifications: [
-      { label: 'ENERGY_OUTPUT', value: '180 kcal' },
-      { label: 'GLUTEN_STATUS', value: 'CONTAINS RAVA' },
-      { label: 'SPICE_PROFILE', value: 'Peppery & Cashews' },
-      { label: 'PREP_CYCLES', value: '8 mins' }
+      { label: 'ENERGY_OUTPUT', value: '60 kcal' },
+      { label: 'HYDRATION', value: 'OPTIMAL' },
+      { label: 'SUGAR_LEVEL', value: 'ZERO' },
+      { label: 'PREP_CYCLES', value: '4 mins' }
     ],
     isAvailable: true,
     neonColor: 'blue',
@@ -128,21 +127,20 @@ export const MENU_ITEMS: MenuItem[] = [
   },
   {
     id: 'ragda-pav',
-    name: 'Delhi Chole Bhature Combo',
-    price: 90,
+    name: 'Delhi Fruit Cream Bowl',
+    price: 160,
     category: 'surti-specials',
-    description: 'A classic street food meal featuring hot and spicy chickpea gravy (chole) garnished with onions, served alongside two soft puffed bhature.',
+    description: 'A lavish dessert bowl featuring fresh seasonal fruits mixed in thick sweet cream, garnished with raisins and cashews.',
     inclusions: [
-      'Spicy Kabuli Chana Chole (250ml)',
-      '2 Puffed Golden Bhature',
-      'Chopped Onions & Pickle',
-      'Green Mint Chutney'
+      'Fresh Mango, Apple & Banana cubes',
+      'Thick Sweet Dairy Cream',
+      'Dry Fruits & Cherry Garnish'
     ],
     specifications: [
-      { label: 'ENERGY_OUTPUT', value: '420 kcal' },
-      { label: 'PROTEIN_LOAD', value: '12g' },
-      { label: 'CARB_CHARGE', value: '64g' },
-      { label: 'PREP_CYCLES', value: '10 mins' }
+      { label: 'ENERGY_OUTPUT', value: '380 kcal' },
+      { label: 'FAT_LOAD', value: 'Rich Creamy' },
+      { label: 'CARB_CHARGE', value: '44g' },
+      { label: 'PREP_CYCLES', value: '6 mins' }
     ],
     isAvailable: true,
     neonColor: 'amber',
@@ -150,20 +148,20 @@ export const MENU_ITEMS: MenuItem[] = [
   },
   {
     id: 'dakor-gota',
-    name: 'Punjabi Samosa (2 Pcs)',
-    price: 120,
+    name: 'Pomegranate Energizer',
+    price: 140,
     category: 'surti-specials',
-    description: 'Traditional golden-fried triangles stuffed with spiced potato and peas, uniquely seasoned with coriander seeds and fennel. Crispy outside, soft inside.',
+    description: 'Freshly pressed sweet pomegranate juice rich in nutrients, served chilled. Great for blood circulation and energy.',
     inclusions: [
-      'Punjabi Samosas (2 Pcs)',
-      'Tangy Tamarind Chutney',
-      'Fried Green Chilli'
+      'Fresh Pomegranate Seeds Press',
+      'Dash of Black Salt',
+      'Ice Cubes'
     ],
     specifications: [
-      { label: 'ENERGY_OUTPUT', value: '340 kcal' },
-      { label: 'PROTEIN_LOAD', value: '9g' },
-      { label: 'SPICE_LEVEL', value: 'MEDIUM-SPICY' },
-      { label: 'PREP_CYCLES', value: '12 mins' }
+      { label: 'ENERGY_OUTPUT', value: '180 kcal' },
+      { label: 'ANTIOXIDANTS', value: 'HIGH' },
+      { label: 'SPICE_LEVEL', value: 'SWEET-TART' },
+      { label: 'PREP_CYCLES', value: '5 mins' }
     ],
     isAvailable: true,
     neonColor: 'blue',
@@ -171,44 +169,43 @@ export const MENU_ITEMS: MenuItem[] = [
   },
   {
     id: 'poha',
-    name: 'Steamed Poha with Sev',
-    price: 70,
+    name: 'Green Apple Cooler',
+    price: 130,
     category: 'surti-specials',
-    description: 'Light and fluffy flattened rice steamed with turmeric, curry leaves, and mustard seeds, topped with spicy and crunchy Indori sev.',
+    description: 'Tangy and crisp juice from fresh green apples, blended with mint and ginger for a warm finish.',
     inclusions: [
-      'Steamed Spiced Poha',
-      'indori Sev',
-      'Fried Groundnuts & Pomegranate',
-      'Fresh Lemon Wedge'
+      'Green Apple Juice (250ml)',
+      'Fresh Ginger Juice extract',
+      'Mint Leaves'
     ],
     specifications: [
-      { label: 'ENERGY_OUTPUT', value: '220 kcal' },
-      { label: 'FAT_CONTENT', value: '5g' },
-      { label: 'CARB_CHARGE', value: '38g' },
-      { label: 'PREP_CYCLES', value: '8 mins' }
+      { label: 'ENERGY_OUTPUT', value: '150 kcal' },
+      { label: 'ACIDITY_LEVEL', value: 'TART' },
+      { label: 'SPICE_PROFILE', value: 'Ginger Kick' },
+      { label: 'PREP_CYCLES', value: '4 mins' }
     ],
     isAvailable: true,
     neonColor: 'amber',
     image: '/images/breakfastidli.png'
   },
 
-  // VADA PAV & MORE
+  // MOCKTAILS & COOLERS
   {
     id: 'cheese-vada-pav',
-    name: 'Signature Cheese Vada Pav',
-    price: 90,
+    name: 'Watermelon Mint Mojito',
+    price: 110,
     category: 'vada-pav-specials',
-    description: 'Crispy batter-fried potato dumpling placed inside a fresh pav lined with spicy green and dry garlic chutneys, loaded with melted cheddar cheese.',
+    description: 'Refreshing summer cooler made with muddled watermelon chunks, fresh mint, lime juice, topped with sparkling club soda.',
     inclusions: [
-      '1 Loaded Cheese Vada Pav',
-      'Dry Garlic Lasun Chutney',
-      'Fried Chilli'
+      'Muddled Sweet Watermelon',
+      'Fresh Mint & Lime juice',
+      'Carbonated Sparkling Soda'
     ],
     specifications: [
-      { label: 'ENERGY_OUTPUT', value: '380 kcal' },
-      { label: 'CHEESE_LEVEL', value: 'MODERATE' },
-      { label: 'PROTEIN_LOAD', value: '9g' },
-      { label: 'PREP_CYCLES', value: '5 mins' }
+      { label: 'ENERGY_OUTPUT', value: '130 kcal' },
+      { label: 'FIZZ_LEVEL', value: 'HIGH' },
+      { label: 'HYDRATION', value: 'EXCELLENT' },
+      { label: 'PREP_CYCLES', value: '3 mins' }
     ],
     isAvailable: true,
     neonColor: 'blue',
@@ -216,20 +213,20 @@ export const MENU_ITEMS: MenuItem[] = [
   },
   {
     id: 'schezwan-vada-pav',
-    name: 'Fiery Schezwan Vada Pav',
-    price: 80,
+    name: 'Blue Lagoon Iced Mocktail',
+    price: 120,
     category: 'vada-pav-specials',
-    description: 'A fusion street snack featuring our classic hot potato vada inside a pav bun loaded with spicy Schezwan sauce, dry garlic powder, and sweet-sour chutney.',
+    description: 'A vibrant blue mocktail with a tangy orange-lemon flavour profile, mixed with sprite and crushed ice.',
     inclusions: [
-      '1 Schezwan Vada Pav',
-      'Fiery Schezwan Paste',
-      'Crispy Batter Crunchies'
+      'Blue Curacao Syrup',
+      'Fresh Lemon & Lime Slices',
+      'Chilled Lemon-Lime Soda'
     ],
     specifications: [
-      { label: 'ENERGY_OUTPUT', value: '310 kcal' },
-      { label: 'SPICE_LEVEL', value: 'HIGH' },
-      { label: 'CARB_CHARGE', value: '38g' },
-      { label: 'PREP_CYCLES', value: '5 mins' }
+      { label: 'ENERGY_OUTPUT', value: '180 kcal' },
+      { label: 'SWEETNESS', value: 'MEDIUM-HIGH' },
+      { label: 'TEMPRATURE', value: 'ICE COLD' },
+      { label: 'PREP_CYCLES', value: '3 mins' }
     ],
     isAvailable: true,
     neonColor: 'amber',
@@ -237,20 +234,20 @@ export const MENU_ITEMS: MenuItem[] = [
   },
   {
     id: 'ulta-vada-pav',
-    name: 'Ulta Vada Pav (Deep Fried)',
-    price: 70,
+    name: 'Classic Virgin Mojito',
+    price: 100,
     category: 'vada-pav-specials',
-    description: 'Inside-out Vada Pav where the pav is stuffed with spiced potato filling, coated in a chickpea batter, and deep-fried until golden and crispy.',
+    description: 'The timeless cooler. Fresh mint leaves and lemon wedges muddled with brown sugar, topped with club soda and ice.',
     inclusions: [
-      '1 Crispy Fried Ulta Vada Pav',
-      'Sweet Tamarind Dip',
-      'Mint Chutney'
+      'Muddled Mint & Lime Wedges',
+      'Brown Demerara Sugar',
+      'Carbonated Club Soda'
     ],
     specifications: [
-      { label: 'ENERGY_OUTPUT', value: '340 kcal' },
-      { label: 'COATING_TYPE', value: 'Besan Batter' },
-      { label: 'PROTEIN_LOAD', value: '7g' },
-      { label: 'PREP_CYCLES', value: '8 mins' }
+      { label: 'ENERGY_OUTPUT', value: '110 kcal' },
+      { label: 'FIZZ_LEVEL', value: 'HIGH' },
+      { label: 'SPICE_LEVEL', value: 'CITRUS-MINT' },
+      { label: 'PREP_CYCLES', value: '3 mins' }
     ],
     isAvailable: true,
     neonColor: 'blue',
@@ -258,20 +255,20 @@ export const MENU_ITEMS: MenuItem[] = [
   },
   {
     id: 'sabudana-vada',
-    name: 'Chilled Mango Lassi (Sweet)',
-    price: 90,
+    name: 'Tropical Alfonso Mango Shake',
+    price: 140,
     category: 'vada-pav-specials',
-    description: 'Creamy yogurt beverage blended with ripe mango pulp and topped with chopped almonds and pistachios. Served chilled.',
+    description: 'Thick and luscious milkshake made with ripe premium Alfonso mango pulp, organic milk, topped with a scoop of vanilla ice cream.',
     inclusions: [
-      'Alfonso Mango Yogurt Blend',
-      'Almond & Pistachio toppings',
-      'Saffron syrup drizzle'
+      'Alfonso Mango Puree',
+      'Creamy Whole Milk',
+      'Vanilla Ice Cream Scoop'
     ],
     specifications: [
-      { label: 'ENERGY_OUTPUT', value: '320 kcal' },
-      { label: 'GLUTEN_STATUS', value: 'GLUTEN-FREE' },
-      { label: 'DAIRY_PROFILE', value: 'Thick Yogurt Lassi' },
-      { label: 'PREP_CYCLES', value: '10 mins' }
+      { label: 'ENERGY_OUTPUT', value: '340 kcal' },
+      { label: 'DAIRY_LOAD', value: 'HEAVY' },
+      { label: 'FRUIT_PERCENT', value: '100% REAL MANGO' },
+      { label: 'PREP_CYCLES', value: '5 mins' }
     ],
     isAvailable: true,
     neonColor: 'amber',
@@ -279,43 +276,43 @@ export const MENU_ITEMS: MenuItem[] = [
   },
   {
     id: 'masala-pav',
-    name: 'Mumbai Butter Masala Pav',
-    price: 70,
+    name: 'Spiced Masala Lemonade',
+    price: 80,
     category: 'vada-pav-specials',
-    description: 'Soft pav buns sliced and tossed on a flat tawa in an aromatic, spicy, buttery mixture of tomatoes, capsicum, onions, and pav bhaji masala.',
+    description: 'Tangy Indian-style shikanji. Fresh lemon juice mixed with roasted cumin seeds, black salt, and a hint of sweet syrup.',
     inclusions: [
-      '2 Butter-Tossed Masala Pavs',
-      'Tawa Onion-Tomato Gravy coating',
-      'Fresh Lemon & Coriander'
+      'Squeezed Lemon Juice',
+      'Special Roasted Shikanji Masala',
+      'Mint Leaves garnish'
     ],
     specifications: [
-      { label: 'ENERGY_OUTPUT', value: '290 kcal' },
-      { label: 'BUTTER_LOAD', value: 'GENEROUS' },
-      { label: 'CARB_CHARGE', value: '44g' },
-      { label: 'PREP_CYCLES', value: '7 mins' }
+      { label: 'ENERGY_OUTPUT', value: '90 kcal' },
+      { label: 'SPICE_LEVEL', value: 'TANGY-SPICY' },
+      { label: 'CARB_CHARGE', value: '22g' },
+      { label: 'PREP_CYCLES', value: '3 mins' }
     ],
     isAvailable: true,
     neonColor: 'blue',
     image: '/images/muttoncurry.png'
   },
 
-  // CHATPATE CHAAT
+  // FRESH SHAKES & SHOTS
   {
     id: 'aloo-chaat',
-    name: 'Crispy Samosa Chaat Bowl',
-    price: 90,
+    name: 'Sweet Strawberry Smoothie',
+    price: 130,
     category: 'chatpate-chaat',
-    description: 'Crispy samosa triangles tossed in chaat masala, tangy tamarind chutney, spicy green mint chutney, finished with a squeeze of fresh lime.',
+    description: 'Creamy yogurt-based smoothie blended with sweet red strawberries, honey, and a touch of vanilla.',
     inclusions: [
-      'Crispy Samosa Bites',
-      'Sweet & Sour Chutney Mix',
-      'Chopped Onions & Sev'
+      'Sweet Red Strawberries',
+      'Chilled Greek Yogurt Base',
+      'Pure Honey'
     ],
     specifications: [
-      { label: 'ENERGY_OUTPUT', value: '260 kcal' },
-      { label: 'SPICE_LEVEL', value: 'MEDIUM-HIGH' },
-      { label: 'FAT_CONTENT', value: '9g' },
-      { label: 'PREP_CYCLES', value: '8 mins' }
+      { label: 'ENERGY_OUTPUT', value: '220 kcal' },
+      { label: 'FAT_CONTENT', value: '4g' },
+      { label: 'FRUIT_TYPE', value: 'INDORE BERRY' },
+      { label: 'PREP_CYCLES', value: '4 mins' }
     ],
     isAvailable: true,
     neonColor: 'blue',
@@ -323,21 +320,20 @@ export const MENU_ITEMS: MenuItem[] = [
   },
   {
     id: 'aloo-tikki-chaat',
-    name: 'Aloo Tikki Chaat Special',
-    price: 100,
+    name: 'Mixed Berry Bliss Shake',
+    price: 150,
     category: 'chatpate-chaat',
-    description: 'Golden shallow-fried potato patties placed on a bed of warm yellow pea ragda, topped with sweetened curd, mint-tamarind chutneys, onions, and fine sev.',
+    description: 'A luxurious purple shake containing blue berries, raspberries, and black berries blended with low fat milk and yogurt.',
     inclusions: [
-      '2 Golden Aloo Tikkis',
-      'Yellow Peas Ragda Base',
-      'Yogurt & Chutneys drizzle',
-      'Nylon Sev & Coriander'
+      'Blueberry, Raspberry & Blackberry',
+      'Chilled Creamy Milk',
+      'Honey Drizzle'
     ],
     specifications: [
-      { label: 'ENERGY_OUTPUT', value: '380 kcal' },
-      { label: 'PROTEIN_LOAD', value: '10g' },
-      { label: 'CARB_CHARGE', value: '54g' },
-      { label: 'PREP_CYCLES', value: '10 mins' }
+      { label: 'ENERGY_OUTPUT', value: '270 kcal' },
+      { label: 'ANTIOXIDANTS', value: 'MAX LOAD' },
+      { label: 'FIBER_CONTENT', value: '6g' },
+      { label: 'PREP_CYCLES', value: '5 mins' }
     ],
     isAvailable: true,
     neonColor: 'amber',
@@ -345,20 +341,20 @@ export const MENU_ITEMS: MenuItem[] = [
   },
   {
     id: 'dahi-vada',
-    name: 'Sweet Chilled Lassi (Glass)',
-    price: 100,
+    name: 'Creamy Chilled Cold Coffee',
+    price: 120,
     category: 'chatpate-chaat',
-    description: 'Traditional Punjabi lassi made by churning fresh thick yogurt, flavored with cardamom, and served chilled with a layer of cream.',
+    description: 'Thick, frothy coffee blended with premium coffee powder, whole milk, sugar, and decorated with chocolate syrup.',
     inclusions: [
-      'Sweet Churned Cardamom Lassi',
-      'Cream (Malai) layer on top',
-      'Dry fruits garnish'
+      'Espresso Decoction Blend',
+      'Full Cream Cold Milk',
+      'Hershey Chocolate Drizzle'
     ],
     specifications: [
-      { label: 'ENERGY_OUTPUT', value: '210 kcal' },
-      { label: 'PROTEIN_LOAD', value: '9g' },
-      { label: 'TEMP_CTRL', value: 'CHILLED' },
-      { label: 'PREP_CYCLES', value: '5 mins' }
+      { label: 'ENERGY_OUTPUT', value: '290 kcal' },
+      { label: 'CAFFEINE_LOAD', value: '80mg' },
+      { label: 'FROTH_LEVEL', value: 'HEAVY' },
+      { label: 'PREP_CYCLES', value: '4 mins' }
     ],
     isAvailable: true,
     neonColor: 'blue',
@@ -366,21 +362,20 @@ export const MENU_ITEMS: MenuItem[] = [
   },
   {
     id: 'mumbai-bhel-puri',
-    name: 'Chowpatty Sev Puri Special',
+    name: 'Chilled Rose Milk Shake',
     price: 100,
     category: 'chatpate-chaat',
-    description: 'Flat puris loaded with boiled potatoes, onions, tomatoes, and topped with garlic, mint, tamarind chutneys, nylon sev, and raw mango slices.',
+    description: 'Fragrant and floral. Premium rose syrup blended with boiled cold milk and topped with sweet basil seeds (sabja).',
     inclusions: [
-      'Flat Puris (6 Pcs)',
-      'Potato & Veg toppings',
-      'Spicy Mint & Sweet Tamarind Drizzle',
-      'Nylon Sev & Coriander'
+      'Organic Rose Syrup',
+      'Chilled Whole Milk',
+      'Soaked Sabja Seeds (Basil)'
     ],
     specifications: [
-      { label: 'ENERGY_OUTPUT', value: '190 kcal' },
-      { label: 'FAT_CONTENT', value: '4g' },
-      { label: 'STYLE_TYPE', value: 'MUMBAI CO-SIDE' },
-      { label: 'PREP_CYCLES', value: '5 mins' }
+      { label: 'ENERGY_OUTPUT', value: '230 kcal' },
+      { label: 'COOLING_EFFECT', value: 'EXCELLENT' },
+      { label: 'FAT_CONTENT', value: '6g' },
+      { label: 'PREP_CYCLES', value: '3 mins' }
     ],
     isAvailable: true,
     neonColor: 'amber',
@@ -388,21 +383,20 @@ export const MENU_ITEMS: MenuItem[] = [
   },
   {
     id: 'magical-masala-bhel',
-    name: 'Classic Pani Puri (6 Pcs)',
-    price: 100,
+    name: 'Immunity Ginger Shots (6 Pcs)',
+    price: 90,
     category: 'chatpate-chaat',
-    description: 'Crispy hollow puris stuffed with potato-chickpea masala, served with chilled spiced mint-coriander water and sweet dates-tamarind water.',
+    description: 'Six concentrated shot glasses containing pure ginger extract, lemon juice, raw honey, and a pinch of black pepper to boost digestion.',
     inclusions: [
-      '6 Hollow Crispy Puris',
-      'Potato & Kabuli Chana filling',
-      'Chilled Mint Spiced Water',
-      'Sweet Dates-Tamarind Water'
+      'Pure Ginger Extract (60ml)',
+      'Lemon & Pepper mix',
+      'Raw Wild Honey'
     ],
     specifications: [
-      { label: 'ENERGY_OUTPUT', value: '200 kcal' },
-      { label: 'SPICE_LEVEL', value: 'MEDIUM-SPICY' },
-      { label: 'CARB_CHARGE', value: '31g' },
-      { label: 'PREP_CYCLES', value: '5 mins' }
+      { label: 'ENERGY_OUTPUT', value: '80 kcal' },
+      { label: 'SPICE_LEVEL', value: 'SPICY-ZESTY' },
+      { label: 'HEALTH_BOOST', value: 'ANTI-INFLAM' },
+      { label: 'PREP_CYCLES', value: '4 mins' }
     ],
     isAvailable: true,
     neonColor: 'blue',
@@ -410,21 +404,20 @@ export const MENU_ITEMS: MenuItem[] = [
   },
   {
     id: 'sukha-bhel-puri',
-    name: 'Dry Masala Sukha Bhel',
-    price: 70,
+    name: 'Tangy Lemon Mint Shots (6 Pcs)',
+    price: 80,
     category: 'chatpate-chaat',
-    description: 'A crunchy mixture of puffed rice, roasted peanuts, sev, papdi, and chopped veggies seasoned only with dry mango powder, lemon juice, and green herbs.',
+    description: 'Six shots of tangy lemon juice, mint essence, honey, and green tea concentrate. A perfect quick metabolism kicker.',
     inclusions: [
-      'Dry Crispy Bhel Mix',
-      'Lemon Squeeze',
-      'Fresh Coriander',
-      'Fine Sev & Papdi'
+      'Lemon Juice & Mint Extract',
+      'Green Tea Extract',
+      'Organic Honey'
     ],
     specifications: [
-      { label: 'ENERGY_OUTPUT', value: '150 kcal' },
-      { label: 'FAT_CONTENT', value: '3g' },
-      { label: 'MOISTURE_LEVEL', value: 'ZERO (DRY)' },
-      { label: 'PREP_CYCLES', value: '4 mins' }
+      { label: 'ENERGY_OUTPUT', value: '60 kcal' },
+      { label: 'CALORIE_LEVEL', value: 'MINIMAL' },
+      { label: 'METABOLISM', value: 'STIMULATED' },
+      { label: 'PREP_CYCLES', value: '3 mins' }
     ],
     isAvailable: true,
     neonColor: 'amber',
@@ -432,21 +425,20 @@ export const MENU_ITEMS: MenuItem[] = [
   },
   {
     id: 'nippat-masala',
-    name: 'Crispy Nippat Masala',
-    price: 100,
+    name: 'Pina Colada Mocktail',
+    price: 130,
     category: 'chatpate-chaat',
-    description: 'A popular Karnataka snack made by crushing flat, crunchy fried Nippat biscuits and tossing them with grated carrots, chopped onions, tamarind-garlic chutney, and red chilli powder.',
+    description: 'A creamy blend of sweet pineapple juice, thick coconut milk, served with crushed ice and pineapple wedge garnish.',
     inclusions: [
-      'Crushed Spiced Nippats',
-      'Carrot & Onion Salad mix',
-      'Sweet and Tangy Chutney Drizzle',
-      'Roasted Peanuts'
+      'Alfonso Pineapple Juice',
+      'Organic Coconut Milk Cream',
+      'Pineapple Slice Garnish'
     ],
     specifications: [
-      { label: 'ENERGY_OUTPUT', value: '280 kcal' },
-      { label: 'PROTEIN_LOAD', value: '6g' },
-      { label: 'BASE_SNACK', value: 'Nippat Biscuits' },
-      { label: 'PREP_CYCLES', value: '6 mins' }
+      { label: 'ENERGY_OUTPUT', value: '260 kcal' },
+      { label: 'CREAMINESS', value: 'HIGH' },
+      { label: 'ALCOHOL_STAT', value: '0.0% (NON-ALC)' },
+      { label: 'PREP_CYCLES', value: '4 mins' }
     ],
     isAvailable: true,
     neonColor: 'blue',
@@ -454,21 +446,20 @@ export const MENU_ITEMS: MenuItem[] = [
   },
   {
     id: 'panipuri',
-    name: 'Fiery 5-Water Pani Puri',
-    price: 80,
+    name: '5-Flavor Juice Shots (6 Pcs)',
+    price: 100,
     category: 'chatpate-chaat',
-    description: 'Six crispy flour semolina balls stuffed with spicy potato-chickpea mixture, served with five distinct flavors of spiced chilled water (Mint, Garlic, Hing, Lemon, Sweet Tamarind).',
+    description: 'Six juice shot glasses featuring six distinct flavors (Tangy Mango, Sweet Grape, Tart Kiwi, Spicy Ginger-Lime, Watermelon-Mint, and Blueberry).',
     inclusions: [
-      '6 Crispy Semolina Puris',
-      'Spiced Potato & Chana filling',
-      '5 Flavors of Chilled Spiced Water',
-      'Sweet Tamarind Chutney'
+      '6 Flavor Juice concentrates',
+      'Chilled Water bases',
+      'Mint garnishes'
     ],
     specifications: [
-      { label: 'ENERGY_OUTPUT', value: '120 kcal' },
-      { label: 'PURI_COUNT', value: '6 Pcs' },
-      { label: 'WATER_VARIETY', value: '5 FLAVOURS' },
-      { label: 'PREP_CYCLES', value: '5 mins' }
+      { label: 'ENERGY_OUTPUT', value: '110 kcal' },
+      { label: 'SHOT_COUNT', value: '6 Glasses' },
+      { label: 'VARIETY', value: '6 DISTINCT FLAVOURS' },
+      { label: 'PREP_CYCLES', value: '4 mins' }
     ],
     isAvailable: true,
     neonColor: 'amber',

@@ -9,32 +9,32 @@ import { Search, Plus } from 'lucide-react';
 /* ─── CONSTANTS ──────────────────────────────────────────────────────── */
 
 const CAT_META: Record<string, { code: string; label: string }> = {
-  'surti-specials': { code: 'SS-01', label: 'SURTI SPECIALS' },
-  'vada-pav-specials': { code: 'VP-02', label: 'VADA PAV SPECIALS' },
-  'chatpate-chaat': { code: 'CC-03', label: 'CHATPATE CHAAT' },
+  'surti-specials': { code: 'SJ-01', label: 'SIGNATURE JUICES' },
+  'vada-pav-specials': { code: 'MC-02', label: 'MOCKTAILS & COOLERS' },
+  'chatpate-chaat': { code: 'SS-03', label: 'FRESH SHAKES & SHOTS' },
 };
 
 const ITEM_BADGES: Record<string, { text: string; bg: string; color: string }> = {
-  'surti-khaman': { text: 'BESTSELLER', bg: '#ff5400', color: '#000' },
-  'surti-khaman-butter': { text: 'BUTTERY', bg: '#f59e0b', color: '#000' },
-  'surti-khaman-cheese': { text: 'CHEESY', bg: '#8b5cf6', color: '#fff' },
+  'surti-khaman': { text: 'BESTSELLER', bg: '#0df265', color: '#000' },
+  'surti-khaman-butter': { text: 'FRESH PULP', bg: '#f59e0b', color: '#000' },
+  'surti-khaman-cheese': { text: 'DETOX', bg: '#8b5cf6', color: '#fff' },
   'sev-khamani': { text: 'POPULAR', bg: '#ef4444', color: '#fff' },
-  'khichu': { text: 'CLASSIC', bg: '#10b981', color: '#fff' },
-  'ragda-pav': { text: 'SPICY', bg: '#f59e0b', color: '#000' },
-  'dakor-gota': { text: 'SIGNATURE', bg: '#ff5400', color: '#000' },
+  'khichu': { text: 'HYDRATION', bg: '#10b981', color: '#fff' },
+  'ragda-pav': { text: 'DELUXE BOWL', bg: '#f59e0b', color: '#000' },
+  'dakor-gota': { text: 'SIGNATURE', bg: '#0df265', color: '#000' },
   'poha': { text: 'LIGHT', bg: '#3b82f6', color: '#fff' },
-  'cheese-vada-pav': { text: 'CHEESY', bg: '#8b5cf6', color: '#fff' },
-  'schezwan-vada-pav': { text: 'HOT', bg: '#ef4444', color: '#fff' },
-  'ulta-vada-pav': { text: 'UNIQUE', bg: '#ff5400', color: '#000' },
-  'sabudana-vada': { text: 'CRISPY', bg: '#10b981', color: '#fff' },
-  'masala-pav': { text: 'BUTTERY', bg: '#f59e0b', color: '#000' },
+  'cheese-vada-pav': { text: 'ICED COLD', bg: '#8b5cf6', color: '#fff' },
+  'schezwan-vada-pav': { text: 'FIZZY', bg: '#ef4444', color: '#fff' },
+  'ulta-vada-pav': { text: 'CLASSIC', bg: '#0df265', color: '#000' },
+  'sabudana-vada': { text: 'MANGO LOVER', bg: '#10b981', color: '#fff' },
+  'masala-pav': { text: 'SPICED', bg: '#f59e0b', color: '#000' },
   'aloo-chaat': { text: 'TANGY', bg: '#3b82f6', color: '#fff' },
-  'aloo-tikki-chaat': { text: 'FAVORITE', bg: '#ff5400', color: '#000' },
+  'aloo-tikki-chaat': { text: 'FAVORITE', bg: '#0df265', color: '#000' },
   'dahi-vada': { text: 'COOLING', bg: '#10b981', color: '#fff' },
-  'mumbai-bhel-puri': { text: 'CLASSIC', bg: '#3b82f6', color: '#fff' },
-  'magical-masala-bhel': { text: 'EXTREME', bg: '#ef4444', color: '#fff' },
-  'sukha-bhel-puri': { text: 'DRY', bg: '#6b7280', color: '#fff' },
-  'nippat-masala': { text: 'CRUNCHY', bg: '#f59e0b', color: '#000' },
+  'mumbai-bhel-puri': { text: 'SWEET ROSE', bg: '#3b82f6', color: '#fff' },
+  'magical-masala-bhel': { text: 'IMMUNITY', bg: '#ef4444', color: '#fff' },
+  'sukha-bhel-puri': { text: 'METABOLISM', bg: '#6b7280', color: '#fff' },
+  'nippat-masala': { text: 'CREAMY', bg: '#f59e0b', color: '#000' },
   'panipuri': { text: '5 FLAVORS', bg: '#10b981', color: '#fff' },
 };
 
@@ -66,7 +66,7 @@ const LevelBars: React.FC<{ filled: number }> = ({ filled }) => (
           width: '18px',
           height: '3px',
           borderRadius: '2px',
-          background: i < filled ? '#ff5400' : 'rgba(255,255,255,0.1)',
+          background: i < filled ? '#0df265' : 'rgba(255,255,255,0.1)',
         }}
       />
     ))}
@@ -81,7 +81,7 @@ const MenuCard: React.FC<{
   onOpen: (item: MenuItem) => void;
 }> = ({ item, index, onAdd, onOpen }) => {
   const [hovered, setHovered] = useState(false);
-  const badge = ITEM_BADGES[item.id] ?? { text: 'BESTSELLER', bg: '#ff5400', color: '#000' };
+  const badge = ITEM_BADGES[item.id] ?? { text: 'BESTSELLER', bg: '#0df265', color: '#000' };
   const level = LEVELS[item.id] ?? 3;
 
   return (
@@ -95,7 +95,7 @@ const MenuCard: React.FC<{
       onHoverEnd={() => setHovered(false)}
       style={{
         background: '#141414',
-        border: `1px solid ${hovered ? 'rgba(255,84,0,0.35)' : 'rgba(255,255,255,0.05)'}`,
+        border: `1px solid ${hovered ? 'rgba(13,242,101,0.35)' : 'rgba(255,255,255,0.05)'}`,
         borderRadius: '8px',
         overflow: 'hidden',
         display: 'flex',
@@ -103,7 +103,7 @@ const MenuCard: React.FC<{
         transform: hovered ? 'translateY(-4px)' : 'translateY(0)',
         transition: 'border-color 0.25s, transform 0.25s, box-shadow 0.25s',
         boxShadow: hovered
-          ? '0 8px 30px rgba(255,84,0,0.1), 0 0 0 1px rgba(255,84,0,0.12)'
+          ? '0 8px 30px rgba(13,242,101,0.1), 0 0 0 1px rgba(13,242,101,0.12)'
           : '0 2px 8px rgba(0,0,0,0.4)',
         cursor: 'default',
         // fixed card width matching screenshot proportions
@@ -186,7 +186,7 @@ const MenuCard: React.FC<{
             left: 0,
             right: 0,
             height: '2px',
-            background: 'linear-gradient(90deg, transparent, #ff5400 50%, transparent)',
+            background: 'linear-gradient(90deg, transparent, #0df265 50%, transparent)',
             opacity: hovered ? 1 : 0,
             transition: 'opacity 0.3s',
           }}
@@ -212,7 +212,7 @@ const MenuCard: React.FC<{
             fontSize: '17px',
             textTransform: 'uppercase',
             letterSpacing: '0.02em',
-            color: hovered ? '#ff5400' : '#ffffff',
+            color: hovered ? '#0df265' : '#ffffff',
             transition: 'color 0.2s',
             margin: 0,
             lineHeight: 1.15,
@@ -256,11 +256,11 @@ const MenuCard: React.FC<{
             style={{
               fontFamily: 'var(--font-roboto-mono), monospace',
               fontSize: '9px',
-              color: '#ff5400',
+              color: '#0df265',
               letterSpacing: '0.04em',
             }}
           >
-            🔥 {getCalories(item)}
+            🥤 {getCalories(item)}
           </span>
         </div>
 
@@ -314,20 +314,20 @@ const MenuCard: React.FC<{
               borderRadius: '4px',
               cursor: item.isAvailable ? 'pointer' : 'not-allowed',
               background: 'transparent',
-              border: `1px solid ${item.isAvailable ? '#ff5400' : 'rgba(255,255,255,0.1)'}`,
-              color: item.isAvailable ? '#ff5400' : 'rgba(255,255,255,0.2)',
+              border: `1px solid ${item.isAvailable ? '#0df265' : 'rgba(255,255,255,0.1)'}`,
+              color: item.isAvailable ? '#0df265' : 'rgba(255,255,255,0.2)',
               transition: 'background 0.2s, box-shadow 0.2s',
             }}
             onMouseEnter={(e) => {
               if (item.isAvailable) {
-                (e.currentTarget as HTMLElement).style.background = '#ff5400';
+                (e.currentTarget as HTMLElement).style.background = '#0df265';
                 (e.currentTarget as HTMLElement).style.color = '#000';
-                (e.currentTarget as HTMLElement).style.boxShadow = '0 0 14px rgba(255,84,0,0.5)';
+                (e.currentTarget as HTMLElement).style.boxShadow = '0 0 14px rgba(13,242,101,0.5)';
               }
             }}
             onMouseLeave={(e) => {
               (e.currentTarget as HTMLElement).style.background = 'transparent';
-              (e.currentTarget as HTMLElement).style.color = item.isAvailable ? '#ff5400' : 'rgba(255,255,255,0.2)';
+              (e.currentTarget as HTMLElement).style.color = item.isAvailable ? '#0df265' : 'rgba(255,255,255,0.2)';
               (e.currentTarget as HTMLElement).style.boxShadow = 'none';
             }}
           >
@@ -468,7 +468,7 @@ export const HolographicMenu: React.FC = () => {
                     fontFamily: 'var(--font-roboto-mono), monospace',
                     fontSize: '8px',
                     fontWeight: 700,
-                    color: isActive ? '#ff5400' : 'rgba(255,255,255,0.22)',
+                    color: isActive ? '#0df265' : 'rgba(255,255,255,0.22)',
                     letterSpacing: '0.1em',
                     transition: 'color 0.2s',
                   }}
@@ -497,8 +497,8 @@ export const HolographicMenu: React.FC = () => {
                       left: 0,
                       right: 0,
                       height: '2px',
-                      background: '#ff5400',
-                      boxShadow: '0 0 8px rgba(255,84,0,0.7)',
+                      background: '#0df265',
+                      boxShadow: '0 0 8px rgba(13,242,101,0.7)',
                     }}
                     transition={{ type: 'spring', stiffness: 380, damping: 30 }}
                   />
