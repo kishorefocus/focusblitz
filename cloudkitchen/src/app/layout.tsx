@@ -28,21 +28,22 @@ const robotoMono = Roboto_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Flavour Trails | Cloud Kitchen Yelahanka, Bengaluru",
+  title: "Shreeji Cloud Kitchen | Authentic Gujarati Snacks & Chaat — Yeshwanthpur, Bengaluru",
   description:
     "Experience authentic Gujarati Snacks, Chaats & Coolers, and Buns from Bengaluru's premier cloud kitchen. Order now for fast delivery.",
   keywords: [
-    "Flavour Trails",
+    "Shreeji Cloud Kitchen",
     "Cloud Kitchen",
-    "Yelahanka",
-    "Yelahanka New Town",
+    "Yeshwanthpur",
+    "Nagasandra",
+    "HMT Layout",
     "Steamed Idli",
     "Vada Pav",
     "Samosa Chaat",
     "Pani Puri",
     "Bengaluru Food Delivery",
   ],
-  authors: [{ name: "Flavour Trails Team" }],
+  authors: [{ name: "Shreeji Cloud Kitchen Team" }],
 };
 
 export const viewport = {
