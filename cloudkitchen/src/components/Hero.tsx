@@ -161,7 +161,7 @@ const ConcentricBadge: React.FC = () => (
         textShadow: '0 0 20px rgba(13,242,101,0.8), 0 0 50px rgba(13,242,101,0.4)',
         userSelect: 'none',
       }}>
-        डी
+        कै
       </span>
       <span style={{
         fontFamily: 'var(--font-roboto-mono), monospace',
@@ -171,7 +171,7 @@ const ConcentricBadge: React.FC = () => (
         marginTop: '8px',
         textTransform: 'uppercase',
       }}>
-        DP // 560068
+        CC // 560029
       </span>
     </div>
 
@@ -225,8 +225,8 @@ const useTypewriter = (lines: string[], speed = 45) => {
 /* ─── HERO ─────────────────────────────────────────────────────────── */
 export const Hero: React.FC = () => {
   const termLines = [
-    '> INITIALIZING DREAM_PARADISE_JUICES.OS _',
-    '> CONNECTING TO MADIWALA NODE _',
+    '> INITIALIZING CAFE_CORNER_JUICES.OS _',
+    '> CONNECTING TO BTM NODE _',
     '> FRESH-JUICE PROTOCOL: ACTIVE',
     '> 100% PURE JUICES & COLD DRINKS',
   ];
@@ -284,7 +284,7 @@ export const Hero: React.FC = () => {
             style={{ display: 'flex', gap: '10px', marginBottom: '36px', flexWrap: 'wrap' }}
           >
             {[
-              { icon: '⛙', text: 'NODE-68 / MADIWALA' },
+              { icon: '⛙', text: 'NODE-29 / BTM' },
               { icon: '⚡', text: 'FRESH JUICES & MOCKTAILS' },
             ].map((b) => (
               <span
@@ -311,7 +311,7 @@ export const Hero: React.FC = () => {
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.6, delay: 0.25 }}
           >
-            {/* SOLID WHITE — "DREAM" */}
+            {/* SOLID WHITE — "CAFE" */}
             <h1
               style={{
                 fontFamily: '"Barlow Condensed", "Orbitron", sans-serif',
@@ -324,9 +324,9 @@ export const Hero: React.FC = () => {
                 margin: 0,
               }}
             >
-              DREAM
+              CAFE
             </h1>
-            {/* STROKE OUTLINE — "PARADISE" */}
+            {/* STROKE OUTLINE — "CORNER" */}
             <h1
               style={{
                 fontFamily: '"Barlow Condensed", "Orbitron", sans-serif',
@@ -341,7 +341,7 @@ export const Hero: React.FC = () => {
                 textShadow: '0 0 40px rgba(13,242,101,0.15)',
               }}
             >
-              PARADISE
+              CORNER
             </h1>
           </motion.div>
 

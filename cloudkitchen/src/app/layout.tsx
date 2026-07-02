@@ -28,21 +28,21 @@ const robotoMono = Roboto_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "DREAM PARADISE | Fresh Juice Shop Old Madiwala, Bengaluru",
+  title: "Cafe Corner | Fresh Juice Shop BTM, Bengaluru",
   description:
     "Experience 100% pure fresh juices, smoothies, shakes, and mocktails from Bengaluru's premier juice shop. Order now for fast delivery.",
   keywords: [
-    "DREAM PARADISE",
+    "Cafe Corner",
     "Juice Shop",
-    "Old Madiwala",
-    "Venkateshwara Layout",
+    "BTM Layout",
+    "Jay Bheema Nagar",
     "Fresh Juice",
     "Mocktails",
     "Smoothies",
     "Shakes",
     "Bengaluru Food Delivery",
   ],
-  authors: [{ name: "DREAM PARADISE Juice Team" }],
+  authors: [{ name: "Cafe Corner Juice Team" }],
 };
 
 export const viewport = {
