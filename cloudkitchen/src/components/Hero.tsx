@@ -161,7 +161,7 @@ const ConcentricBadge: React.FC = () => (
         textShadow: '0 0 20px rgba(255,84,0,0.8), 0 0 50px rgba(255,84,0,0.4)',
         userSelect: 'none',
       }}>
-        श्री
+        म
       </span>
       <span style={{
         fontFamily: 'var(--font-roboto-mono), monospace',
@@ -171,7 +171,7 @@ const ConcentricBadge: React.FC = () => (
         marginTop: '8px',
         textTransform: 'uppercase',
       }}>
-        SCK // 560073
+        MT // 560015
       </span>
     </div>
 
@@ -225,8 +225,8 @@ const useTypewriter = (lines: string[], speed = 45) => {
 /* ─── HERO ─────────────────────────────────────────────────────────── */
 export const Hero: React.FC = () => {
   const termLines = [
-    '> INITIALIZING SHREEJI_KITCHEN_CLOUD.OS _',
-    '> CONNECTING TO NAGASANDRA NODE _',
+    '> INITIALIZING MANE_THINDI_CLOUD.OS _',
+    '> CONNECTING TO JALAHALLI NODE _',
     '> CHASKA-FOOD PROTOCOL: ACTIVE',
     '> GUJARATI SNACKS & CHAAT • FRESH DAILY',
   ];
@@ -284,7 +284,7 @@ export const Hero: React.FC = () => {
             style={{ display: 'flex', gap: '10px', marginBottom: '36px', flexWrap: 'wrap' }}
           >
             {[
-              { icon: '⛙', text: 'NODE-73 / NAGASANDRA' },
+              { icon: '⛙', text: 'NODE-15 / JALAHALLI' },
               { icon: '⚡', text: 'DELIVERY-FIRST KITCHEN' },
             ].map((b) => (
               <span
@@ -311,7 +311,7 @@ export const Hero: React.FC = () => {
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.6, delay: 0.25 }}
           >
-            {/* SOLID WHITE — "SHREEJI" */}
+            {/* SOLID WHITE — "MANE" */}
             <h1
               style={{
                 fontFamily: '"Barlow Condensed", "Orbitron", sans-serif',
@@ -324,9 +324,9 @@ export const Hero: React.FC = () => {
                 margin: 0,
               }}
             >
-              SHREEJI
+              MANE
             </h1>
-            {/* STROKE OUTLINE — "KITCHEN" */}
+            {/* STROKE OUTLINE — "THINDI" */}
             <h1
               style={{
                 fontFamily: '"Barlow Condensed", "Orbitron", sans-serif',
@@ -341,7 +341,7 @@ export const Hero: React.FC = () => {
                 textShadow: '0 0 40px rgba(255,84,0,0.15)',
               }}
             >
-              KITCHEN
+              THINDI
             </h1>
           </motion.div>
 

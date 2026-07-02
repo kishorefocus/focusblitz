@@ -28,22 +28,21 @@ const robotoMono = Roboto_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Shreeji Cloud Kitchen | Authentic Gujarati Snacks & Chaat — Yeshwanthpur, Bengaluru",
+  title: "Mane Thindi | Cloud Kitchen Jalahalli, Bengaluru",
   description:
     "Experience authentic Gujarati Snacks, Chaats & Coolers, and Buns from Bengaluru's premier cloud kitchen. Order now for fast delivery.",
   keywords: [
-    "Shreeji Cloud Kitchen",
+    "Mane Thindi",
     "Cloud Kitchen",
-    "Yeshwanthpur",
-    "Nagasandra",
-    "HMT Layout",
+    "Jalahalli",
+    "Renaissance Woods",
     "Steamed Idli",
     "Vada Pav",
     "Samosa Chaat",
     "Pani Puri",
     "Bengaluru Food Delivery",
   ],
-  authors: [{ name: "Shreeji Cloud Kitchen Team" }],
+  authors: [{ name: "Mane Thindi Team" }],
 };
 
 export const viewport = {

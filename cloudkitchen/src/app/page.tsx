@@ -13,7 +13,7 @@ const steps = [
   {
     code: 'PHASE_01',
     title: 'Source',
-    desc: 'Drone-synchronized delivery to your coordinates in under 35 minutes, anywhere in the Yeshwanthpur radius.',
+    desc: 'Drone-synchronized delivery to your coordinates in under 35 minutes, anywhere in the Jalahalli radius.',
   },
   {
     code: 'PHASE_02',
@@ -28,7 +28,7 @@ const steps = [
   {
     code: 'PHASE_04',
     title: 'Deliver',
-    desc: 'Drone-synchronized delivery to your coordinates in under 35 minutes, anywhere in the Yeshwanthpur radius.',
+    desc: 'Drone-synchronized delivery to your coordinates in under 35 minutes, anywhere in the Jalahalli radius.',
   },
 ];
 
@@ -36,7 +36,7 @@ const steps = [
 const faqs = [
   {
     q: 'What is the delivery radius?',
-    a: 'We cover a 15km radius from our Yeshwanthpur node. Standard ETA is 30–45 minutes depending on order volume.',
+    a: 'We cover a 15km radius from our Jalahalli node. Standard ETA is 30–45 minutes depending on order volume.',
   },
   {
     q: 'Can I pre-schedule an order?',
@@ -44,7 +44,7 @@ const faqs = [
   },
   {
     q: 'Are the recipes authentic?',
-    a: 'Absolutely. Our masala formulas are multi-generational Gujarati and Shreeji recipes, precision-replicated with modern kitchen tech.',
+    a: 'Absolutely. Our masala formulas are multi-generational Gujarati and Mane Thindi recipes, precision-replicated with modern kitchen tech.',
   },
   {
     q: 'What payment methods are accepted?',
@@ -184,7 +184,7 @@ export default function Home() {
             <span style={{
               fontFamily: '"Barlow Condensed", "Orbitron", sans-serif',
               fontWeight: 900, fontSize: '15px', color: '#000',
-            }}>SCK</span>
+            }}>MT</span>
           </div>
           <span style={{
             fontFamily: '"Barlow Condensed", "Orbitron", sans-serif',
@@ -192,7 +192,7 @@ export default function Home() {
             letterSpacing: '0.15em', color: '#ffffff',
             textTransform: 'uppercase',
           }}>
-            SHREEJI CLOUD KITCHEN // CLOUD KITCHEN
+            MANE THINDI // CLOUD KITCHEN
           </span>
         </div>
 
@@ -453,7 +453,7 @@ export default function Home() {
 
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(220px, 1fr))', gap: '32px' }}>
             {[
-              { label: '📍 ADDRESS', lines: ['169, 1st Main Rd,', 'Opposite Christ University, Block II,', 'HMT Layout, Yeshwanthpur Campus,', 'Nagasandra, Bengaluru 560073'] },
+              { label: '📍 ADDRESS', lines: ['Renaissance Woods, Woods 1, 508,', 'Sri Sri Sri Shivakumara Swamiji Rd,', 'Renaissance HVV Villas, Jalahalli,', 'Bengaluru, Karnataka 560015'] },
               { label: '🕒 HOURS', lines: ['11:00 — 23:00 IST', 'Mon – Sun', 'All major holidays'] },
               { label: '📡 COMMS', lines: ['+91 9999999999', 'WhatsApp Order', 'Also on Zomato & Swiggy'] },
               { label: '// STATUS', lines: ['● Kitchen ONLINE', '⚡ Delivery: ~35min', '🔥 Orders flowing'] },
@@ -497,14 +497,14 @@ export default function Home() {
             width: '28px', height: '28px', background: '#ff5400',
             display: 'flex', alignItems: 'center', justifyContent: 'center', borderRadius: '3px',
           }}>
-            <span style={{ fontFamily: '"Barlow Condensed", sans-serif', fontWeight: 900, fontSize: '12px', color: '#000' }}>SCK</span>
+            <span style={{ fontFamily: '"Barlow Condensed", sans-serif', fontWeight: 900, fontSize: '12px', color: '#000' }}>MT</span>
           </div>
           <span style={{
             fontFamily: 'var(--font-roboto-mono), monospace',
             fontSize: '10px', color: 'rgba(255,255,255,0.3)',
             letterSpacing: '0.05em',
           }}>
-            © {new Date().getFullYear()} SHREEJI CLOUD KITCHEN [NODE_073]
+            © {new Date().getFullYear()} MANE THINDI CLOUD KITCHEN [NODE_015]
           </span>
         </div>
         <div style={{ display: 'flex', gap: '6px', alignItems: 'center' }}>
@@ -514,7 +514,7 @@ export default function Home() {
             fontSize: '9px', color: '#ff5400',
             letterSpacing: '0.1em', textTransform: 'uppercase',
           }}>
-            13.0494° N, 77.5028° E // 560073
+            13.0480° N, 77.5401° E // 560015
           </span>
         </div>
       </footer>

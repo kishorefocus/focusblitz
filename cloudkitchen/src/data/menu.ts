@@ -12,7 +12,7 @@ export interface MenuItem {
 }
 
 export const MENU_CATEGORIES = [
-  { id: 'surti-specials', name: 'Shreeji Signatures' },
+  { id: 'surti-specials', name: 'Mane Specials' },
   { id: 'vada-pav-specials', name: 'Buns & Vada Pav' },
   { id: 'chatpate-chaat', name: 'Chaats & Coolers' },
 ] as const;
