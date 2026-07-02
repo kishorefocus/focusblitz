@@ -28,21 +28,21 @@ const robotoMono = Roboto_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Utkarsh Cloud Kitchen | Authentic Gujarati Snacks & Chaat — Marathahalli, Bengaluru",
+  title: "Flavour Trails | Cloud Kitchen Yelahanka, Bengaluru",
   description:
-    "Experience authentic Surti Khaman, delicious Vada Pav, and chatpate chaat from Bengaluru's premier cloud kitchen. Order now for fast delivery.",
+    "Experience authentic Gujarati Snacks, Chaats & Coolers, and Buns from Bengaluru's premier cloud kitchen. Order now for fast delivery.",
   keywords: [
-    "Utkarsh Cloud Kitchen",
+    "Flavour Trails",
     "Cloud Kitchen",
-    "Marathahalli",
-    "Rajashree Layout",
-    "Surti Khaman",
+    "Yelahanka",
+    "Yelahanka New Town",
+    "Steamed Idli",
     "Vada Pav",
-    "Aloo Tikki Chaat",
+    "Samosa Chaat",
     "Pani Puri",
     "Bengaluru Food Delivery",
   ],
-  authors: [{ name: "Utkarsh Cloud Kitchen Team" }],
+  authors: [{ name: "Flavour Trails Team" }],
 };
 
 export const viewport = {

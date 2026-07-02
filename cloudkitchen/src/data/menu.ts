@@ -12,24 +12,24 @@ export interface MenuItem {
 }
 
 export const MENU_CATEGORIES = [
-  { id: 'surti-specials', name: 'Surti Specials' },
-  { id: 'vada-pav-specials', name: 'Vada Pav Specials' },
-  { id: 'chatpate-chaat', name: 'Chatpate Chaat' },
+  { id: 'surti-specials', name: 'Flavour Signatures' },
+  { id: 'vada-pav-specials', name: 'Buns & Vada Pav' },
+  { id: 'chatpate-chaat', name: 'Chaats & Coolers' },
 ] as const;
 
 export const MENU_ITEMS: MenuItem[] = [
-  // SURTI SPECIALS
+  // FLAVOUR SIGNATURES
   {
     id: 'surti-khaman',
-    name: 'Surti Khaman (Traditional)',
+    name: 'Traditional Steamed Idli (4 Pcs)',
     price: 100,
     category: 'surti-specials',
-    description: 'Traditional soft, fluffy and spongy Gujarati snack made from fresh chana dal, steamed to perfection and tempered with mustard seeds and green chillies.',
+    description: 'Traditional soft, fluffy and spongy steamed rice cakes, tempered with light mustard seeds and served hot with fresh green chillies and chutney.',
     inclusions: [
-      'Soft Khaman (4 Pcs)',
+      'Soft Steamed Idli (4 Pcs)',
       'Fried Green Chillies',
       'Spicy Mint-Coriander Chutney',
-      'Nylon Sev Garnish'
+      'Sambhar Garnish'
     ],
     specifications: [
       { label: 'ENERGY_OUTPUT', value: '240 kcal' },
@@ -43,14 +43,14 @@ export const MENU_ITEMS: MenuItem[] = [
   },
   {
     id: 'surti-khaman-butter',
-    name: 'Surti Kaman (Topped With Butter)',
+    name: 'Butter Ghee Masala Idli',
     price: 110,
     category: 'surti-specials',
-    description: 'Our traditional steamed Khaman served hot and topped with a generous layer of pure melted butter for a rich, comforting taste.',
+    description: 'Our traditional steamed idli served hot and topped with a generous layer of pure melted butter and aromatic podi for a rich, comforting taste.',
     inclusions: [
-      'Soft Khaman (4 Pcs)',
-      'Melted Amul Butter',
-      'Spicy Garlic-Chilli Chutney'
+      'Soft Idli (4 Pcs)',
+      'Melted Amul Butter & Ghee',
+      'Spicy Garlic-Podi Chutney'
     ],
     specifications: [
       { label: 'ENERGY_OUTPUT', value: '310 kcal' },
@@ -64,12 +64,12 @@ export const MENU_ITEMS: MenuItem[] = [
   },
   {
     id: 'surti-khaman-cheese',
-    name: 'Surti Kaman (Topped With Cheese)',
+    name: 'Cheese Loaded Steamed Idli',
     price: 120,
     category: 'surti-specials',
-    description: 'Authentic steamed Khaman loaded with a thick blanket of freshly grated processed cheese. A modern fusion twist to a classic street food.',
+    description: 'Fluffy steamed idli loaded with a thick blanket of freshly grated processed cheese. A modern fusion twist to a classic south Indian staple.',
     inclusions: [
-      'Soft Khaman (4 Pcs)',
+      'Soft Idli (4 Pcs)',
       'Grated Cheddar & Mozzarella',
       'Sweet and Sour Chutney'
     ],
@@ -85,12 +85,12 @@ export const MENU_ITEMS: MenuItem[] = [
   },
   {
     id: 'sev-khamani',
-    name: 'Sev Khamani',
+    name: 'Special Samosa Chaat',
     price: 100,
     category: 'surti-specials',
-    description: 'A popular Surti street snack made by crumbling freshly steamed Khaman, tempering it with ginger, garlic, and chillies, and topping it with nylon sev and sweet pomegranate seeds.',
+    description: 'Crispy golden samosas crumbled and topped with yellow peas ragda, sweetened curd, tamarind chutney, fine nylon sev, and fresh pomegranate seeds.',
     inclusions: [
-      'Crumbled Spiced Khaman',
+      'Crumbled Spiced Samosas',
       'Crispy Nylon Sev',
       'Pomegranate Seeds',
       'Fresh Coriander & Lemon'
@@ -107,19 +107,19 @@ export const MENU_ITEMS: MenuItem[] = [
   },
   {
     id: 'khichu',
-    name: 'Khichu',
+    name: 'Classic Rava Idli (2 Pcs)',
     price: 80,
     category: 'surti-specials',
-    description: 'A comforting, warm rice flour dough seasoned with green chillies, cumin seeds, and soda bi-carb, served hot drizzled with raw peanut oil and methi masala.',
+    description: 'A comforting, warm rava idli seasoned with green chillies, mustard seeds, and cashews, served hot drizzled with raw ghee.',
     inclusions: [
-      'Hot Spiced Rice Dough',
-      'Raw Groundnut Oil',
-      'Gujarati Methi Masala'
+      'Hot Spiced Rava Idli',
+      'Pure Desi Ghee',
+      'Coconut & Garlic Masala Chutney'
     ],
     specifications: [
       { label: 'ENERGY_OUTPUT', value: '180 kcal' },
-      { label: 'GLUTEN_STATUS', value: 'GLUTEN-FREE' },
-      { label: 'SPICE_PROFILE', value: 'Peppery & Cumin' },
+      { label: 'GLUTEN_STATUS', value: 'CONTAINS RAVA' },
+      { label: 'SPICE_PROFILE', value: 'Peppery & Cashews' },
       { label: 'PREP_CYCLES', value: '8 mins' }
     ],
     isAvailable: true,
@@ -128,15 +128,15 @@ export const MENU_ITEMS: MenuItem[] = [
   },
   {
     id: 'ragda-pav',
-    name: 'Ragda Pav (Served With 2 Pav)',
+    name: 'Delhi Chole Bhature Combo',
     price: 90,
     category: 'surti-specials',
-    description: 'A classic street food meal featuring a hot and spicy yellow peas gravy (ragda) garnished with chopped onions and chutneys, served alongside soft pav buns.',
+    description: 'A classic street food meal featuring hot and spicy chickpea gravy (chole) garnished with onions, served alongside two soft puffed bhature.',
     inclusions: [
-      'Spicy Pea Ragda (250ml)',
-      '2 Butter-Toasted Pavs',
-      'Chopped Onions & Coriander',
-      'Tamarind Chutney'
+      'Spicy Kabuli Chana Chole (250ml)',
+      '2 Puffed Golden Bhature',
+      'Chopped Onions & Pickle',
+      'Green Mint Chutney'
     ],
     specifications: [
       { label: 'ENERGY_OUTPUT', value: '420 kcal' },
@@ -150,19 +150,19 @@ export const MENU_ITEMS: MenuItem[] = [
   },
   {
     id: 'dakor-gota',
-    name: 'Dakor na Gota',
+    name: 'Punjabi Samosa (2 Pcs)',
     price: 120,
     category: 'surti-specials',
-    description: 'Traditional golden-fried gram flour fritters from the town of Dakor, uniquely flavored with sesame seeds, fennel seeds, and coriander seeds. Crispy outside, soft inside.',
+    description: 'Traditional golden-fried triangles stuffed with spiced potato and peas, uniquely seasoned with coriander seeds and fennel. Crispy outside, soft inside.',
     inclusions: [
-      'Dakor Gota Fritters (6 Pcs)',
+      'Punjabi Samosas (2 Pcs)',
       'Tangy Tamarind Chutney',
       'Fried Green Chilli'
     ],
     specifications: [
       { label: 'ENERGY_OUTPUT', value: '340 kcal' },
       { label: 'PROTEIN_LOAD', value: '9g' },
-      { label: 'SPICE_LEVEL', value: 'MILD-SWEET' },
+      { label: 'SPICE_LEVEL', value: 'MEDIUM-SPICY' },
       { label: 'PREP_CYCLES', value: '12 mins' }
     ],
     isAvailable: true,
@@ -171,13 +171,13 @@ export const MENU_ITEMS: MenuItem[] = [
   },
   {
     id: 'poha',
-    name: 'Poha (Topped with Ratlami Sev)',
+    name: 'Steamed Poha with Sev',
     price: 70,
     category: 'surti-specials',
-    description: 'Light and fluffy flattened rice steamed with turmeric, curry leaves, and mustard seeds, topped with spicy and crunchy Indori Ratlami sev.',
+    description: 'Light and fluffy flattened rice steamed with turmeric, curry leaves, and mustard seeds, topped with spicy and crunchy Indori sev.',
     inclusions: [
       'Steamed Spiced Poha',
-      'indori Ratlami Sev',
+      'indori Sev',
       'Fried Groundnuts & Pomegranate',
       'Fresh Lemon Wedge'
     ],
@@ -195,7 +195,7 @@ export const MENU_ITEMS: MenuItem[] = [
   // VADA PAV & MORE
   {
     id: 'cheese-vada-pav',
-    name: 'Cheese Vada Pav (1 Pc)',
+    name: 'Signature Cheese Vada Pav',
     price: 90,
     category: 'vada-pav-specials',
     description: 'Crispy batter-fried potato dumpling placed inside a fresh pav lined with spicy green and dry garlic chutneys, loaded with melted cheddar cheese.',
@@ -216,7 +216,7 @@ export const MENU_ITEMS: MenuItem[] = [
   },
   {
     id: 'schezwan-vada-pav',
-    name: 'Schezwan Vada Pav (1 Pc)',
+    name: 'Fiery Schezwan Vada Pav',
     price: 80,
     category: 'vada-pav-specials',
     description: 'A fusion street snack featuring our classic hot potato vada inside a pav bun loaded with spicy Schezwan sauce, dry garlic powder, and sweet-sour chutney.',
@@ -237,7 +237,7 @@ export const MENU_ITEMS: MenuItem[] = [
   },
   {
     id: 'ulta-vada-pav',
-    name: 'Ulta Vada Pav (1 Pc)',
+    name: 'Ulta Vada Pav (Deep Fried)',
     price: 70,
     category: 'vada-pav-specials',
     description: 'Inside-out Vada Pav where the pav is stuffed with spiced potato filling, coated in a chickpea batter, and deep-fried until golden and crispy.',
@@ -258,19 +258,19 @@ export const MENU_ITEMS: MenuItem[] = [
   },
   {
     id: 'sabudana-vada',
-    name: 'Sabudana Vada (2 Pcs)',
+    name: 'Chilled Mango Lassi (Sweet)',
     price: 90,
     category: 'vada-pav-specials',
-    description: 'Crispy deep-fried patties made of soaked tapioca pearls (sabudana), mashed potatoes, green chillies, and roasted peanuts. Served with sweetened curd.',
+    description: 'Creamy yogurt beverage blended with ripe mango pulp and topped with chopped almonds and pistachios. Served chilled.',
     inclusions: [
-      '2 Sabudana Vada Patties',
-      'Chilled Sweetened Curd Bowl',
-      'Mint Chutney'
+      'Alfonso Mango Yogurt Blend',
+      'Almond & Pistachio toppings',
+      'Saffron syrup drizzle'
     ],
     specifications: [
       { label: 'ENERGY_OUTPUT', value: '320 kcal' },
       { label: 'GLUTEN_STATUS', value: 'GLUTEN-FREE' },
-      { label: 'PEANUT_CONTENT', value: 'Crushed Roasted' },
+      { label: 'DAIRY_PROFILE', value: 'Thick Yogurt Lassi' },
       { label: 'PREP_CYCLES', value: '10 mins' }
     ],
     isAvailable: true,
@@ -279,7 +279,7 @@ export const MENU_ITEMS: MenuItem[] = [
   },
   {
     id: 'masala-pav',
-    name: 'Masala Pav (2 Pcs)',
+    name: 'Mumbai Butter Masala Pav',
     price: 70,
     category: 'vada-pav-specials',
     description: 'Soft pav buns sliced and tossed on a flat tawa in an aromatic, spicy, buttery mixture of tomatoes, capsicum, onions, and pav bhaji masala.',
@@ -302,12 +302,12 @@ export const MENU_ITEMS: MenuItem[] = [
   // CHATPATE CHAAT
   {
     id: 'aloo-chaat',
-    name: 'Aloo Chaat',
+    name: 'Crispy Samosa Chaat Bowl',
     price: 90,
     category: 'chatpate-chaat',
-    description: 'Crispy double-fried potato cubes tossed in chaat masala, tangy tamarind chutney, spicy green mint chutney, finished with a squeeze of fresh lime.',
+    description: 'Crispy samosa triangles tossed in chaat masala, tangy tamarind chutney, spicy green mint chutney, finished with a squeeze of fresh lime.',
     inclusions: [
-      'Crispy Potato Cubes',
+      'Crispy Samosa Bites',
       'Sweet & Sour Chutney Mix',
       'Chopped Onions & Sev'
     ],
@@ -323,7 +323,7 @@ export const MENU_ITEMS: MenuItem[] = [
   },
   {
     id: 'aloo-tikki-chaat',
-    name: 'Aloo Tikki Chaat',
+    name: 'Aloo Tikki Chaat Special',
     price: 100,
     category: 'chatpate-chaat',
     description: 'Golden shallow-fried potato patties placed on a bed of warm yellow pea ragda, topped with sweetened curd, mint-tamarind chutneys, onions, and fine sev.',
@@ -345,15 +345,14 @@ export const MENU_ITEMS: MenuItem[] = [
   },
   {
     id: 'dahi-vada',
-    name: 'Dahi Vada (2 Pcs)',
+    name: 'Sweet Chilled Lassi (Glass)',
     price: 100,
     category: 'chatpate-chaat',
-    description: 'Soft lentil dumplings soaked in sweetened chilled yogurt, garnished with roasted cumin powder, red chilli powder, black salt, and sweet tamarind chutney.',
+    description: 'Traditional Punjabi lassi made by churning fresh thick yogurt, flavored with cardamom, and served chilled with a layer of cream.',
     inclusions: [
-      '2 Soft Lentil Dumplings',
-      'Chilled Sweetened Yogurt',
-      'Tamarind Chutney',
-      'Roasted Cumin & Chilli Powder'
+      'Sweet Churned Cardamom Lassi',
+      'Cream (Malai) layer on top',
+      'Dry fruits garnish'
     ],
     specifications: [
       { label: 'ENERGY_OUTPUT', value: '210 kcal' },
@@ -367,15 +366,15 @@ export const MENU_ITEMS: MenuItem[] = [
   },
   {
     id: 'mumbai-bhel-puri',
-    name: 'Mumbai Chowpatty Bhel Puri',
+    name: 'Chowpatty Sev Puri Special',
     price: 100,
     category: 'chatpate-chaat',
-    description: 'Light and crunchy mix of puffed rice, roasted peanuts, diced onions, tomatoes, and boiled potatoes tossed in garlic, mint, and sour tamarind chutneys.',
+    description: 'Flat puris loaded with boiled potatoes, onions, tomatoes, and topped with garlic, mint, tamarind chutneys, nylon sev, and raw mango slices.',
     inclusions: [
-      'Puffed Rice & Peanut Mix',
-      'Garlic-Chilli Chutney (Spicy)',
-      'Tamarind Chutney (Sweet)',
-      'Papdi & Nylon Sev'
+      'Flat Puris (6 Pcs)',
+      'Potato & Veg toppings',
+      'Spicy Mint & Sweet Tamarind Drizzle',
+      'Nylon Sev & Coriander'
     ],
     specifications: [
       { label: 'ENERGY_OUTPUT', value: '190 kcal' },
@@ -389,19 +388,19 @@ export const MENU_ITEMS: MenuItem[] = [
   },
   {
     id: 'magical-masala-bhel',
-    name: 'Magical Masala Spicy Bhel',
+    name: 'Classic Pani Puri (6 Pcs)',
     price: 100,
     category: 'chatpate-chaat',
-    description: 'A fiery variation of our classic Bhel Puri, tossed with extra green chillies and a special secret hot masala powder that packs a punch.',
+    description: 'Crispy hollow puris stuffed with potato-chickpea masala, served with chilled spiced mint-coriander water and sweet dates-tamarind water.',
     inclusions: [
-      'Puffed Rice & Spiced Peanuts',
-      'Special Spicy Masala Dust',
-      'Green Chilli Paste & Garlic Chutney',
-      'Sev & Papdi crunchies'
+      '6 Hollow Crispy Puris',
+      'Potato & Kabuli Chana filling',
+      'Chilled Mint Spiced Water',
+      'Sweet Dates-Tamarind Water'
     ],
     specifications: [
       { label: 'ENERGY_OUTPUT', value: '200 kcal' },
-      { label: 'SPICE_LEVEL', value: 'EXTREME' },
+      { label: 'SPICE_LEVEL', value: 'MEDIUM-SPICY' },
       { label: 'CARB_CHARGE', value: '31g' },
       { label: 'PREP_CYCLES', value: '5 mins' }
     ],
@@ -411,10 +410,10 @@ export const MENU_ITEMS: MenuItem[] = [
   },
   {
     id: 'sukha-bhel-puri',
-    name: 'Sukha (Dry) Bhel Puri',
+    name: 'Dry Masala Sukha Bhel',
     price: 70,
     category: 'chatpate-chaat',
-    description: 'A crunchy mixture of puffed rice, roasted peanuts, sev, papdi, and chopped veggies seasoned only with dry mango powder, lemon juice, and green herbs (no wet chutneys).',
+    description: 'A crunchy mixture of puffed rice, roasted peanuts, sev, papdi, and chopped veggies seasoned only with dry mango powder, lemon juice, and green herbs.',
     inclusions: [
       'Dry Crispy Bhel Mix',
       'Lemon Squeeze',
@@ -433,7 +432,7 @@ export const MENU_ITEMS: MenuItem[] = [
   },
   {
     id: 'nippat-masala',
-    name: 'Nippat Masala Dry',
+    name: 'Crispy Nippat Masala',
     price: 100,
     category: 'chatpate-chaat',
     description: 'A popular Karnataka snack made by crushing flat, crunchy fried Nippat biscuits and tossing them with grated carrots, chopped onions, tamarind-garlic chutney, and red chilli powder.',
@@ -455,7 +454,7 @@ export const MENU_ITEMS: MenuItem[] = [
   },
   {
     id: 'panipuri',
-    name: 'Pani Puri (Gol Gappe)',
+    name: 'Fiery 5-Water Pani Puri',
     price: 80,
     category: 'chatpate-chaat',
     description: 'Six crispy flour semolina balls stuffed with spicy potato-chickpea mixture, served with five distinct flavors of spiced chilled water (Mint, Garlic, Hing, Lemon, Sweet Tamarind).',

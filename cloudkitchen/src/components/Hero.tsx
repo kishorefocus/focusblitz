@@ -161,7 +161,7 @@ const ConcentricBadge: React.FC = () => (
         textShadow: '0 0 20px rgba(255,84,0,0.8), 0 0 50px rgba(255,84,0,0.4)',
         userSelect: 'none',
       }}>
-        उ
+        फ्
       </span>
       <span style={{
         fontFamily: 'var(--font-roboto-mono), monospace',
@@ -171,7 +171,7 @@ const ConcentricBadge: React.FC = () => (
         marginTop: '8px',
         textTransform: 'uppercase',
       }}>
-        UK // 560037
+        FT // 560064
       </span>
     </div>
 
@@ -225,8 +225,8 @@ const useTypewriter = (lines: string[], speed = 45) => {
 /* ─── HERO ─────────────────────────────────────────────────────────── */
 export const Hero: React.FC = () => {
   const termLines = [
-    '> INITIALIZING UTKARSH_KITCHEN_CLOUD.OS _',
-    '> CONNECTING TO MARATHAHALLI NODE _',
+    '> INITIALIZING FLAVOUR_TRAILS_CLOUD.OS _',
+    '> CONNECTING TO YELAHANKA NODE _',
     '> CHASKA-FOOD PROTOCOL: ACTIVE',
     '> GUJARATI SNACKS & CHAAT • FRESH DAILY',
   ];
@@ -284,7 +284,7 @@ export const Hero: React.FC = () => {
             style={{ display: 'flex', gap: '10px', marginBottom: '36px', flexWrap: 'wrap' }}
           >
             {[
-              { icon: '⛙', text: 'NODE-37 / MARATHAHALLI' },
+              { icon: '⛙', text: 'NODE-64 / YELAHANKA' },
               { icon: '⚡', text: 'DELIVERY-FIRST KITCHEN' },
             ].map((b) => (
               <span
@@ -311,7 +311,7 @@ export const Hero: React.FC = () => {
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.6, delay: 0.25 }}
           >
-            {/* SOLID WHITE — "UTKARSH" */}
+            {/* SOLID WHITE — "FLAVOUR" */}
             <h1
               style={{
                 fontFamily: '"Barlow Condensed", "Orbitron", sans-serif',
@@ -324,9 +324,9 @@ export const Hero: React.FC = () => {
                 margin: 0,
               }}
             >
-              UTKARSH
+              FLAVOUR
             </h1>
-            {/* STROKE OUTLINE — "KITCHEN" */}
+            {/* STROKE OUTLINE — "TRAILS" */}
             <h1
               style={{
                 fontFamily: '"Barlow Condensed", "Orbitron", sans-serif',
@@ -341,7 +341,7 @@ export const Hero: React.FC = () => {
                 textShadow: '0 0 40px rgba(255,84,0,0.15)',
               }}
             >
-              KITCHEN
+              TRAILS
             </h1>
           </motion.div>
 
