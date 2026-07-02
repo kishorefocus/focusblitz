@@ -28,21 +28,21 @@ const robotoMono = Roboto_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "J H B Cloud Kitchen | Authentic Gujarati Snacks & Chaat — Whitefield, Bengaluru",
+  title: "Utkarsh Cloud Kitchen | Authentic Gujarati Snacks & Chaat — Marathahalli, Bengaluru",
   description:
     "Experience authentic Surti Khaman, delicious Vada Pav, and chatpate chaat from Bengaluru's premier cloud kitchen. Order now for fast delivery.",
   keywords: [
-    "J H B Cloud Kitchen",
+    "Utkarsh Cloud Kitchen",
     "Cloud Kitchen",
-    "Whitefield",
-    "Veerabhadraswamy Nilaya",
+    "Marathahalli",
+    "Rajashree Layout",
     "Surti Khaman",
     "Vada Pav",
     "Aloo Tikki Chaat",
     "Pani Puri",
     "Bengaluru Food Delivery",
   ],
-  authors: [{ name: "J H B Cloud Kitchen Team" }],
+  authors: [{ name: "Utkarsh Cloud Kitchen Team" }],
 };
 
 export const viewport = {
