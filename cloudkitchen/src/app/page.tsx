@@ -13,7 +13,7 @@ const steps = [
   {
     code: 'PHASE_01',
     title: 'Source',
-    desc: 'Drone-synchronized delivery to your coordinates in under 35 minutes, anywhere in the Whitefield & Laughing Waters radius.',
+    desc: 'Drone-synchronized delivery to your coordinates in under 35 minutes, anywhere in the Whitefield radius.',
   },
   {
     code: 'PHASE_02',
@@ -28,7 +28,7 @@ const steps = [
   {
     code: 'PHASE_04',
     title: 'Deliver',
-    desc: 'Drone-synchronized delivery to your coordinates in under 35 minutes, anywhere in the Whitefield & Laughing Waters radius.',
+    desc: 'Drone-synchronized delivery to your coordinates in under 35 minutes, anywhere in the Whitefield radius.',
   },
 ];
 
@@ -44,7 +44,7 @@ const faqs = [
   },
   {
     q: 'Are the recipes authentic?',
-    a: 'Absolutely. Our masala formulas are multi-generational Gujarati and Leetu\'s recipes, precision-replicated with modern kitchen tech.',
+    a: 'Absolutely. Our masala formulas are multi-generational Gujarati and J H B recipes, precision-replicated with modern kitchen tech.',
   },
   {
     q: 'What payment methods are accepted?',
@@ -184,7 +184,7 @@ export default function Home() {
             <span style={{
               fontFamily: '"Barlow Condensed", "Orbitron", sans-serif',
               fontWeight: 900, fontSize: '15px', color: '#000',
-            }}>LK</span>
+            }}>JHB</span>
           </div>
           <span style={{
             fontFamily: '"Barlow Condensed", "Orbitron", sans-serif',
@@ -192,7 +192,7 @@ export default function Home() {
             letterSpacing: '0.15em', color: '#ffffff',
             textTransform: 'uppercase',
           }}>
-            LEETU'S KITCHEN // CLOUD KITCHEN
+            J H B CLOUD KITCHEN // CLOUD KITCHEN
           </span>
         </div>
 
@@ -453,7 +453,7 @@ export default function Home() {
 
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(220px, 1fr))', gap: '32px' }}>
             {[
-              { label: '📍 ADDRESS', lines: ['Flat No. 104, Greenview Apartment,', 'Laughing Waters, 2nd Main Rd,', 'Whitefield, Bengaluru,', 'Karnataka 560066'] },
+              { label: '📍 ADDRESS', lines: ['Veerabhadraswamy Nilaya, J H B,', 'Sree Shanimahatma Temple Rd,', 'Whitefield, Bengaluru,', 'Karnataka 560066'] },
               { label: '🕒 HOURS', lines: ['11:00 — 23:00 IST', 'Mon – Sun', 'All major holidays'] },
               { label: '📡 COMMS', lines: ['+91 9999999999', 'WhatsApp Order', 'Also on Zomato & Swiggy'] },
               { label: '// STATUS', lines: ['● Kitchen ONLINE', '⚡ Delivery: ~35min', '🔥 Orders flowing'] },
@@ -497,14 +497,14 @@ export default function Home() {
             width: '28px', height: '28px', background: '#ff5400',
             display: 'flex', alignItems: 'center', justifyContent: 'center', borderRadius: '3px',
           }}>
-            <span style={{ fontFamily: '"Barlow Condensed", sans-serif', fontWeight: 900, fontSize: '12px', color: '#000' }}>LK</span>
+            <span style={{ fontFamily: '"Barlow Condensed", sans-serif', fontWeight: 900, fontSize: '12px', color: '#000' }}>JHB</span>
           </div>
           <span style={{
             fontFamily: 'var(--font-roboto-mono), monospace',
             fontSize: '10px', color: 'rgba(255,255,255,0.3)',
             letterSpacing: '0.05em',
           }}>
-            © {new Date().getFullYear()} LEETU'S KITCHEN CLOUD KITCHEN [NODE_066]
+            © {new Date().getFullYear()} J H B CLOUD KITCHEN CLOUD KITCHEN [NODE_066]
           </span>
         </div>
         <div style={{ display: 'flex', gap: '6px', alignItems: 'center' }}>

@@ -28,21 +28,21 @@ const robotoMono = Roboto_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Leetu's Kitchen (Cloud Kitchen) | Authentic Gujarati Snacks & Chaat — Whitefield, Bengaluru",
+  title: "J H B Cloud Kitchen | Authentic Gujarati Snacks & Chaat — Whitefield, Bengaluru",
   description:
     "Experience authentic Surti Khaman, delicious Vada Pav, and chatpate chaat from Bengaluru's premier cloud kitchen. Order now for fast delivery.",
   keywords: [
-    "Leetu's Kitchen",
+    "J H B Cloud Kitchen",
     "Cloud Kitchen",
     "Whitefield",
-    "Laughing Waters",
+    "Veerabhadraswamy Nilaya",
     "Surti Khaman",
     "Vada Pav",
     "Aloo Tikki Chaat",
     "Pani Puri",
     "Bengaluru Food Delivery",
   ],
-  authors: [{ name: "Leetu's Kitchen Team" }],
+  authors: [{ name: "J H B Cloud Kitchen Team" }],
 };
 
 export const viewport = {
