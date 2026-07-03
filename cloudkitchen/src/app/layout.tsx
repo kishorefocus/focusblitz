@@ -28,21 +28,23 @@ const robotoMono = Roboto_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Juice And Sandwich Junction | Juice Shop BTM Layout, Bengaluru",
+  title: "Juice And FALOODA CAFE | Juice Shop BTM, Bengaluru",
   description:
     "Experience 100% pure fresh juices, smoothies, shakes, and mocktails from Bengaluru's premier juice shop. Order now for fast delivery.",
   keywords: [
-    "Juice And Sandwich Junction",
+    "Juice And FALOODA CAFE",
+    "FALOODA CAFE",
     "Juice Shop",
     "BTM Layout",
-    "Phase 4",
+    "Maruti Nagar",
+    "Zuzuvadi",
     "Fresh Juice",
     "Mocktails",
     "Smoothies",
     "Shakes",
     "Bengaluru Food Delivery",
   ],
-  authors: [{ name: "Juice And Sandwich Junction Team" }],
+  authors: [{ name: "Juice And FALOODA CAFE Team" }],
 };
 
 export const viewport = {

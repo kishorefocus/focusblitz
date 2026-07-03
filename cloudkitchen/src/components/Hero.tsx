@@ -161,7 +161,7 @@ const ConcentricBadge: React.FC = () => (
         textShadow: '0 0 20px rgba(13,242,101,0.8), 0 0 50px rgba(13,242,101,0.4)',
         userSelect: 'none',
       }}>
-        ज
+        फ़
       </span>
       <span style={{
         fontFamily: 'var(--font-roboto-mono), monospace',
@@ -171,7 +171,7 @@ const ConcentricBadge: React.FC = () => (
         marginTop: '8px',
         textTransform: 'uppercase',
       }}>
-        JSJ // 560076
+        FC // 560068
       </span>
     </div>
 
@@ -225,7 +225,7 @@ const useTypewriter = (lines: string[], speed = 45) => {
 /* ─── HERO ─────────────────────────────────────────────────────────── */
 export const Hero: React.FC = () => {
   const termLines = [
-    '> INITIALIZING JS_JUNCTION_JUICES.OS _',
+    '> INITIALIZING FALOODA_CAFE_JUICES.OS _',
     '> CONNECTING TO BTM NODE _',
     '> FRESH-JUICE PROTOCOL: ACTIVE',
     '> 100% PURE JUICES & COLD DRINKS',
@@ -284,7 +284,7 @@ export const Hero: React.FC = () => {
             style={{ display: 'flex', gap: '10px', marginBottom: '36px', flexWrap: 'wrap' }}
           >
             {[
-              { icon: '⛙', text: 'NODE-76 / BTM' },
+              { icon: '⛙', text: 'NODE-68 / BTM' },
               { icon: '⚡', text: 'FRESH JUICES & MOCKTAILS' },
             ].map((b) => (
               <span
@@ -311,7 +311,7 @@ export const Hero: React.FC = () => {
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.6, delay: 0.25 }}
           >
-            {/* SOLID WHITE — "JUICE &" */}
+            {/* SOLID WHITE — "FALOODA" */}
             <h1
               style={{
                 fontFamily: '"Barlow Condensed", "Orbitron", sans-serif',
@@ -324,9 +324,9 @@ export const Hero: React.FC = () => {
                 margin: 0,
               }}
             >
-              JUICE &
+              FALOODA
             </h1>
-            {/* STROKE OUTLINE — "SANDWICH JN" */}
+            {/* STROKE OUTLINE — "CAFE" */}
             <h1
               style={{
                 fontFamily: '"Barlow Condensed", "Orbitron", sans-serif',
@@ -341,7 +341,7 @@ export const Hero: React.FC = () => {
                 textShadow: '0 0 40px rgba(13,242,101,0.15)',
               }}
             >
-              SANDWICH JN
+              CAFE
             </h1>
           </motion.div>
 
