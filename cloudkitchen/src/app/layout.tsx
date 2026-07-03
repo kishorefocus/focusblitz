@@ -28,21 +28,21 @@ const robotoMono = Roboto_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Orange Bake & Juice | Juice Shop Old Madiwala, Bengaluru",
+  title: "Juice And Sandwich Junction | Juice Shop BTM Layout, Bengaluru",
   description:
     "Experience 100% pure fresh juices, smoothies, shakes, and mocktails from Bengaluru's premier juice shop. Order now for fast delivery.",
   keywords: [
-    "Orange Bake & Juice",
+    "Juice And Sandwich Junction",
     "Juice Shop",
-    "Old Madiwala",
-    "Chikka Madivala",
+    "BTM Layout",
+    "Phase 4",
     "Fresh Juice",
     "Mocktails",
     "Smoothies",
     "Shakes",
     "Bengaluru Food Delivery",
   ],
-  authors: [{ name: "Orange Bake & Juice Team" }],
+  authors: [{ name: "Juice And Sandwich Junction Team" }],
 };
 
 export const viewport = {

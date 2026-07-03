@@ -13,7 +13,7 @@ const steps = [
   {
     code: 'PHASE_01',
     title: 'Source',
-    desc: 'Drone-synchronized delivery to your coordinates in under 35 minutes, anywhere in the Madiwala radius.',
+    desc: 'Drone-synchronized delivery to your coordinates in under 35 minutes, anywhere in the BTM radius.',
   },
   {
     code: 'PHASE_02',
@@ -28,7 +28,7 @@ const steps = [
   {
     code: 'PHASE_04',
     title: 'Deliver',
-    desc: 'Drone-synchronized delivery to your coordinates in under 35 minutes, anywhere in the Madiwala radius.',
+    desc: 'Drone-synchronized delivery to your coordinates in under 35 minutes, anywhere in the BTM radius.',
   },
 ];
 
@@ -36,7 +36,7 @@ const steps = [
 const faqs = [
   {
     q: 'What is the delivery radius?',
-    a: 'We cover a 15km radius from our Madiwala node. Standard ETA is 30–45 minutes depending on order volume.',
+    a: 'We cover a 15km radius from our BTM node. Standard ETA is 30–45 minutes depending on order volume.',
   },
   {
     q: 'Can I pre-schedule an order?',
@@ -44,7 +44,7 @@ const faqs = [
   },
   {
     q: 'Are the recipes authentic?',
-    a: 'Absolutely. Our juice formulas are multi-generational organic and Orange Bake & Juice recipes, precision-replicated with modern kitchen tech.',
+    a: 'Absolutely. Our juice formulas are multi-generational organic and Juice & Sandwich Junction recipes, precision-replicated with modern kitchen tech.',
   },
   {
     q: 'What payment methods are accepted?',
@@ -184,7 +184,7 @@ export default function Home() {
             <span style={{
               fontFamily: '"Barlow Condensed", "Orbitron", sans-serif',
               fontWeight: 900, fontSize: '15px', color: '#000',
-            }}>OBJ</span>
+            }}>JSJ</span>
           </div>
           <span style={{
             fontFamily: '"Barlow Condensed", "Orbitron", sans-serif',
@@ -192,7 +192,7 @@ export default function Home() {
             letterSpacing: '0.15em', color: '#ffffff',
             textTransform: 'uppercase',
           }}>
-            ORANGE BAKE & JUICE
+            JUICE & SANDWICH JUNCTION
           </span>
         </div>
 
@@ -453,7 +453,7 @@ export default function Home() {
 
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(220px, 1fr))', gap: '32px' }}>
             {[
-              { label: '📍 ADDRESS', lines: ['404/2, 1, 13th Cross, Old Madiwala,', 'Chikka Madivala, 1st Stage,', 'BTM 1st Stage, Bengaluru,', 'Karnataka 560068'] },
+              { label: '📍 ADDRESS', lines: ['727, 10th Main Rd, Phase 4,', 'BTM Layout, Bengaluru,', 'Karnataka 560076'] },
               { label: '🕒 HOURS', lines: ['11:00 — 23:00 IST', 'Mon – Sun', 'All major holidays'] },
               { label: '📡 COMMS', lines: ['+91 9999999999', 'WhatsApp Order', 'Also on Zomato & Swiggy'] },
               { label: '// STATUS', lines: ['● Juice Shop OPEN', '⚡ Delivery: ~35min', '🍹 Juices flowing'] },
@@ -497,14 +497,14 @@ export default function Home() {
             width: '28px', height: '28px', background: '#0df265',
             display: 'flex', alignItems: 'center', justifyContent: 'center', borderRadius: '3px',
           }}>
-            <span style={{ fontFamily: '"Barlow Condensed", sans-serif', fontWeight: 900, fontSize: '12px', color: '#000' }}>OBJ</span>
+            <span style={{ fontFamily: '"Barlow Condensed", sans-serif', fontWeight: 900, fontSize: '12px', color: '#000' }}>JSJ</span>
           </div>
           <span style={{
             fontFamily: 'var(--font-roboto-mono), monospace',
             fontSize: '10px', color: 'rgba(255,255,255,0.3)',
             letterSpacing: '0.05em',
           }}>
-            © {new Date().getFullYear()} ORANGE BAKE & JUICE [NODE_068]
+            © {new Date().getFullYear()} JUICE & SANDWICH JUNCTION [NODE_076]
           </span>
         </div>
         <div style={{ display: 'flex', gap: '6px', alignItems: 'center' }}>
@@ -514,7 +514,7 @@ export default function Home() {
             fontSize: '9px', color: '#0df265',
             letterSpacing: '0.1em', textTransform: 'uppercase',
           }}>
-            12.9226° N, 77.6219° E // 560068
+            12.9100° N, 77.6020° E // 560076
           </span>
         </div>
       </footer>
