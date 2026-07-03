@@ -28,21 +28,21 @@ const robotoMono = Roboto_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Cafe Corner | Fresh Juice Shop BTM, Bengaluru",
+  title: "Orange Bake & Juice | Juice Shop Old Madiwala, Bengaluru",
   description:
     "Experience 100% pure fresh juices, smoothies, shakes, and mocktails from Bengaluru's premier juice shop. Order now for fast delivery.",
   keywords: [
-    "Cafe Corner",
+    "Orange Bake & Juice",
     "Juice Shop",
-    "BTM Layout",
-    "Jay Bheema Nagar",
+    "Old Madiwala",
+    "Chikka Madivala",
     "Fresh Juice",
     "Mocktails",
     "Smoothies",
     "Shakes",
     "Bengaluru Food Delivery",
   ],
-  authors: [{ name: "Cafe Corner Juice Team" }],
+  authors: [{ name: "Orange Bake & Juice Team" }],
 };
 
 export const viewport = {
