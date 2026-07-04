@@ -44,7 +44,7 @@ const faqs = [
   },
   {
     q: 'Are the recipes authentic?',
-    a: 'Absolutely. Our juice formulas are multi-generational organic and Juice Lover Koramangala recipes, precision-replicated with modern kitchen tech.',
+    a: 'Absolutely. Our juice formulas are multi-generational organic and Cool Point recipes, precision-replicated with modern kitchen tech.',
   },
   {
     q: 'What payment methods are accepted?',
@@ -184,7 +184,7 @@ export default function Home() {
             <span style={{
               fontFamily: '"Barlow Condensed", "Orbitron", sans-serif',
               fontWeight: 900, fontSize: '15px', color: '#000',
-            }}>JL</span>
+            }}>CP</span>
           </div>
           <span style={{
             fontFamily: '"Barlow Condensed", "Orbitron", sans-serif',
@@ -192,7 +192,7 @@ export default function Home() {
             letterSpacing: '0.15em', color: '#ffffff',
             textTransform: 'uppercase',
           }}>
-            JUICE LOVER KORAMANGALA
+            COOL POINT // JUICE SHOP
           </span>
         </div>
 
@@ -453,7 +453,7 @@ export default function Home() {
 
           <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(220px, 1fr))', gap: '32px' }}>
             {[
-              { label: '📍 ADDRESS', lines: ['Paragon Prima, 39, 8th Main Rd,', '4th Block, Koramangala, Bengaluru,', 'Karnataka 560034'] },
+              { label: '📍 ADDRESS', lines: ['Jyoti Nivas College Rd, KHB Colony,', 'Koramangala Industrial Layout,', 'Koramangala, Bengaluru, Karnataka', 'Pin 560095'] },
               { label: '🕒 HOURS', lines: ['11:00 — 23:00 IST', 'Mon – Sun', 'All major holidays'] },
               { label: '📡 COMMS', lines: ['+91 9999999999', 'WhatsApp Order', 'Also on Zomato & Swiggy'] },
               { label: '// STATUS', lines: ['● Juice Shop OPEN', '⚡ Delivery: ~35min', '🍹 Juices flowing'] },
@@ -497,14 +497,14 @@ export default function Home() {
             width: '28px', height: '28px', background: '#0df265',
             display: 'flex', alignItems: 'center', justifyContent: 'center', borderRadius: '3px',
           }}>
-            <span style={{ fontFamily: '"Barlow Condensed", sans-serif', fontWeight: 900, fontSize: '12px', color: '#000' }}>JL</span>
+            <span style={{ fontFamily: '"Barlow Condensed", sans-serif', fontWeight: 900, fontSize: '12px', color: '#000' }}>CP</span>
           </div>
           <span style={{
             fontFamily: 'var(--font-roboto-mono), monospace',
             fontSize: '10px', color: 'rgba(255,255,255,0.3)',
             letterSpacing: '0.05em',
           }}>
-            © {new Date().getFullYear()} JUICE LOVER KORAMANGALA [NODE_034]
+            © {new Date().getFullYear()} COOL POINT JUICE SHOP [NODE_095]
           </span>
         </div>
         <div style={{ display: 'flex', gap: '6px', alignItems: 'center' }}>
@@ -514,7 +514,7 @@ export default function Home() {
             fontSize: '9px', color: '#0df265',
             letterSpacing: '0.1em', textTransform: 'uppercase',
           }}>
-            12.9340° N, 77.6240° E // 560034
+            12.9330° N, 77.6160° E // 560095
           </span>
         </div>
       </footer>

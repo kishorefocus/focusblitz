@@ -28,21 +28,22 @@ const robotoMono = Roboto_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Juice Lover Koramangala | Juice Shop Koramangala, Bengaluru",
+  title: "Cool Point | Juice Shop Koramangala, Bengaluru",
   description:
     "Experience 100% pure fresh juices, smoothies, shakes, and mocktails from Bengaluru's premier juice shop. Order now for fast delivery.",
   keywords: [
-    "Juice Lover Koramangala",
-    "Koramangala Juice Shop",
-    "Koramangala 4th Block",
-    "Paragon Prima",
+    "Cool Point",
+    "Juice Shop",
+    "Koramangala",
+    "Jyoti Nivas College Rd",
+    "KHB Colony",
     "Fresh Juice",
     "Mocktails",
     "Smoothies",
     "Shakes",
     "Bengaluru Food Delivery",
   ],
-  authors: [{ name: "Juice Lover Koramangala Team" }],
+  authors: [{ name: "Cool Point Juice Team" }],
 };
 
 export const viewport = {
