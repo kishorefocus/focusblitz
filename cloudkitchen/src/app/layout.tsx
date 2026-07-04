@@ -28,23 +28,23 @@ const robotoMono = Roboto_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Bee natural juice and sugarcane | Juice Shop Koramangala, Bengaluru",
+  title: "The Fresh Fuel Juice Shop | Juice Shop Madiwala, Bengaluru",
   description:
     "Experience 100% pure fresh juices, smoothies, shakes, and mocktails from Bengaluru's premier juice shop. Order now for fast delivery.",
   keywords: [
-    "Bee natural juice and sugarcane",
-    "Sugarcane Juice",
+    "The Fresh Fuel Juice Shop",
+    "Fresh Fuel Juice",
     "Juice Shop",
-    "Koramangala",
-    "80 Feet Rd",
-    "3rd Block",
+    "Madiwala",
+    "Zuzuvadi",
+    "BTM 1st Stage",
     "Fresh Juice",
     "Mocktails",
     "Smoothies",
     "Shakes",
     "Bengaluru Food Delivery",
   ],
-  authors: [{ name: "Bee natural juice and sugarcane Team" }],
+  authors: [{ name: "The Fresh Fuel Juice Shop Team" }],
 };
 
 export const viewport = {
