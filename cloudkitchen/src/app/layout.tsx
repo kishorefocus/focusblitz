@@ -28,22 +28,23 @@ const robotoMono = Roboto_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Cool Point | Juice Shop Koramangala, Bengaluru",
+  title: "Bee natural juice and sugarcane | Juice Shop Koramangala, Bengaluru",
   description:
     "Experience 100% pure fresh juices, smoothies, shakes, and mocktails from Bengaluru's premier juice shop. Order now for fast delivery.",
   keywords: [
-    "Cool Point",
+    "Bee natural juice and sugarcane",
+    "Sugarcane Juice",
     "Juice Shop",
     "Koramangala",
-    "Jyoti Nivas College Rd",
-    "KHB Colony",
+    "80 Feet Rd",
+    "3rd Block",
     "Fresh Juice",
     "Mocktails",
     "Smoothies",
     "Shakes",
     "Bengaluru Food Delivery",
   ],
-  authors: [{ name: "Cool Point Juice Team" }],
+  authors: [{ name: "Bee natural juice and sugarcane Team" }],
 };
 
 export const viewport = {
