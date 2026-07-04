@@ -28,23 +28,21 @@ const robotoMono = Roboto_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Juice And FALOODA CAFE | Juice Shop BTM, Bengaluru",
+  title: "Juice Lover Koramangala | Juice Shop Koramangala, Bengaluru",
   description:
     "Experience 100% pure fresh juices, smoothies, shakes, and mocktails from Bengaluru's premier juice shop. Order now for fast delivery.",
   keywords: [
-    "Juice And FALOODA CAFE",
-    "FALOODA CAFE",
-    "Juice Shop",
-    "BTM Layout",
-    "Maruti Nagar",
-    "Zuzuvadi",
+    "Juice Lover Koramangala",
+    "Koramangala Juice Shop",
+    "Koramangala 4th Block",
+    "Paragon Prima",
     "Fresh Juice",
     "Mocktails",
     "Smoothies",
     "Shakes",
     "Bengaluru Food Delivery",
   ],
-  authors: [{ name: "Juice And FALOODA CAFE Team" }],
+  authors: [{ name: "Juice Lover Koramangala Team" }],
 };
 
 export const viewport = {
