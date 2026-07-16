@@ -5,6 +5,7 @@ import { motion, AnimatePresence } from 'framer-motion';
 import { useCart } from '../context/CartContext';
 import { MENU_CATEGORIES, MENU_ITEMS, MenuItem } from '../data/menu';
 import { Search, Plus } from 'lucide-react';
+import { useIsMobile } from '../hooks/useIsMobile';
 
 /* ─── CONSTANTS ──────────────────────────────────────────────────────── */
 
@@ -344,6 +345,7 @@ export const HolographicMenu: React.FC = () => {
   const { addToCart, setSelectedItemForDetail, setIsOrderModalOpen } = useCart();
   const [activeCategory, setActiveCategory] = useState<string>('surti-specials');
   const [search, setSearch] = useState('');
+  const isMobile = useIsMobile(768);
 
   const filtered = MENU_ITEMS.filter((item) => {
     const catMatch = item.category === activeCategory;
@@ -369,7 +371,7 @@ export const HolographicMenu: React.FC = () => {
       id="menu"
       style={{
         background: '#0a0a0a',
-        padding: '64px 48px',
+        padding: isMobile ? '40px 16px' : '64px 48px',
         borderTop: '1px solid rgba(255,255,255,0.05)',
       }}
     >
@@ -379,10 +381,10 @@ export const HolographicMenu: React.FC = () => {
         <div
           style={{
             display: 'flex',
-            alignItems: 'flex-end',
+            flexDirection: isMobile ? 'column' : 'row',
+            alignItems: isMobile ? 'stretch' : 'flex-end',
             justifyContent: 'space-between',
-            flexWrap: 'wrap',
-            gap: '16px',
+            gap: isMobile ? '20px' : '16px',
             marginBottom: '32px',
             paddingBottom: '24px',
             borderBottom: '1px solid rgba(255,255,255,0.05)',
@@ -398,7 +400,7 @@ export const HolographicMenu: React.FC = () => {
           </div>
 
           {/* Search field */}
-          <div style={{ position: 'relative', width: '280px' }}>
+          <div style={{ position: 'relative', width: isMobile ? '100%' : '280px' }}>
             <Search
               size={12}
               style={{
@@ -435,12 +437,15 @@ export const HolographicMenu: React.FC = () => {
 
         {/* ── CATEGORY TABS ── */}
         <div
+          className="no-scrollbar"
           style={{
             display: 'flex',
             gap: 0,
             borderBottom: '1px solid rgba(255,255,255,0.07)',
             marginBottom: '4px',
             overflowX: 'auto',
+            scrollbarWidth: 'none',
+            msOverflowStyle: 'none',
           }}
         >
           {MENU_CATEGORIES.map((cat) => {
@@ -452,7 +457,7 @@ export const HolographicMenu: React.FC = () => {
                 onClick={() => { setActiveCategory(cat.id); setSearch(''); }}
                 style={{
                   position: 'relative',
-                  padding: '0 20px 16px',
+                  padding: isMobile ? '0 12px 12px' : '0 20px 16px',
                   background: 'none',
                   border: 'none',
                   cursor: 'pointer',
@@ -512,7 +517,9 @@ export const HolographicMenu: React.FC = () => {
         <div
           style={{
             display: 'flex',
+            flexDirection: isMobile ? 'column' : 'row',
             justifyContent: 'space-between',
+            gap: isMobile ? '8px' : '0',
             fontFamily: 'var(--font-roboto-mono), monospace',
             fontSize: '8px',
             color: 'rgba(255,255,255,0.22)',
