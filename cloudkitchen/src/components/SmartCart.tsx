@@ -4,6 +4,7 @@ import React, { useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { useCart } from '../context/CartContext';
 import { X, Plus, Minus, Trash2, Send, ShoppingBag } from 'lucide-react';
+import { useIsMobile } from '../hooks/useIsMobile';
 
 export const SmartCart: React.FC = () => {
   const {
@@ -12,6 +13,7 @@ export const SmartCart: React.FC = () => {
     isCartOpen, setIsCartOpen,
   } = useCart();
   const [dispatching, setDispatching] = useState(false);
+  const isMobile = useIsMobile(768);
 
   const packagingTax = Math.ceil(cartTotal * 0.05);
   const grandTotal = cartTotal + packagingTax;
@@ -104,7 +106,7 @@ export const SmartCart: React.FC = () => {
               right: 0,
               bottom: 0,
               zIndex: 9999,
-              width: '380px',
+              width: isMobile ? '100%' : '380px',
               background: '#111111',
               borderLeft: '1px solid rgba(255,255,255,0.08)',
               display: 'flex',
