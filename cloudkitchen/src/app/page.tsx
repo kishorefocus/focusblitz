@@ -6,7 +6,10 @@ import { Hero } from '../components/Hero';
 import { HolographicMenu } from '../components/HolographicMenu';
 import { ThaliModal } from '../components/ThaliModal';
 import { SmartCart } from '../components/SmartCart';
-import { motion, useScroll, useSpring } from 'framer-motion';
+import { motion, useScroll, useSpring, AnimatePresence } from 'framer-motion';
+import { useIsMobile } from '../hooks/useIsMobile';
+import { Menu as MenuIcon, X as XIcon } from 'lucide-react';
+
 
 /* ─── SECTION: HOW IT WORKS ──────────────────────────────────────────── */
 const steps = [
@@ -146,6 +149,8 @@ const chefs = [
 export default function Home() {
   const { scrollYProgress } = useScroll();
   const scaleX = useSpring(scrollYProgress, { stiffness: 120, damping: 30 });
+  const isMobile = useIsMobile(768);
+  const [mobileMenuOpen, setMobileMenuOpen] = useState(false);
 
   return (
     <CartProvider>
@@ -169,7 +174,7 @@ export default function Home() {
         backdropFilter: 'blur(16px)',
         WebkitBackdropFilter: 'blur(16px)',
         borderBottom: '1px solid rgba(255,255,255,0.06)',
-        padding: '0 60px',
+        padding: isMobile ? '0 16px' : '0 60px',
         display: 'flex', alignItems: 'center', justifyContent: 'space-between',
         height: '60px',
       }}>
@@ -188,57 +193,150 @@ export default function Home() {
           </div>
           <span style={{
             fontFamily: '"Barlow Condensed", "Orbitron", sans-serif',
-            fontWeight: 800, fontSize: '14px',
-            letterSpacing: '0.15em', color: '#ffffff',
+            fontWeight: 800, fontSize: isMobile ? '12px' : '14px',
+            letterSpacing: '0.1em', color: '#ffffff',
             textTransform: 'uppercase',
           }}>
-            DREAM PARADISE // JUICE SHOP
+            {isMobile ? "DREAM PARADISE" : "DREAM PARADISE // JUICE SHOP"}
           </span>
         </div>
 
-        {/* Nav links */}
-        <nav style={{ display: 'flex', gap: '36px' }}>
-          {['MENU', 'ABOUT', 'CONTACT'].map((l) => (
-            <a
-              key={l}
-              href={`#${l.toLowerCase()}`}
-              style={{
-                fontFamily: '"Barlow Condensed", sans-serif',
-                fontWeight: 600, fontSize: '21px',
-                letterSpacing: '0.1em', textTransform: 'uppercase',
-                color: 'rgba(255,255,255,0.5)',
-                textDecoration: 'none',
-                transition: 'color 0.2s',
-              }}
-              onMouseEnter={(e) => { (e.currentTarget as HTMLElement).style.color = '#0df265'; }}
-              onMouseLeave={(e) => { (e.currentTarget as HTMLElement).style.color = 'rgba(255,255,255,0.5)'; }}
-            >
-              {l}
-            </a>
-          ))}
-        </nav>
+        {/* Nav links or Mobile Toggle */}
+        {isMobile ? (
+          <button
+            onClick={() => setMobileMenuOpen(!mobileMenuOpen)}
+            style={{
+              background: 'none',
+              border: '1px solid rgba(255,255,255,0.12)',
+              borderRadius: '4px',
+              padding: '6px',
+              color: '#ffffff',
+              cursor: 'pointer',
+              display: 'flex',
+              alignItems: 'center',
+              justifyContent: 'center',
+              zIndex: 70,
+            }}
+          >
+            {mobileMenuOpen ? <XIcon size={18} /> : <MenuIcon size={18} />}
+          </button>
+        ) : (
+          <>
+            <nav style={{ display: 'flex', gap: '36px' }}>
+              {['MENU', 'ABOUT', 'CONTACT'].map((l) => (
+                <a
+                  key={l}
+                  href={`#${l.toLowerCase()}`}
+                  style={{
+                    fontFamily: '"Barlow Condensed", sans-serif',
+                    fontWeight: 600, fontSize: '21px',
+                    letterSpacing: '0.1em', textTransform: 'uppercase',
+                    color: 'rgba(255,255,255,0.5)',
+                    textDecoration: 'none',
+                    transition: 'color 0.2s',
+                  }}
+                  onMouseEnter={(e) => { (e.currentTarget as HTMLElement).style.color = '#0df265'; }}
+                  onMouseLeave={(e) => { (e.currentTarget as HTMLElement).style.color = 'rgba(255,255,255,0.5)'; }}
+                >
+                  {l}
+                </a>
+              ))}
+            </nav>
 
-        {/* Status pill */}
-        <div style={{
-          display: 'flex', alignItems: 'center', gap: '8px',
-          padding: '6px 14px',
-          border: '1px solid rgba(13,242,101,0.35)',
-          borderRadius: '20px',
-          background: 'rgba(13,242,101,0.05)',
-          fontFamily: 'var(--font-roboto-mono), monospace',
-          fontSize: '10px', fontWeight: 700,
-          color: '#0df265', letterSpacing: '0.1em',
-          textTransform: 'uppercase',
-        }}>
-          <span style={{
-            width: '7px', height: '7px', borderRadius: '50%',
-            background: '#22c55e',
-            boxShadow: '0 0 6px rgba(34,197,94,0.8)',
-            animation: 'badge-pulse 1.8s ease-in-out infinite',
-          }} />
-          ONLINE • BLR
-        </div>
+            {/* Status pill */}
+            <div style={{
+              display: 'flex', alignItems: 'center', gap: '8px',
+              padding: '6px 14px',
+              border: '1px solid rgba(13,242,101,0.35)',
+              borderRadius: '20px',
+              background: 'rgba(13,242,101,0.05)',
+              fontFamily: 'var(--font-roboto-mono), monospace',
+              fontSize: '10px', fontWeight: 700,
+              color: '#0df265', letterSpacing: '0.1em',
+              textTransform: 'uppercase',
+            }}>
+              <span style={{
+                width: '7px', height: '7px', borderRadius: '50%',
+                background: '#22c55e',
+                boxShadow: '0 0 6px rgba(34,197,94,0.8)',
+                animation: 'badge-pulse 1.8s ease-in-out infinite',
+              }} />
+              ONLINE • BLR
+            </div>
+          </>
+        )}
       </header>
+
+      {/* Mobile Menu Drawer */}
+      <AnimatePresence>
+        {isMobile && mobileMenuOpen && (
+          <motion.div
+            initial={{ opacity: 0, height: 0 }}
+            animate={{ opacity: 1, height: 'auto' }}
+            exit={{ opacity: 0, height: 0 }}
+            transition={{ duration: 0.25, ease: 'easeInOut' }}
+            style={{
+              position: 'fixed',
+              top: '60px',
+              left: 0,
+              right: 0,
+              background: 'rgba(10,10,10,0.98)',
+              backdropFilter: 'blur(20px)',
+              WebkitBackdropFilter: 'blur(20px)',
+              borderBottom: '1px solid rgba(255,255,255,0.08)',
+              zIndex: 55,
+              overflow: 'hidden',
+            }}
+          >
+            <div style={{ padding: '24px 20px', display: 'flex', flexDirection: 'column', gap: '20px' }}>
+              <nav style={{ display: 'flex', flexDirection: 'column', gap: '16px' }}>
+                {['MENU', 'ABOUT', 'CONTACT'].map((l) => (
+                  <a
+                    key={l}
+                    href={`#${l.toLowerCase()}`}
+                    onClick={() => setMobileMenuOpen(false)}
+                    style={{
+                      fontFamily: '"Barlow Condensed", sans-serif',
+                      fontWeight: 700, fontSize: '24px',
+                      letterSpacing: '0.08em', textTransform: 'uppercase',
+                      color: '#ffffff', textDecoration: 'none',
+                      padding: '8px 0',
+                      borderBottom: '1px solid rgba(255,255,255,0.04)',
+                    }}
+                  >
+                    {l}
+                  </a>
+                ))}
+              </nav>
+              <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', paddingTop: '10px' }}>
+                <span style={{
+                  fontFamily: 'var(--font-roboto-mono), monospace',
+                  fontSize: '9px', color: 'rgba(255,255,255,0.3)',
+                }}>
+                  SYSTEM STATUS // ACTIVE
+                </span>
+                <div style={{
+                  display: 'flex', alignItems: 'center', gap: '6px',
+                  padding: '4px 10px',
+                  border: '1px solid rgba(13,242,101,0.3)',
+                  borderRadius: '20px',
+                  background: 'rgba(13,242,101,0.03)',
+                  fontFamily: 'var(--font-roboto-mono), monospace',
+                  fontSize: '9px', fontWeight: 700,
+                  color: '#0df265',
+                }}>
+                  <span style={{
+                    width: '6px', height: '6px', borderRadius: '50%',
+                    background: '#22c55e',
+                    boxShadow: '0 0 4px rgba(34,197,94,0.8)',
+                  }} />
+                  ONLINE • BLR
+                </div>
+              </div>
+            </div>
+          </motion.div>
+        )}
+      </AnimatePresence>
 
       {/* ── HERO ── */}
       <Hero />
@@ -249,7 +347,7 @@ export default function Home() {
       {/* ── HOW IT WORKS ── */}
       <section id="about" style={{
         background: '#0a0a0a',
-        padding: '80px 60px',
+        padding: isMobile ? '48px 16px' : '80px 60px',
         borderTop: '1px solid rgba(255,255,255,0.05)',
         position: 'relative', overflow: 'hidden',
       }}>
@@ -328,7 +426,7 @@ export default function Home() {
       {/* ── OPERATORS (CHEFS) ── */}
       <section id="operators" style={{
         background: '#111111',
-        padding: '80px 60px',
+        padding: isMobile ? '48px 16px' : '80px 60px',
         borderTop: '1px solid rgba(255,255,255,0.05)',
       }}>
         <div style={{ maxWidth: '1000px', margin: '0 auto' }}>
@@ -343,7 +441,7 @@ export default function Home() {
             <div style={{ width: '48px', height: '2px', background: '#0df265', margin: '16px auto 0', boxShadow: '0 0 10px rgba(13,242,101,0.6)' }} />
           </motion.div>
 
-          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(340px, 1fr))', gap: '24px' }}>
+          <div style={{ display: 'grid', gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))', gap: '24px' }}>
             {chefs.map((chef, i) => (
               <motion.div
                 key={chef.id}
@@ -413,7 +511,7 @@ export default function Home() {
       {/* ── FAQ ── */}
       <section id="faq" style={{
         background: '#0a0a0a',
-        padding: '80px 60px',
+        padding: isMobile ? '48px 16px' : '80px 60px',
         borderTop: '1px solid rgba(255,255,255,0.05)',
       }}>
         <div style={{ maxWidth: '800px', margin: '0 auto' }}>
@@ -436,7 +534,7 @@ export default function Home() {
       {/* ── CONTACT ── */}
       <section id="contact" style={{
         background: '#111111',
-        padding: '80px 60px',
+        padding: isMobile ? '48px 16px' : '80px 60px',
         borderTop: '1px solid rgba(255,255,255,0.05)',
       }}>
         <div style={{ maxWidth: '1200px', margin: '0 auto' }}>
@@ -488,8 +586,12 @@ export default function Home() {
       <footer style={{
         background: '#070707',
         borderTop: '1px solid rgba(255,255,255,0.05)',
-        padding: '32px 60px',
-        display: 'flex', alignItems: 'center', justifyContent: 'space-between',
+        padding: isMobile ? '24px 16px' : '32px 60px',
+        display: 'flex',
+        flexDirection: isMobile ? 'column' : 'row',
+        alignItems: 'center',
+        justifyContent: isMobile ? 'center' : 'space-between',
+        textAlign: isMobile ? 'center' : 'left',
         flexWrap: 'wrap', gap: '16px',
       }}>
         <div style={{ display: 'flex', alignItems: 'center', gap: '12px' }}>

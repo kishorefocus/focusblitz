@@ -4,10 +4,12 @@ import React, { useEffect, useState } from 'react';
 import { motion, AnimatePresence } from 'framer-motion';
 import { useCart } from '../context/CartContext';
 import { X, HardDrive, ShieldCheck, Plus } from 'lucide-react';
+import { useIsMobile } from '../hooks/useIsMobile';
 
 export const ThaliModal: React.FC = () => {
   const { selectedItemForDetail, setSelectedItemForDetail, isOrderModalOpen, setIsOrderModalOpen, addToCart } = useCart();
   const [mounted, setMounted] = useState(false);
+  const isMobile = useIsMobile(768);
 
   useEffect(() => { setMounted(true); }, []);
 
@@ -45,17 +47,21 @@ export const ThaliModal: React.FC = () => {
               background: '#111111',
               border: '1px solid rgba(255,255,255,0.08)',
               borderRadius: '10px',
-              display: 'flex', flexDirection: 'row',
+              display: 'flex', flexDirection: isMobile ? 'column' : 'row',
               overflow: 'hidden',
-              boxShadow: '0 24px 80px rgba(0,0,0,0.8), 0 0 60px rgba(255,84,0,0.06)',
-              maxHeight: '90vh',
+              boxShadow: '0 24px 80px rgba(0,0,0,0.8), 0 0 60px rgba(13,242,101,0.06)',
+              maxHeight: isMobile ? '95vh' : '90vh',
+              overflowY: isMobile ? 'auto' : 'hidden',
             }}
           >
             {/* Left — Visual Node Showcase */}
             <div style={{
-              width: '45%', minHeight: '480px',
+              width: isMobile ? '100%' : '45%',
+              minHeight: isMobile ? '220px' : '480px',
+              height: isMobile ? '220px' : 'auto',
               background: '#0a0a0a',
-              borderRight: '1px solid rgba(255,255,255,0.06)',
+              borderRight: isMobile ? 'none' : '1px solid rgba(255,255,255,0.06)',
+              borderBottom: isMobile ? '1px solid rgba(255,255,255,0.06)' : 'none',
               position: 'relative', display: 'flex', alignItems: 'center', justifyContent: 'center',
               overflow: 'hidden',
             }}>
@@ -104,8 +110,13 @@ export const ThaliModal: React.FC = () => {
 
             {/* Right — Details */}
             <div style={{
-              flex: 1, padding: '32px', display: 'flex', flexDirection: 'column',
-              justifyContent: 'space-between', overflowY: 'auto', maxHeight: '90vh',
+              flex: 1,
+              padding: isMobile ? '20px 16px' : '32px',
+              display: 'flex',
+              flexDirection: 'column',
+              justifyContent: 'space-between',
+              overflowY: isMobile ? 'visible' : 'auto',
+              maxHeight: isMobile ? 'none' : '90vh',
             }}>
               <div>
                 {/* Status row */}
@@ -143,7 +154,7 @@ export const ThaliModal: React.FC = () => {
                 </p>
 
                 {/* Specs grid */}
-                <div style={{ display: 'grid', gridTemplateColumns: '1fr 1fr', gap: '12px' }}>
+                <div style={{ display: 'grid', gridTemplateColumns: isMobile ? '1fr' : '1fr 1fr', gap: '12px' }}>
                   {/* Inclusions */}
                   <div style={{
                     padding: '16px',
@@ -210,12 +221,15 @@ export const ThaliModal: React.FC = () => {
 
               {/* Footer */}
               <div style={{
-                display: 'flex', alignItems: 'center', justifyContent: 'space-between',
+                display: 'flex',
+                flexDirection: isMobile ? 'column' : 'row',
+                alignItems: isMobile ? 'stretch' : 'center',
+                justifyContent: 'space-between',
                 marginTop: '24px', paddingTop: '20px',
                 borderTop: '1px solid rgba(255,255,255,0.07)',
                 gap: '16px',
               }}>
-                <div>
+                <div style={{ textAlign: isMobile ? 'center' : 'left' }}>
                   <span style={{ fontFamily: 'var(--font-roboto-mono), monospace', fontSize: '9px', color: 'rgba(255,255,255,0.3)', textTransform: 'uppercase', display: 'block', marginBottom: '2px' }}>Total Cost</span>
                   <span style={{
                     fontFamily: '"Barlow Condensed", "Orbitron", sans-serif',
@@ -224,8 +238,8 @@ export const ThaliModal: React.FC = () => {
                     textShadow: '0 0 16px rgba(13,242,101,0.5)',
                   }}>₹{item.price}</span>
                 </div>
-                <div style={{ display: 'flex', gap: '10px' }}>
-                  <button onClick={handleClose} className="btn-ghost" style={{ padding: '12px 20px', fontSize: '11px', borderRadius: '4px' }}>
+                <div style={{ display: 'flex', gap: '10px', justifyContent: isMobile ? 'center' : 'flex-end' }}>
+                  <button onClick={handleClose} className="btn-ghost" style={{ padding: '12px 20px', fontSize: '11px', borderRadius: '4px', flex: isMobile ? 1 : 'none' }}>
                     CANCEL
                   </button>
                   <motion.button
@@ -235,9 +249,10 @@ export const ThaliModal: React.FC = () => {
                     className="btn-orange"
                     style={{
                       padding: '12px 24px', fontSize: '11px', borderRadius: '4px',
-                      display: 'flex', alignItems: 'center', gap: '6px',
+                      display: 'flex', alignItems: 'center', justifyContent: 'center', gap: '6px',
                       opacity: item.isAvailable ? 1 : 0.4,
                       cursor: item.isAvailable ? 'pointer' : 'not-allowed',
+                      flex: isMobile ? 2 : 'none',
                     }}
                   >
                     <Plus size={13} /> ADD TO MANIFEST

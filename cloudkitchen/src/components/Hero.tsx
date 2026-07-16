@@ -2,6 +2,7 @@
 
 import React, { useEffect, useRef, useState } from 'react';
 import { motion } from 'framer-motion';
+import { useIsMobile } from '../hooks/useIsMobile';
 
 /* ─── PARTICLE CANVAS ──────────────────────────────────────────────── */
 const ParticleField: React.FC = () => {
@@ -224,6 +225,7 @@ const useTypewriter = (lines: string[], speed = 45) => {
 
 /* ─── HERO ─────────────────────────────────────────────────────────── */
 export const Hero: React.FC = () => {
+  const isMobile = useIsMobile(768);
   const termLines = [
     '> INITIALIZING DREAM_PARADISE_JUICES.OS _',
     '> CONNECTING TO MADIWALA NODE _',
@@ -237,12 +239,12 @@ export const Hero: React.FC = () => {
       id="hero"
       style={{
         position: 'relative',
-        minHeight: '85vh',
+        minHeight: isMobile ? 'auto' : '85vh',
         display: 'flex',
         flexDirection: 'column',
         justifyContent: 'center',
         overflow: 'hidden',
-        padding: '80px 60px',
+        padding: isMobile ? '40px 16px 60px' : '80px 60px',
         background: '#0a0a0a',
         borderBottom: '1px solid rgba(255,255,255,0.05)',
       }}
@@ -267,21 +269,36 @@ export const Hero: React.FC = () => {
       <div style={{
         position: 'relative', zIndex: 5,
         display: 'flex',
+        flexDirection: isMobile ? 'column' : 'row',
         alignItems: 'center',
         justifyContent: 'space-between',
-        gap: '48px',
+        gap: isMobile ? '32px' : '48px',
         maxWidth: '1400px',
         margin: '0 auto',
         width: '100%',
+        textAlign: isMobile ? 'center' : 'left',
       }}>
         {/* ── LEFT COLUMN ── */}
-        <div style={{ flex: 1, minWidth: 0 }}>
+        <div style={{
+          flex: 1,
+          minWidth: 0,
+          width: '100%',
+          display: 'flex',
+          flexDirection: 'column',
+          alignItems: isMobile ? 'center' : 'flex-start',
+        }}>
           {/* Top badge row */}
           <motion.div
             initial={{ opacity: 0, y: -12 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.1 }}
-            style={{ display: 'flex', gap: '10px', marginBottom: '36px', flexWrap: 'wrap' }}
+            style={{
+              display: 'flex',
+              gap: '10px',
+              marginBottom: '24px',
+              flexWrap: 'wrap',
+              justifyContent: isMobile ? 'center' : 'flex-start',
+            }}
           >
             {[
               { icon: '⛙', text: 'NODE-68 / MADIWALA' },
@@ -310,12 +327,17 @@ export const Hero: React.FC = () => {
             initial={{ opacity: 0, x: -30 }}
             animate={{ opacity: 1, x: 0 }}
             transition={{ duration: 0.6, delay: 0.25 }}
+            style={{
+              display: 'flex',
+              flexDirection: 'column',
+              alignItems: isMobile ? 'center' : 'flex-start',
+            }}
           >
             {/* SOLID WHITE — "DREAM" */}
             <h1
               style={{
                 fontFamily: '"Barlow Condensed", "Orbitron", sans-serif',
-                fontSize: 'clamp(80px, 12vw, 140px)',
+                fontSize: isMobile ? 'clamp(44px, 12vw, 76px)' : 'clamp(80px, 12vw, 140px)',
                 fontWeight: 900,
                 textTransform: 'uppercase',
                 letterSpacing: '-0.01em',
@@ -330,12 +352,12 @@ export const Hero: React.FC = () => {
             <h1
               style={{
                 fontFamily: '"Barlow Condensed", "Orbitron", sans-serif',
-                fontSize: 'clamp(80px, 12vw, 140px)',
+                fontSize: isMobile ? 'clamp(44px, 12vw, 76px)' : 'clamp(80px, 12vw, 140px)',
                 fontWeight: 900,
                 textTransform: 'uppercase',
                 letterSpacing: '-0.01em',
                 lineHeight: 0.92,
-                WebkitTextStroke: '2.5px #0df265',
+                WebkitTextStroke: isMobile ? '1.5px #0df265' : '2.5px #0df265',
                 color: 'transparent',
                 margin: 0,
                 textShadow: '0 0 40px rgba(13,242,101,0.15)',
@@ -370,7 +392,9 @@ export const Hero: React.FC = () => {
               background: 'rgba(0,0,0,0.6)',
               border: '1px solid rgba(255,255,255,0.07)',
               borderRadius: '4px',
+              width: '100%',
               maxWidth: '460px',
+              textAlign: 'left',
             }}
           >
             {termLines.map((line, i) => (
@@ -379,7 +403,7 @@ export const Hero: React.FC = () => {
                 style={{
                   fontFamily: 'var(--font-roboto-mono), monospace',
                   fontSize: '11px',
-                  color: i < (typed.length || 0) ? 'rgba(255,84,0,0.85)' : 'transparent',
+                  color: i < (typed.length || 0) ? 'rgba(13,242,101,0.85)' : 'transparent',
                   lineHeight: '1.8',
                   whiteSpace: 'pre',
                 }}
@@ -401,7 +425,14 @@ export const Hero: React.FC = () => {
             initial={{ opacity: 0, y: 12 }}
             animate={{ opacity: 1, y: 0 }}
             transition={{ duration: 0.5, delay: 0.95 }}
-            style={{ display: 'flex', gap: '12px', marginTop: '36px', flexWrap: 'wrap' }}
+            style={{
+              display: 'flex',
+              gap: '12px',
+              marginTop: '36px',
+              flexWrap: 'wrap',
+              justifyContent: isMobile ? 'center' : 'flex-start',
+              width: '100%',
+            }}
           >
             <a
               href="#menu"
@@ -436,7 +467,17 @@ export const Hero: React.FC = () => {
           initial={{ opacity: 0, scale: 0.85 }}
           animate={{ opacity: 1, scale: 1 }}
           transition={{ duration: 0.8, delay: 0.4, ease: [0.16, 1, 0.3, 1] }}
-          style={{ flexShrink: 0, display: 'flex', alignItems: 'center', justifyContent: 'flex-end' }}
+          style={{
+            flexShrink: 0,
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'center',
+            width: isMobile ? '260px' : '320px',
+            height: isMobile ? '260px' : '320px',
+            transform: isMobile ? 'scale(0.8)' : 'scale(1)',
+            transformOrigin: 'center',
+            marginTop: isMobile ? '24px' : '0',
+          }}
         >
           <ConcentricBadge />
         </motion.div>
