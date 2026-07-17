@@ -1,0 +1,278 @@
+// About.module.scss
+
+.about {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  min-height: 700px;
+  position: relative;
+
+  @media (max-width: 900px) {
+    grid-template-columns: 1fr;
+  }
+}
+
+// ── Image Side ────────────────────────────────────────────────
+.imageWrap {
+  position: relative;
+  overflow: hidden;
+  min-height: 500px;
+}
+
+.imageInner {
+  position: absolute;
+  inset: 0;
+}
+
+.img {
+  object-fit: cover;
+  object-position: center;
+  transition: transform 8s ease;
+
+  &:hover {
+    transform: scale(1.03);
+  }
+}
+
+.imageOverlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(
+    to bottom,
+    rgba(8, 8, 8, 0.15) 0%,
+    rgba(8, 8, 8, 0.5) 100%
+  );
+}
+
+// ── Floating Card ─────────────────────────────────────────────
+.floatCard {
+  position: absolute;
+  top: 2.5rem;
+  right: -1.5rem;
+  z-index: 2;
+  background: white;
+  padding: 1.5rem 2rem;
+  text-align: center;
+  box-shadow: 0 8px 40px rgba(0, 0, 0, 0.15);
+  border-left: 3px solid var(--color-gold);
+
+  @media (max-width: 900px) {
+    right: 1.5rem;
+    top: 1.5rem;
+  }
+}
+
+.floatStar {
+  font-size: 1.25rem;
+  color: var(--color-gold);
+  margin-bottom: 0.5rem;
+}
+
+.floatTitle {
+  font-family: var(--font-display);
+  font-size: 1.5rem;
+  font-weight: 500;
+  color: var(--color-dark);
+  line-height: 1;
+}
+
+.floatSub {
+  font-family: var(--font-body);
+  font-size: 0.7rem;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  color: var(--color-gold);
+  margin-top: 0.35rem;
+}
+
+// ── Stats Strip ───────────────────────────────────────────────
+.statsStrip {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 2;
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  background: rgba(8, 8, 8, 0.85);
+  backdrop-filter: blur(12px);
+  border-top: 1px solid rgba(201, 169, 110, 0.3);
+
+  @media (max-width: 540px) {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+.stat {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1.25rem 0.75rem;
+  border-right: 1px solid rgba(255, 255, 255, 0.06);
+
+  &:last-child {
+    border-right: none;
+  }
+}
+
+.statValue {
+  font-family: var(--font-display);
+  font-size: 1.75rem;
+  font-weight: 400;
+  color: var(--color-gold);
+  line-height: 1;
+}
+
+.statLabel {
+  font-family: var(--font-body);
+  font-size: 0.65rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: rgba(255, 255, 255, 0.5);
+  margin-top: 0.35rem;
+  text-align: center;
+}
+
+// ── Content Side ──────────────────────────────────────────────
+.content {
+  padding: 6rem 5rem;
+  background: var(--color-cream);
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 0;
+
+  @media (max-width: 1200px) {
+    padding: 5rem 3rem;
+  }
+
+  @media (max-width: 900px) {
+    padding: 4rem 2rem;
+  }
+}
+
+.title {
+  font-family: var(--font-display);
+  font-size: clamp(2rem, 3.5vw, 3rem);
+  font-weight: 300;
+  color: var(--color-dark);
+  line-height: 1.2;
+  margin-bottom: 1.5rem;
+
+  em {
+    font-style: italic;
+    color: var(--color-gold);
+  }
+}
+
+.divider {
+  width: 60px;
+  height: 2px;
+  background: linear-gradient(to right, var(--color-gold), var(--color-gold-light));
+  margin-bottom: 2rem;
+}
+
+.lead {
+  font-size: 1.1rem;
+  font-weight: 400;
+  color: var(--color-dark);
+  line-height: 1.75;
+  margin-bottom: 1.25rem;
+}
+
+.body {
+  font-size: 0.95rem;
+  color: var(--color-text-muted);
+  line-height: 1.8;
+  margin-bottom: 2rem;
+}
+
+// ── Highlights ────────────────────────────────────────────────
+.highlights {
+  display: flex;
+  flex-direction: column;
+  gap: 0.75rem;
+  margin-bottom: 2.5rem;
+}
+
+.highlight {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  font-family: var(--font-body);
+  font-size: 0.9rem;
+  color: var(--color-dark);
+}
+
+.highlightDot {
+  color: var(--color-gold);
+  font-size: 0.6rem;
+  flex-shrink: 0;
+}
+
+// ── Socials ───────────────────────────────────────────────────
+.socials {
+  margin-bottom: 2.5rem;
+}
+
+.socialsLabel {
+  font-family: var(--font-body);
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.25em;
+  text-transform: uppercase;
+  color: var(--color-text-muted);
+  margin-bottom: 1rem;
+}
+
+.socialIcons {
+  display: flex;
+  gap: 0.75rem;
+}
+
+.socialIcon {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  color: var(--color-text-muted);
+  background: white;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  text-decoration: none;
+  transition: all 0.3s ease;
+
+  &:hover {
+    color: var(--social-color, var(--color-gold));
+    border-color: var(--social-color, var(--color-gold));
+    background: rgba(0, 0, 0, 0.03);
+    transform: translateY(-3px);
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.1);
+  }
+
+  &:hover .socialTooltip {
+    opacity: 1;
+    transform: translateY(-100%) scale(1);
+  }
+}
+
+.socialTooltip {
+  position: absolute;
+  top: -0.5rem;
+  left: 50%;
+  transform: translateX(-50%) translateY(-100%) scale(0.85);
+  padding: 0.35rem 0.75rem;
+  font-size: 0.7rem;
+  font-weight: 600;
+  white-space: nowrap;
+  color: white;
+  background: var(--color-dark);
+  pointer-events: none;
+  opacity: 0;
+  transition: all 0.2s ease;
+}
+
+.ctaBtn {
+  align-self: flex-start;
+}

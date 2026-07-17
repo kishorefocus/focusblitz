@@ -1,0 +1,361 @@
+// Footer.module.scss
+
+.footer {
+  background: var(--color-dark);
+  color: rgba(255, 255, 255, 0.7);
+  position: relative;
+}
+
+// ── Top Decorative Border ─────────────────────────────────────
+.topBorder {
+  height: 3px;
+  background: linear-gradient(to right, transparent, #c9a96e 30%, #e8d5b7 50%, #c9a96e 70%, transparent);
+}
+
+// ── Book Strip ────────────────────────────────────────────────
+.bookStrip {
+  background: var(--color-dark-2);
+  border-bottom: 1px solid rgba(201, 169, 110, 0.15);
+  padding: 2.5rem 2rem;
+}
+
+.bookStripContent {
+  max-width: var(--container-max);
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.bookStripText {}
+
+.bookStripTitle {
+  font-family: var(--font-display);
+  font-size: 1.75rem;
+  font-weight: 400;
+  color: white;
+  line-height: 1.2;
+}
+
+.bookStripSub {
+  font-family: var(--font-body);
+  font-size: 0.85rem;
+  letter-spacing: 0.1em;
+  color: var(--color-gold);
+  margin-top: 0.35rem;
+}
+
+.bookStripBtn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  padding: 1rem 2.25rem;
+  font-family: var(--font-body);
+  font-size: 0.8rem;
+  font-weight: 600;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: var(--color-dark);
+  background: linear-gradient(135deg, #c9a96e, #e8d5b7);
+  text-decoration: none;
+  flex-shrink: 0;
+  transition: all 0.3s ease;
+
+  &:hover {
+    box-shadow: 0 8px 30px rgba(201, 169, 110, 0.4);
+    transform: translateY(-2px);
+  }
+}
+
+// ── Main Body ─────────────────────────────────────────────────
+.body {
+  padding: 5rem 2rem;
+}
+
+.grid {
+  max-width: var(--container-max);
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 1.8fr 1fr 1fr 1.3fr;
+  gap: 4rem;
+
+  @media (max-width: 1100px) {
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+  }
+
+  @media (max-width: 600px) {
+    grid-template-columns: 1fr;
+    gap: 2.5rem;
+  }
+}
+
+// ── Brand Column ──────────────────────────────────────────────
+.brandCol {}
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  margin-bottom: 1.5rem;
+}
+
+.logoMark {
+  font-size: 2rem;
+  color: var(--color-gold);
+}
+
+.logoName {
+  display: block;
+  font-family: var(--font-display);
+  font-size: 1.35rem;
+  font-weight: 500;
+  color: white;
+  line-height: 1;
+}
+
+.logoTagline {
+  display: block;
+  font-family: var(--font-body);
+  font-size: 0.62rem;
+  font-weight: 500;
+  letter-spacing: 0.3em;
+  text-transform: uppercase;
+  color: var(--color-gold);
+  margin-top: 0.3rem;
+}
+
+.brandText {
+  font-size: 0.9rem;
+  line-height: 1.8;
+  color: rgba(255, 255, 255, 0.5);
+  margin-bottom: 2rem;
+  max-width: 300px;
+}
+
+// ── Social Links ──────────────────────────────────────────────
+.socials {
+  display: flex;
+  gap: 0.6rem;
+}
+
+.socialLink {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  color: rgba(255, 255, 255, 0.5);
+  background: rgba(255, 255, 255, 0.05);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  text-decoration: none;
+  transition: all 0.25s ease;
+
+  &:hover {
+    color: var(--color-gold);
+    border-color: rgba(201, 169, 110, 0.4);
+    background: rgba(201, 169, 110, 0.08);
+    transform: translateY(-3px);
+  }
+}
+
+// ── Generic Column ────────────────────────────────────────────
+.col {}
+
+.colTitle {
+  font-family: var(--font-display);
+  font-size: 1.1rem;
+  font-weight: 500;
+  color: white;
+  margin-bottom: 1.5rem;
+  padding-bottom: 1rem;
+  border-bottom: 1px solid rgba(201, 169, 110, 0.2);
+  position: relative;
+
+  &::after {
+    content: '';
+    position: absolute;
+    bottom: -1px;
+    left: 0;
+    width: 30px;
+    height: 1px;
+    background: var(--color-gold);
+  }
+}
+
+.linkList {
+  display: flex;
+  flex-direction: column;
+  gap: 0.6rem;
+}
+
+.footerLink {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-family: var(--font-body);
+  font-size: 0.875rem;
+  color: rgba(255, 255, 255, 0.5);
+  text-decoration: none;
+  transition: all 0.2s ease;
+
+  .linkArrow {
+    color: var(--color-gold);
+    opacity: 0;
+    transform: translateX(-6px);
+    transition: all 0.2s ease;
+    font-size: 0.75rem;
+  }
+
+  &:hover {
+    color: var(--color-gold);
+    padding-left: 0.4rem;
+
+    .linkArrow {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+}
+
+// ── Contact Column ────────────────────────────────────────────
+.contactList {
+  display: flex;
+  flex-direction: column;
+  gap: 1.25rem;
+  margin-bottom: 1.75rem;
+}
+
+.contactItem {
+  display: flex;
+  gap: 0.85rem;
+  align-items: flex-start;
+}
+
+.contactIcon {
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+  color: var(--color-gold);
+  background: rgba(201, 169, 110, 0.1);
+  border-radius: 50%;
+  margin-top: 0.1rem;
+}
+
+.contactText {
+  font-size: 0.875rem;
+  line-height: 1.65;
+  color: rgba(255, 255, 255, 0.5);
+  font-style: normal;
+  display: flex;
+  flex-direction: column;
+  gap: 0.15rem;
+}
+
+.contactLink {
+  font-size: 0.875rem;
+  color: rgba(255, 255, 255, 0.7);
+  text-decoration: none;
+  transition: color 0.2s;
+
+  &:hover {
+    color: var(--color-gold);
+  }
+}
+
+.hoursTitle {
+  color: white;
+  font-weight: 600;
+}
+
+.mapLink {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-family: var(--font-body);
+  font-size: 0.78rem;
+  font-weight: 600;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--color-gold);
+  text-decoration: none;
+  padding-bottom: 2px;
+  border-bottom: 1px solid rgba(201, 169, 110, 0.3);
+  transition: all 0.2s ease;
+
+  &:hover {
+    border-bottom-color: var(--color-gold);
+    gap: 0.7rem;
+  }
+}
+
+// ── Bottom Bar ────────────────────────────────────────────────
+.bottomBar {
+  border-top: 1px solid rgba(255, 255, 255, 0.06);
+  padding: 1.5rem 2rem;
+}
+
+.bottomInner {
+  max-width: var(--container-max);
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+  flex-wrap: wrap;
+
+  @media (max-width: 700px) {
+    flex-direction: column;
+    text-align: center;
+  }
+}
+
+.copyright {
+  font-size: 0.8rem;
+  color: rgba(255, 255, 255, 0.35);
+  line-height: 1;
+}
+
+.tagline {
+  font-family: var(--font-display);
+  font-size: 0.85rem;
+  font-style: italic;
+  color: rgba(255, 255, 255, 0.25);
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.taglineMark {
+  color: var(--color-gold);
+  font-size: 0.6rem;
+  opacity: 0.6;
+}
+
+.bottomLinks {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.bottomLink {
+  font-size: 0.78rem;
+  color: rgba(255, 255, 255, 0.35);
+  text-decoration: none;
+  transition: color 0.2s;
+
+  &:hover {
+    color: var(--color-gold);
+  }
+}
+
+.bottomSep {
+  color: rgba(255, 255, 255, 0.2);
+  font-size: 0.75rem;
+}
