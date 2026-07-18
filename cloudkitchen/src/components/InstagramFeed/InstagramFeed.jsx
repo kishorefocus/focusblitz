@@ -9,7 +9,7 @@ const posts = [
     image: '/images/insta1.png',
     likes: '2.4K',
     comments: '87',
-    caption: 'Stunning transformation 🌟 Full balayage + blowout at Porto De Belleza 💫',
+    caption: 'Stunning transformation 🌟 Full balayage + blowout at Primera Beauty Salon 💫',
     duration: '0:45',
     views: '18.2K',
   },
@@ -53,7 +53,7 @@ const posts = [
     image: '/images/about.png',
     likes: '4.2K',
     comments: '196',
-    caption: 'A peek inside Porto De Belleza — Dubai\'s beauty destination ✨',
+    caption: 'A peek inside Primera Beauty Salon — Dubai\'s beauty destination ✨',
     duration: '0:30',
     views: '42.8K',
   },
@@ -85,7 +85,7 @@ export default function InstagramFeed() {
       <div className={styles.header}>
         <span className="section-label">Follow the Journey</span>
         <h2 className={styles.title} id="instagram-heading">
-          @portodebelleza
+          @primerabeautysalon
         </h2>
         <div className="gold-divider centered" />
         <p className={styles.subtitle}>

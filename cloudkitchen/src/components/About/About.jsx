@@ -5,7 +5,7 @@ const socials = [
   {
     id: 'whatsapp',
     label: 'WhatsApp',
-    href: 'https://wa.me/971509391092',
+    href: 'https://wa.me/971551088584',
     color: '#25D366',
     icon: (
       <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
@@ -63,7 +63,7 @@ export default function About() {
         <div className={styles.imageInner}>
           <Image
             src="/images/about.png"
-            alt="Porto De Belleza interior — Dubai"
+            alt="Primera Beauty Salon interior — Dubai"
             fill
             className={styles.img}
             sizes="(max-width: 768px) 100vw, 50vw"
@@ -101,8 +101,8 @@ export default function About() {
         <div className={styles.divider} />
 
         <p className={styles.lead}>
-          Welcome to Porto De Belleza — where artistry meets indulgence. Nestled
-          in the luxurious Swissôtel Al Ghurair on Omar Bin Al Khattab Street, Deira, we have been the destination of choice for
+          Welcome to Primera Beauty Salon — where artistry meets indulgence. Nestled
+          on Al Rigga Road in Deira, we have been the destination of choice for
           Dubai&apos;s most discerning clientele.
         </p>
 
