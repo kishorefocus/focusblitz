@@ -1,14 +1,14 @@
 import './globals.scss';
 
 export const metadata = {
-  title: "Pinas Spa and Beauty Center — Beauty Parlour in Al Rigga, Dubai",
+  title: "Sibs Style Beauty Lounge L.L.C. — Beauty Parlour in Salah Al Din St, Dubai",
   description:
-    "Pinas Spa and Beauty Center Al Rigga is a premier beauty parlour in Deira, Dubai. Expert hair styling, coloring, spa treatments, manicures, pedicures, and beauty care.",
-  keywords: "Pinas Spa and Beauty Center, beauty parlour Al Rigga, hair salon Deira, beauty salon Al Muraqqabat, ladies spa Dubai",
+    "Sibs Style Beauty Lounge L.L.C. is a premier beauty parlour in Deira, Dubai. Expert nail artistry, styling, skincare, brows, and beauty lounge services next to Crowne Plaza Hotel.",
+  keywords: "Sibs Style Beauty Lounge, beauty parlour Salah Al Din, hair salon Deira, beauty lounge Muteena, nail salon Dubai",
   openGraph: {
-    title: "Pinas Spa and Beauty Center — Beauty Parlour in Al Rigga, Dubai",
+    title: "Sibs Style Beauty Lounge L.L.C. — Beauty Parlour in Salah Al Din St, Dubai",
     description:
-      "Pinas Spa and Beauty Center Al Rigga is a premier beauty parlour in Deira, Dubai. Expert hair styling, coloring, spa treatments, and beauty care.",
+      "Sibs Style Beauty Lounge L.L.C. is a premier beauty parlour in Deira, Dubai. Expert nail artistry, styling, skincare, brows, and beauty lounge services.",
     type: "website",
     locale: "en_AE",
   },

@@ -8,7 +8,7 @@ const products = [
   {
     id: 1,
     name: 'Luxe Hydrating Shampoo',
-    brand: 'Pinas Spa Selection',
+    brand: 'Sibs Style Selection',
     image: '/images/product1.png',
     price: 'AED 145',
     originalPrice: null,
@@ -19,7 +19,7 @@ const products = [
   {
     id: 2,
     name: 'Argan Oil Hair Elixir',
-    brand: 'Pinas Spa Selection',
+    brand: 'Sibs Style Selection',
     image: '/images/product2.png',
     price: 'AED 189',
     originalPrice: 'AED 220',
@@ -30,7 +30,7 @@ const products = [
   {
     id: 3,
     name: 'Intense Repair Hair Mask',
-    brand: 'Pinas Spa Selection',
+    brand: 'Sibs Style Selection',
     image: '/images/product3.png',
     price: 'AED 220',
     originalPrice: null,
@@ -41,7 +41,7 @@ const products = [
   {
     id: 4,
     name: 'Color Protect Conditioner',
-    brand: 'Pinas Spa Selection',
+    brand: 'Sibs Style Selection',
     image: '/images/product1.png',
     price: 'AED 135',
     originalPrice: null,

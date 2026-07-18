@@ -8,13 +8,13 @@ const slides = [
   {
     id: 1,
     image: '/images/hero1.png',
-    eyebrow: 'Welcome to Pinas Spa & Beauty Center',
+    eyebrow: 'Welcome to Sibs Style Beauty Lounge',
     title: 'Radiance',
     subtitle: 'Unmatched Styling',
     description: 'Transform your look with our world-class stylists. Premium services tailored to celebrate your unique beauty.',
     cta: 'Book Now',
-    ctaHref: 'https://wa.me/97142621888',
-    tag: 'Al Rigga · Deira · Dubai',
+    ctaHref: 'https://wa.me/971529063016',
+    tag: 'Salah Al Din St · Deira · Dubai',
   },
   {
     id: 2,
