@@ -8,13 +8,13 @@ const slides = [
   {
     id: 1,
     image: '/images/hero1.png',
-    eyebrow: 'Welcome to Primera Beauty Salon',
+    eyebrow: 'Welcome to Beauty &amp; Sense Ladies Salon',
     title: 'Radiance',
     subtitle: 'Unmatched Styling',
     description: 'Transform your look with our world-class stylists. Premium services tailored to celebrate your unique beauty.',
     cta: 'Book Now',
-    ctaHref: 'https://wa.me/971551088584',
-    tag: 'Al Rigga Rd · Deira · Dubai',
+    ctaHref: 'https://wa.me/971564959101',
+    tag: 'Al Mamzar · Deira · Dubai',
   },
   {
     id: 2,

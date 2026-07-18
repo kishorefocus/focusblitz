@@ -1,14 +1,14 @@
 import './globals.scss';
 
 export const metadata = {
-  title: "Primera Beauty Salon — Beauty Parlour in Al Rigga Rd, Dubai",
+  title: "Beauty & Sense Ladies Salon — Beauty Parlour in Al Mamzar, Dubai",
   description:
-    "Primera Beauty Salon is a premier beauty parlour in Deira, Dubai. Professional hair care, styling, nail services, threading, Moroccan baths, and beauty salon treatments.",
-  keywords: "Primera Beauty Salon, beauty parlour Al Rigga Rd, ladies salon Deira, Moroccan bath Dubai, hair salon Al Muraqqabat",
+    "Beauty & Sense Ladies Salon is a premier beauty parlour in Al Mamzar, Deira, Dubai. Professional hair care, styling, nail services, threading, waxing, lash extensions, facials, and bridal makeup.",
+  keywords: "Beauty & Sense Ladies Salon, ladies salon Al Mamzar, beauty parlour Deira, hair salon Dubai, home salon service Dubai",
   openGraph: {
-    title: "Primera Beauty Salon — Beauty Parlour in Al Rigga Rd, Dubai",
+    title: "Beauty & Sense Ladies Salon — Beauty Parlour in Al Mamzar, Dubai",
     description:
-      "Primera Beauty Salon is a premier beauty parlour in Deira, Dubai. Professional hair care, styling, nail services, threading, Moroccan baths, and beauty salon treatments.",
+      "Beauty & Sense Ladies Salon is a premier beauty parlour in Al Mamzar, Deira, Dubai. Professional hair care, styling, nail services, threading, waxing, lash extensions, facials, and bridal makeup.",
     type: "website",
     locale: "en_AE",
   },
