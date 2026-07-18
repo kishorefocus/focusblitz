@@ -8,13 +8,13 @@ const slides = [
   {
     id: 1,
     image: '/images/hero1.png',
-    eyebrow: 'Welcome to Beauty &amp; Sense Ladies Salon',
+    eyebrow: 'Welcome to Desert Wave Ladies Salon Dubai',
     title: 'Radiance',
     subtitle: 'Unmatched Styling',
     description: 'Transform your look with our world-class stylists. Premium services tailored to celebrate your unique beauty.',
     cta: 'Book Now',
-    ctaHref: 'https://wa.me/971564959101',
-    tag: 'Al Mamzar · Deira · Dubai',
+    ctaHref: 'https://wa.me/97148866167',
+    tag: 'Al Muraqqabat · Deira · Dubai',
   },
   {
     id: 2,

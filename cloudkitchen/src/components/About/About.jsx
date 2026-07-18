@@ -5,7 +5,7 @@ const socials = [
   {
     id: 'whatsapp',
     label: 'WhatsApp',
-    href: 'https://wa.me/971564959101',
+    href: 'https://wa.me/97148866167',
     color: '#25D366',
     icon: (
       <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
@@ -63,7 +63,7 @@ export default function About() {
         <div className={styles.imageInner}>
           <Image
             src="/images/about.png"
-            alt="Beauty &amp; Sense Ladies Salon interior — Dubai"
+            alt="Desert Wave Ladies Salon Dubai interior — Dubai"
             fill
             className={styles.img}
             sizes="(max-width: 768px) 100vw, 50vw"
@@ -101,8 +101,8 @@ export default function About() {
         <div className={styles.divider} />
 
         <p className={styles.lead}>
-          Welcome to Beauty &amp; Sense Ladies Salon — where artistry meets indulgence. Nestled
-          on 54 Street in Al Mamzar, Deira, we have been the destination of choice for
+          Welcome to Desert Wave Ladies Salon Dubai — where artistry meets indulgence. Nestled
+          on 26B Street in Al Muraqqabat, Deira, we have been the destination of choice for
           Dubai&apos;s most discerning clientele.
         </p>
 

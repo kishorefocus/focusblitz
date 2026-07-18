@@ -1,14 +1,14 @@
 import './globals.scss';
 
 export const metadata = {
-  title: "Beauty & Sense Ladies Salon — Beauty Parlour in Al Mamzar, Dubai",
+  title: "Desert Wave Ladies Salon Dubai — Beauty Parlour in Al Muraqqabat, Dubai",
   description:
-    "Beauty & Sense Ladies Salon is a premier beauty parlour in Al Mamzar, Deira, Dubai. Professional hair care, styling, nail services, threading, waxing, lash extensions, facials, and bridal makeup.",
-  keywords: "Beauty & Sense Ladies Salon, ladies salon Al Mamzar, beauty parlour Deira, hair salon Dubai, home salon service Dubai",
+    "Desert Wave Ladies Salon Dubai is a premier beauty parlour in Al Muraqqabat, Deira. Professional hair care, styling, nail art, threading, waxing, facials, and beauty treatments.",
+  keywords: "Desert Wave Ladies Salon Dubai, ladies salon Al Muraqqabat, beauty parlour Deira, hair salon Dubai, nail salon Deira",
   openGraph: {
-    title: "Beauty & Sense Ladies Salon — Beauty Parlour in Al Mamzar, Dubai",
+    title: "Desert Wave Ladies Salon Dubai — Beauty Parlour in Al Muraqqabat, Dubai",
     description:
-      "Beauty & Sense Ladies Salon is a premier beauty parlour in Al Mamzar, Deira, Dubai. Professional hair care, styling, nail services, threading, waxing, lash extensions, facials, and bridal makeup.",
+      "Desert Wave Ladies Salon Dubai is a premier beauty parlour in Al Muraqqabat, Deira. Professional hair care, styling, nail art, threading, waxing, facials, and beauty treatments.",
     type: "website",
     locale: "en_AE",
   },

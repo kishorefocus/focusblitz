@@ -24,7 +24,7 @@ export default function HomePage() {
 
       {/* WhatsApp Floating Button */}
       <a
-        href="https://wa.me/971564959101"
+        href="https://wa.me/97148866167"
         target="_blank"
         rel="noopener noreferrer"
         className={styles.whatsappFloat}
