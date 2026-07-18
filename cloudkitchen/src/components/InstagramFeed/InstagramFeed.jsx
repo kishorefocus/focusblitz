@@ -9,7 +9,7 @@ const posts = [
     image: '/images/insta1.png',
     likes: '2.4K',
     comments: '87',
-    caption: 'Stunning transformation 🌟 Full balayage + blowout at Sibs Style Beauty Lounge Dubai 💫',
+    caption: 'Stunning transformation 🌟 Full balayage + blowout at Zang Beauty Dubai 💫',
     duration: '0:45',
     views: '18.2K',
   },
@@ -53,7 +53,7 @@ const posts = [
     image: '/images/about.png',
     likes: '4.2K',
     comments: '196',
-    caption: 'A peek inside Sibs Style Beauty Lounge — Dubai\'s beauty destination ✨',
+    caption: 'A peek inside Zang Beauty Dubai — Dubai\'s beauty destination ✨',
     duration: '0:30',
     views: '42.8K',
   },
@@ -85,7 +85,7 @@ export default function InstagramFeed() {
       <div className={styles.header}>
         <span className="section-label">Follow the Journey</span>
         <h2 className={styles.title} id="instagram-heading">
-          @sibsstylebeautylounge
+          @zangbeautydubai
         </h2>
         <div className="gold-divider centered" />
         <p className={styles.subtitle}>

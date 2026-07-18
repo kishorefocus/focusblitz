@@ -1,14 +1,14 @@
 import './globals.scss';
 
 export const metadata = {
-  title: "Sibs Style Beauty Lounge L.L.C. — Beauty Parlour in Salah Al Din St, Dubai",
+  title: "Zang Beauty Dubai — Beauty Parlour in Al Rigga, Dubai",
   description:
-    "Sibs Style Beauty Lounge L.L.C. is a premier beauty parlour in Deira, Dubai. Expert nail artistry, styling, skincare, brows, and beauty lounge services next to Crowne Plaza Hotel.",
-  keywords: "Sibs Style Beauty Lounge, beauty parlour Salah Al Din, hair salon Deira, beauty lounge Muteena, nail salon Dubai",
+    "Zang Beauty Dubai is a premier beauty parlour and clinic in Deira near Union Metro Station. Specializing in Vietnamese permanent makeup, skincare, HydraFacials, and eyelash extensions.",
+  keywords: "Zang Beauty Dubai, Vietnamese microblading, beauty parlour Al Rigga, hair salon Deira, beauty clinic Union Metro, aesthetic salon Dubai",
   openGraph: {
-    title: "Sibs Style Beauty Lounge L.L.C. — Beauty Parlour in Salah Al Din St, Dubai",
+    title: "Zang Beauty Dubai — Beauty Parlour in Al Rigga, Dubai",
     description:
-      "Sibs Style Beauty Lounge L.L.C. is a premier beauty parlour in Deira, Dubai. Expert nail artistry, styling, skincare, brows, and beauty lounge services.",
+      "Zang Beauty Dubai is a premier beauty parlour and clinic in Deira near Union Metro Station. Specializing in Vietnamese permanent makeup, skincare, HydraFacials, and eyelash extensions.",
     type: "website",
     locale: "en_AE",
   },

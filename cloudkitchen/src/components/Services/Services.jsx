@@ -86,7 +86,7 @@ export default function Services() {
         </h2>
         <div className="gold-divider centered" />
         <p className={styles.subtitle}>
-          Every service at Sibs Style Beauty Lounge is a curated experience,
+          Every service at Zang Beauty Dubai is a curated experience,
           delivered by master stylists using only the finest professional products.
         </p>
       </div>
@@ -111,7 +111,7 @@ export default function Services() {
             <div className={styles.cardBottom}>
               <span className={styles.price}>{service.price}</span>
               <a
-                href="https://wa.me/971529063016"
+                href="https://wa.me/971588989220"
                 target="_blank"
                 rel="noopener noreferrer"
                 className={styles.bookBtn}

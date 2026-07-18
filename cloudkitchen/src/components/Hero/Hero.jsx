@@ -8,13 +8,13 @@ const slides = [
   {
     id: 1,
     image: '/images/hero1.png',
-    eyebrow: 'Welcome to Sibs Style Beauty Lounge',
+    eyebrow: 'Welcome to Zang Beauty Dubai',
     title: 'Radiance',
     subtitle: 'Unmatched Styling',
     description: 'Transform your look with our world-class stylists. Premium services tailored to celebrate your unique beauty.',
     cta: 'Book Now',
-    ctaHref: 'https://wa.me/971529063016',
-    tag: 'Salah Al Din St · Deira · Dubai',
+    ctaHref: 'https://wa.me/971588989220',
+    tag: 'Union Metro · Al Rigga · Dubai',
   },
   {
     id: 2,
