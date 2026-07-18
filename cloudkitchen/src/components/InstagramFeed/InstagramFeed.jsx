@@ -9,7 +9,7 @@ const posts = [
     image: '/images/insta1.png',
     likes: '2.4K',
     comments: '87',
-    caption: 'Stunning transformation 🌟 Full balayage + blowout at Kim\'s Beauty Salon Dubai 💫',
+    caption: 'Stunning transformation 🌟 Full balayage + blowout at Hollywood Ladies Salon Dubai 💫',
     duration: '0:45',
     views: '18.2K',
   },
@@ -53,7 +53,7 @@ const posts = [
     image: '/images/about.png',
     likes: '4.2K',
     comments: '196',
-    caption: 'A peek inside Kim\'s Beauty Salon — Dubai\'s luxury beauty destination ✨',
+    caption: 'A peek inside Hollywood Ladies Salon — Dubai\'s beauty destination ✨',
     duration: '0:30',
     views: '42.8K',
   },
@@ -85,7 +85,7 @@ export default function InstagramFeed() {
       <div className={styles.header}>
         <span className="section-label">Follow the Journey</span>
         <h2 className={styles.title} id="instagram-heading">
-          @kimsbeautysalon
+          @hollywoodladiessalon
         </h2>
         <div className="gold-divider centered" />
         <p className={styles.subtitle}>
@@ -94,7 +94,7 @@ export default function InstagramFeed() {
         </p>
 
         <a
-          href="https://instagram.com/kimsbeautysalon"
+          href="https://instagram.com/"
           target="_blank"
           rel="noopener noreferrer"
           className={styles.followBtn}
@@ -112,7 +112,7 @@ export default function InstagramFeed() {
         {posts.map((post, index) => (
           <a
             key={post.id}
-            href="https://instagram.com/kimsbeautysalon"
+            href="https://instagram.com/"
             target="_blank"
             rel="noopener noreferrer"
             className={`${styles.post} ${post.type === 'reel' ? styles.postReel : ''} ${index === 0 || index === 5 ? styles.postFeatured : ''}`}

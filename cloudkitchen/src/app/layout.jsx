@@ -1,14 +1,14 @@
 import './globals.scss';
 
 export const metadata = {
-  title: "Kim's Beauty Salon — Luxury Hair & Beauty in Dubai",
+  title: "Hollywood Ladies Salon — Beauty Parlour in Al Rigga, Dubai",
   description:
-    "Dubai's premier luxury beauty salon. Expert hair coloring, balayage, keratin treatments, extensions, and exclusive haircare products at Deira Twin Towers.",
-  keywords: "luxury salon Dubai, hair salon Deira, balayage Dubai, keratin treatment, hair extensions Dubai",
+    "Hollywood Ladies Salon Al Rigga branch is a premier beauty parlour in Deira, Dubai. Expert hair care, styling, coloring, nail care, skincare, and bridal beauty treatments.",
+  keywords: "Hollywood Ladies Salon, beauty parlour Al Rigga, hair salon Deira, beauty salon Al Muraqqabat, ladies salon Dubai",
   openGraph: {
-    title: "Kim's Beauty Salon — Luxury Hair & Beauty in Dubai",
+    title: "Hollywood Ladies Salon — Beauty Parlour in Al Rigga, Dubai",
     description:
-      "Expert hair coloring, balayage, keratin treatments & extensions at Deira Twin Towers, Dubai.",
+      "Hollywood Ladies Salon Al Rigga branch is a premier beauty parlour in Deira, Dubai. Expert hair care, styling, coloring, and beauty treatments.",
     type: "website",
     locale: "en_AE",
   },

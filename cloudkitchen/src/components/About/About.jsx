@@ -5,7 +5,7 @@ const socials = [
   {
     id: 'whatsapp',
     label: 'WhatsApp',
-    href: 'https://wa.me/971456531750',
+    href: 'https://wa.me/971585865070',
     color: '#25D366',
     icon: (
       <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
@@ -16,7 +16,7 @@ const socials = [
   {
     id: 'instagram',
     label: 'Instagram',
-    href: 'https://instagram.com/kimsbeautysalon',
+    href: 'https://instagram.com/',
     color: '#E1306C',
     icon: (
       <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
@@ -27,7 +27,7 @@ const socials = [
   {
     id: 'facebook',
     label: 'Facebook',
-    href: 'https://facebook.com/kimsbeautysalon',
+    href: 'https://facebook.com/',
     color: '#1877F2',
     icon: (
       <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
@@ -38,7 +38,7 @@ const socials = [
   {
     id: 'youtube',
     label: 'YouTube',
-    href: 'https://youtube.com/@kimsbeautysalon',
+    href: 'https://youtube.com/',
     color: '#FF0000',
     icon: (
       <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
@@ -63,7 +63,7 @@ export default function About() {
         <div className={styles.imageInner}>
           <Image
             src="/images/about.png"
-            alt="Kim's Beauty Salon interior — Dubai"
+            alt="Hollywood Ladies Salon interior — Dubai"
             fill
             className={styles.img}
             sizes="(max-width: 768px) 100vw, 50vw"
@@ -101,9 +101,9 @@ export default function About() {
         <div className={styles.divider} />
 
         <p className={styles.lead}>
-          Welcome to Kim&apos;s Beauty Salon — where artistry meets indulgence. Nestled
-          in the iconic Deira Twin Towers, we have been the destination of choice for
-          Dubai&apos;s most discerning clientele since 2009.
+          Welcome to Hollywood Ladies Salon — where artistry meets indulgence. Nestled
+          on the vibrant Al Rigga Road, we have been the destination of choice for
+          Dubai&apos;s most discerning clientele.
         </p>
 
         <p className={styles.body}>

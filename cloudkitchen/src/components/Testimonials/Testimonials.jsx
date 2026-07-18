@@ -11,7 +11,7 @@ const testimonials = [
     avatar: 'L',
     rating: 5,
     service: 'Balayage & Blowout',
-    text: 'I walked in wanting a change and walked out feeling like a completely new person. The balayage result was absolutely stunning — natural, dimensional, and exactly what I envisioned. Kim\'s team made me feel so welcome. I won\'t go anywhere else.',
+    text: 'I walked in wanting a change and walked out feeling like a completely new person. The balayage result was absolutely stunning — natural, dimensional, and exactly what I envisioned. The team made me feel so welcome. I won\'t go anywhere else.',
     date: 'March 2025',
   },
   {
@@ -31,7 +31,7 @@ const testimonials = [
     avatar: 'N',
     rating: 5,
     service: 'Full Hair Color & Highlights',
-    text: 'I\'ve been to many salons in Dubai, but Kim\'s is truly in a league of its own. The attention to detail and the skill of the colorist are unmatched. My hair color is vibrant, rich, and looks exactly like the inspiration photo I brought.',
+    text: 'I\'ve been to many salons in Dubai, but Hollywood Ladies Salon is truly in a league of its own. The attention to detail and the skill of the colorist are unmatched. My hair color is vibrant, rich, and looks exactly like the inspiration photo I brought.',
     date: 'February 2025',
   },
   {
@@ -41,7 +41,7 @@ const testimonials = [
     avatar: 'A',
     rating: 5,
     service: 'Tape Hair Extensions',
-    text: 'The tape extensions are so natural-looking that my friends couldn\'t tell the difference. The application took no time, and the quality is exceptional. I\'ve been getting compliments non-stop. Highly, highly recommend Kim\'s Beauty Salon!',
+    text: 'The tape extensions are so natural-looking that my friends couldn\'t tell the difference. The application took no time, and the quality is exceptional. I\'ve been getting compliments non-stop. Highly, highly recommend Hollywood Ladies Salon!',
     date: 'April 2025',
   },
 ];
