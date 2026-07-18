@@ -1,14 +1,14 @@
 import './globals.scss';
 
 export const metadata = {
-  title: "Desert Wave Ladies Salon Dubai — Beauty Parlour in Al Muraqqabat, Dubai",
+  title: "Diamond International Beauty — Beauty Parlour in Port Saeed, Deira, Dubai",
   description:
-    "Desert Wave Ladies Salon Dubai is a premier beauty parlour in Al Muraqqabat, Deira. Professional hair care, styling, nail art, threading, waxing, facials, and beauty treatments.",
-  keywords: "Desert Wave Ladies Salon Dubai, ladies salon Al Muraqqabat, beauty parlour Deira, hair salon Dubai, nail salon Deira",
+    "Diamond International Beauty is a premier beauty parlour in Port Saeed, Deira, Dubai. Professional hair care, botox & keratin treatments, Moroccan baths, manicures, and bridal makeup.",
+  keywords: "Diamond International Beauty, beauty parlour Port Saeed, ladies salon Deira, Moroccan bath Dubai, hair botox Deira",
   openGraph: {
-    title: "Desert Wave Ladies Salon Dubai — Beauty Parlour in Al Muraqqabat, Dubai",
+    title: "Diamond International Beauty — Beauty Parlour in Port Saeed, Deira, Dubai",
     description:
-      "Desert Wave Ladies Salon Dubai is a premier beauty parlour in Al Muraqqabat, Deira. Professional hair care, styling, nail art, threading, waxing, facials, and beauty treatments.",
+      "Diamond International Beauty is a premier beauty parlour in Port Saeed, Deira, Dubai. Professional hair care, botox & keratin treatments, Moroccan baths, manicures, and bridal makeup.",
     type: "website",
     locale: "en_AE",
   },

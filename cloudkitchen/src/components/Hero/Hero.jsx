@@ -8,13 +8,13 @@ const slides = [
   {
     id: 1,
     image: '/images/hero1.png',
-    eyebrow: 'Welcome to Desert Wave Ladies Salon Dubai',
+    eyebrow: 'Welcome to Diamond International Beauty',
     title: 'Radiance',
     subtitle: 'Unmatched Styling',
     description: 'Transform your look with our world-class stylists. Premium services tailored to celebrate your unique beauty.',
     cta: 'Book Now',
-    ctaHref: 'https://wa.me/97148866167',
-    tag: 'Al Muraqqabat · Deira · Dubai',
+    ctaHref: 'https://wa.me/971525512838',
+    tag: 'Port Saeed · Deira · Dubai',
   },
   {
     id: 2,

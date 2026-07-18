@@ -9,7 +9,7 @@ const posts = [
     image: '/images/insta1.png',
     likes: '2.4K',
     comments: '87',
-    caption: 'Stunning transformation 🌟 Full balayage + blowout at Desert Wave Ladies Salon Dubai 💫',
+    caption: 'Stunning transformation 🌟 Full balayage + blowout at Diamond International Beauty 💫',
     duration: '0:45',
     views: '18.2K',
   },
@@ -53,7 +53,7 @@ const posts = [
     image: '/images/about.png',
     likes: '4.2K',
     comments: '196',
-    caption: 'A peek inside Desert Wave Ladies Salon Dubai — Dubai\'s beauty destination ✨',
+    caption: 'A peek inside Diamond International Beauty — Dubai\'s beauty destination ✨',
     duration: '0:30',
     views: '42.8K',
   },
@@ -85,7 +85,7 @@ export default function InstagramFeed() {
       <div className={styles.header}>
         <span className="section-label">Follow the Journey</span>
         <h2 className={styles.title} id="instagram-heading">
-          @desertwaveladiessalon
+          @diamondinternationalbeauty
         </h2>
         <div className="gold-divider centered" />
         <p className={styles.subtitle}>
