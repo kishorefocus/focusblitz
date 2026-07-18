@@ -86,7 +86,7 @@ export default function Services() {
         </h2>
         <div className="gold-divider centered" />
         <p className={styles.subtitle}>
-          Every service at Hollywood Ladies Salon is a curated experience,
+          Every service at Pinas Spa &amp; Beauty Center is a curated experience,
           delivered by master stylists using only the finest professional products.
         </p>
       </div>
@@ -111,7 +111,7 @@ export default function Services() {
             <div className={styles.cardBottom}>
               <span className={styles.price}>{service.price}</span>
               <a
-                href="https://wa.me/971585865070"
+                href="https://wa.me/97142621888"
                 target="_blank"
                 rel="noopener noreferrer"
                 className={styles.bookBtn}

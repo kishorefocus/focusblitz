@@ -5,7 +5,7 @@ const socials = [
   {
     id: 'whatsapp',
     label: 'WhatsApp',
-    href: 'https://wa.me/971585865070',
+    href: 'https://wa.me/97142621888',
     color: '#25D366',
     icon: (
       <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
@@ -63,7 +63,7 @@ export default function About() {
         <div className={styles.imageInner}>
           <Image
             src="/images/about.png"
-            alt="Hollywood Ladies Salon interior — Dubai"
+            alt="Pinas Spa &amp; Beauty Center interior — Dubai"
             fill
             className={styles.img}
             sizes="(max-width: 768px) 100vw, 50vw"
@@ -101,8 +101,8 @@ export default function About() {
         <div className={styles.divider} />
 
         <p className={styles.lead}>
-          Welcome to Hollywood Ladies Salon — where artistry meets indulgence. Nestled
-          on the vibrant Al Rigga Road, we have been the destination of choice for
+          Welcome to Pinas Spa &amp; Beauty Center — where artistry meets indulgence. Nestled
+          on Al Rigga Street in Deira, we have been the destination of choice for
           Dubai&apos;s most discerning clientele.
         </p>
 

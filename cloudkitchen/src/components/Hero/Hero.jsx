@@ -8,12 +8,12 @@ const slides = [
   {
     id: 1,
     image: '/images/hero1.png',
-    eyebrow: 'Welcome to Hollywood Ladies Salon',
+    eyebrow: 'Welcome to Pinas Spa & Beauty Center',
     title: 'Radiance',
     subtitle: 'Unmatched Styling',
     description: 'Transform your look with our world-class stylists. Premium services tailored to celebrate your unique beauty.',
     cta: 'Book Now',
-    ctaHref: 'https://wa.me/971585865070',
+    ctaHref: 'https://wa.me/97142621888',
     tag: 'Al Rigga · Deira · Dubai',
   },
   {

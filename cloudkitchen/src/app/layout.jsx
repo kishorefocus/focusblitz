@@ -1,14 +1,14 @@
 import './globals.scss';
 
 export const metadata = {
-  title: "Hollywood Ladies Salon — Beauty Parlour in Al Rigga, Dubai",
+  title: "Pinas Spa and Beauty Center — Beauty Parlour in Al Rigga, Dubai",
   description:
-    "Hollywood Ladies Salon Al Rigga branch is a premier beauty parlour in Deira, Dubai. Expert hair care, styling, coloring, nail care, skincare, and bridal beauty treatments.",
-  keywords: "Hollywood Ladies Salon, beauty parlour Al Rigga, hair salon Deira, beauty salon Al Muraqqabat, ladies salon Dubai",
+    "Pinas Spa and Beauty Center Al Rigga is a premier beauty parlour in Deira, Dubai. Expert hair styling, coloring, spa treatments, manicures, pedicures, and beauty care.",
+  keywords: "Pinas Spa and Beauty Center, beauty parlour Al Rigga, hair salon Deira, beauty salon Al Muraqqabat, ladies spa Dubai",
   openGraph: {
-    title: "Hollywood Ladies Salon — Beauty Parlour in Al Rigga, Dubai",
+    title: "Pinas Spa and Beauty Center — Beauty Parlour in Al Rigga, Dubai",
     description:
-      "Hollywood Ladies Salon Al Rigga branch is a premier beauty parlour in Deira, Dubai. Expert hair care, styling, coloring, and beauty treatments.",
+      "Pinas Spa and Beauty Center Al Rigga is a premier beauty parlour in Deira, Dubai. Expert hair styling, coloring, spa treatments, and beauty care.",
     type: "website",
     locale: "en_AE",
   },
