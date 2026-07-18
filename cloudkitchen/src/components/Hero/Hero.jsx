@@ -8,13 +8,13 @@ const slides = [
   {
     id: 1,
     image: '/images/hero1.png',
-    eyebrow: 'Welcome to Zang Beauty Dubai',
+    eyebrow: 'Welcome to Porto De Belleza',
     title: 'Radiance',
     subtitle: 'Unmatched Styling',
     description: 'Transform your look with our world-class stylists. Premium services tailored to celebrate your unique beauty.',
     cta: 'Book Now',
-    ctaHref: 'https://wa.me/971588989220',
-    tag: 'Union Metro · Al Rigga · Dubai',
+    ctaHref: 'https://wa.me/971509391092',
+    tag: 'Swissôtel Al Ghurair · Deira · Dubai',
   },
   {
     id: 2,

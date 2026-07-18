@@ -31,7 +31,7 @@ const testimonials = [
     avatar: 'N',
     rating: 5,
     service: 'Full Hair Color & Highlights',
-    text: 'I\'ve been to many salons in Dubai, but Zang Beauty Dubai is truly in a league of its own. The attention to detail and the skill of the colorist are unmatched. My hair color is vibrant, rich, and looks exactly like the inspiration photo I brought.',
+    text: 'I\'ve been to many salons in Dubai, but Porto De Belleza is truly in a league of its own. The attention to detail and the skill of the colorist are unmatched. My hair color is vibrant, rich, and looks exactly like the inspiration photo I brought.',
     date: 'February 2025',
   },
   {
@@ -41,7 +41,7 @@ const testimonials = [
     avatar: 'A',
     rating: 5,
     service: 'Tape Hair Extensions',
-    text: 'The tape extensions are so natural-looking that my friends couldn\'t tell the difference. The application took no time, and the quality is exceptional. I\'ve been getting compliments non-stop. Highly, highly recommend Zang Beauty Dubai!',
+    text: 'The tape extensions are so natural-looking that my friends couldn\'t tell the difference. The application took no time, and the quality is exceptional. I\'ve been getting compliments non-stop. Highly, highly recommend Porto De Belleza!',
     date: 'April 2025',
   },
 ];

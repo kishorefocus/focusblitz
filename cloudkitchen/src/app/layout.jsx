@@ -1,14 +1,14 @@
 import './globals.scss';
 
 export const metadata = {
-  title: "Zang Beauty Dubai — Beauty Parlour in Al Rigga, Dubai",
+  title: "Porto De Belleza — Beauty Parlour in Swissôtel Al Ghurair, Dubai",
   description:
-    "Zang Beauty Dubai is a premier beauty parlour and clinic in Deira near Union Metro Station. Specializing in Vietnamese permanent makeup, skincare, HydraFacials, and eyelash extensions.",
-  keywords: "Zang Beauty Dubai, Vietnamese microblading, beauty parlour Al Rigga, hair salon Deira, beauty clinic Union Metro, aesthetic salon Dubai",
+    "Porto De Belleza is a premier luxury beauty parlour located at Swissôtel Al Ghurair in Deira, Dubai. Expert hair styling, coloring, wellness spa treatments, manicures, pedicures, and beauty services.",
+  keywords: "Porto De Belleza, beauty parlour Swissotel Al Ghurair, hair salon Deira, wellness spa Dubai, ladies salon Al Muraqqabat",
   openGraph: {
-    title: "Zang Beauty Dubai — Beauty Parlour in Al Rigga, Dubai",
+    title: "Porto De Belleza — Beauty Parlour in Swissôtel Al Ghurair, Dubai",
     description:
-      "Zang Beauty Dubai is a premier beauty parlour and clinic in Deira near Union Metro Station. Specializing in Vietnamese permanent makeup, skincare, HydraFacials, and eyelash extensions.",
+      "Porto De Belleza is a premier luxury beauty parlour located at Swissôtel Al Ghurair in Deira, Dubai. Expert hair styling, coloring, wellness spa treatments, manicures, pedicures, and beauty services.",
     type: "website",
     locale: "en_AE",
   },

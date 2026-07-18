@@ -53,11 +53,11 @@ export default function Header() {
         <div className={styles.inner}>
 
           {/* ── Logo ── */}
-          <Link href="#home" className={styles.logo} aria-label="Zang Beauty Dubai">
+          <Link href="#home" className={styles.logo} aria-label="Porto De Belleza">
             <span className={styles.logoMark}>✦</span>
             <div className={styles.logoText}>
-              <span className={styles.logoName}>Zang Beauty</span>
-              <span className={styles.logoSub}>Salon &amp; Clinic</span>
+              <span className={styles.logoName}>Porto De Belleza</span>
+              <span className={styles.logoSub}>Beauty Parlour</span>
             </div>
           </Link>
 
@@ -93,7 +93,7 @@ export default function Header() {
             </button>
 
             <a
-              href="https://wa.me/971588989220"
+              href="https://wa.me/971509391092"
               target="_blank"
               rel="noopener noreferrer"
               className={styles.bookBtn}
@@ -149,7 +149,7 @@ export default function Header() {
         aria-hidden={!mobileOpen}
       >
         <div className={styles.mobileMenuHeader}>
-          <span className={styles.logoName}>Zang Beauty Dubai</span>
+          <span className={styles.logoName}>Porto De Belleza</span>
           <button
             className={styles.closeBtn}
             aria-label="Close menu"
@@ -175,7 +175,7 @@ export default function Header() {
 
         <div className={styles.mobileFooter}>
           <a
-            href="https://wa.me/971588989220"
+            href="https://wa.me/971509391092"
             target="_blank"
             rel="noopener noreferrer"
             className={styles.mobileBookBtn}
@@ -184,7 +184,7 @@ export default function Header() {
           </a>
           <p className={styles.mobileContact}>
             <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07A19.5 19.5 0 013.07 9.81a19.79 19.79 0 01-3.07-8.63A2 2 0 012 .18h3a2 2 0 012 1.72 12.84 12.84 0 00.7 2.81 2 2 0 01-.45 2.11L6.09 7.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45 12.84 12.84 0 002.81.7A2 2 0 0122 14.92z"/></svg>
-            +971 58 898 9220
+            +971 50 939 1092
           </p>
         </div>
       </nav>
